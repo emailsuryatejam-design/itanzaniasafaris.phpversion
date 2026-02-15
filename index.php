@@ -64,6 +64,24 @@ include 'includes/header.php';
 </section>
 
 <!-- ============================================================
+     SEASONAL DEAL BANNER
+     ============================================================ -->
+<section style="padding:3rem 0;background:var(--primary);">
+  <div class="container">
+    <a href="feb-march-2026-safari.php" style="display:flex;align-items:center;justify-content:space-between;gap:2rem;text-decoration:none;color:#fff;flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;">
+        <span style="background:var(--secondary);color:#fff;padding:8px 20px;border-radius:24px;font-weight:700;font-size:0.85rem;letter-spacing:0.5px;white-space:nowrap;">LIMITED TIME</span>
+        <div>
+          <h3 style="font-size:1.35rem;font-weight:700;margin:0;color:#fff;">Feb & March 2026 Safari Package — 5N/6D from $1,476pp</h3>
+          <p style="margin:4px 0 0;opacity:0.85;font-size:0.95rem;">Tarangire, Serengeti & Ngorongoro Crater · 4 accommodation options</p>
+        </div>
+      </div>
+      <span style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);padding:10px 24px;border-radius:8px;font-weight:600;font-size:0.95rem;white-space:nowrap;transition:background 0.3s;">View Itinerary <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+    </a>
+  </div>
+</section>
+
+<!-- ============================================================
      FEATURED TOURS
      ============================================================ -->
 <section class="py-20 bg-white">
