@@ -1389,3 +1389,277 @@ textarea.form-input { resize: none; }
    ============================================================ */
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ============================================================
+   ITINERARY PAGE - IMMERSIVE LAYOUT
+   ============================================================ */
+
+/* Featured Package Card */
+.featured-package-card:hover { transform: translateY(-4px); box-shadow: 0 8px 40px rgba(0,0,0,0.15); }
+
+/* Hero */
+.itn-hero {
+  position: relative; height: 85vh; min-height: 550px;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.itn-hero-bg {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+}
+.itn-hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+}
+.itn-hero-content {
+  position: relative; z-index: 10; text-align: center;
+  max-width: 800px; padding: 0 1rem;
+}
+.itn-hero-badge {
+  display: inline-block;
+  background: var(--secondary); color: var(--white);
+  font-size: 0.8rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.4rem 1.25rem; border-radius: 9999px;
+  margin-bottom: 1.5rem;
+}
+.itn-hero-content h1 {
+  font-size: 3.5rem; font-weight: 800; color: var(--white);
+  margin-bottom: 0.5rem; line-height: 1.1;
+}
+.itn-hero-route {
+  font-size: 1.25rem; color: rgba(255,255,255,0.85);
+  font-weight: 500; letter-spacing: 0.05em; margin-bottom: 1.5rem;
+}
+.itn-hero-meta {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.itn-hero-meta span {
+  display: flex; align-items: center; gap: 0.4rem;
+  color: rgba(255,255,255,0.8); font-size: 0.9rem;
+}
+.itn-hero-quote {
+  margin-top: 1rem;
+}
+.itn-hero-quote em {
+  display: block; font-size: 1.1rem; color: rgba(255,255,255,0.7);
+  font-style: italic;
+}
+.itn-hero-quote span {
+  font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-top: 0.25rem;
+  display: block;
+}
+
+/* Timeline Section */
+.itn-timeline-section {
+  padding: 5rem 0 3rem;
+  background: var(--white);
+}
+
+/* Day Block - Alternating layout */
+.itn-day {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 0; min-height: 420px;
+  overflow: hidden;
+}
+.itn-day-reverse { direction: rtl; }
+.itn-day-reverse > * { direction: ltr; }
+
+.itn-day-image {
+  position: relative; overflow: hidden;
+}
+.itn-day-image img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.itn-day:hover .itn-day-image img {
+  transform: scale(1.05);
+}
+
+.itn-day-content {
+  display: flex; flex-direction: column;
+  justify-content: center;
+  padding: 3rem 3.5rem;
+  background: var(--sand);
+}
+.itn-day:nth-child(odd) .itn-day-content { background: var(--white); }
+.itn-day:nth-child(even) .itn-day-content { background: var(--sand); }
+
+.itn-day-badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 52px; height: 52px; border-radius: 50%;
+  background: var(--primary); color: var(--white);
+  font-size: 0.7rem; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.itn-day-content h3 {
+  font-size: 1.5rem; font-weight: 700; color: var(--charcoal);
+  margin-bottom: 1rem; line-height: 1.3;
+}
+.itn-day-content > p {
+  font-size: 0.95rem; color: rgba(51,51,51,0.75);
+  line-height: 1.75; margin-bottom: 1.25rem;
+}
+
+.itn-day-details {
+  display: flex; flex-direction: column; gap: 0.5rem;
+  padding-top: 1rem; border-top: 1px solid var(--sand-dark);
+}
+.itn-detail-item {
+  display: flex; align-items: center; gap: 0.5rem;
+  font-size: 0.8rem; color: rgba(51,51,51,0.6);
+}
+.itn-detail-item svg { flex-shrink: 0; color: var(--primary); }
+
+/* Pricing Grid */
+.itn-pricing-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem; margin-top: 1rem;
+}
+.itn-price-card {
+  background: var(--white); border-radius: 1rem;
+  overflow: hidden; box-shadow: var(--shadow-md);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.itn-price-card:hover {
+  box-shadow: var(--shadow-xl); transform: translateY(-4px);
+}
+.itn-price-featured {
+  box-shadow: 0 0 0 2px var(--primary), var(--shadow-lg);
+}
+.itn-price-featured:hover {
+  box-shadow: 0 0 0 2px var(--primary), var(--shadow-xl);
+}
+
+.itn-price-header {
+  padding: 1.5rem 1.5rem 1.25rem; color: var(--white);
+  position: relative;
+}
+.itn-price-header.itn-budget { background: #5D7B6A; }
+.itn-price-header.itn-midrange { background: var(--primary); }
+.itn-price-header.itn-highend { background: #3E2723; }
+.itn-price-header.itn-premium { background: #1a1a1a; }
+
+.itn-price-tier {
+  font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.1em; opacity: 0.7;
+}
+.itn-price-header h3 {
+  font-size: 1.35rem; font-weight: 700; margin-top: 0.25rem;
+}
+.itn-popular-badge {
+  position: absolute; top: 1rem; right: 1rem;
+  background: var(--secondary); color: var(--white);
+  font-size: 0.65rem; font-weight: 700; text-transform: uppercase;
+  padding: 0.2rem 0.6rem; border-radius: 9999px;
+}
+
+.itn-price-body { padding: 1.5rem; }
+
+.itn-hotels {
+  margin-bottom: 1.25rem;
+}
+.itn-hotels li {
+  font-size: 0.85rem; color: rgba(51,51,51,0.8);
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.itn-hotels li:last-child { border-bottom: none; }
+.itn-hotels strong {
+  color: var(--primary); font-weight: 600; font-size: 0.8rem;
+}
+
+.itn-price-table {
+  margin-bottom: 1.25rem;
+}
+.itn-price-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  font-size: 0.85rem;
+}
+.itn-price-row:last-child { border-bottom: none; }
+.itn-price-row span:first-child {
+  color: rgba(51,51,51,0.6); font-weight: 500;
+}
+.itn-pp-price {
+  font-size: 1.1rem; font-weight: 700; color: var(--primary);
+}
+.itn-pp-price small {
+  font-size: 0.7rem; font-weight: 500; color: rgba(51,51,51,0.5);
+}
+.itn-total {
+  font-size: 0.75rem; color: rgba(51,51,51,0.4);
+}
+
+.btn-block { display: block; text-align: center; width: 100%; }
+.btn-outline {
+  display: inline-block; padding: 0.75rem 2rem;
+  border: 2px solid var(--primary); color: var(--primary);
+  font-weight: 600; font-size: 0.9rem; border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover {
+  background: var(--primary); color: var(--white);
+}
+
+/* Inclusions / Exclusions Grid */
+.itn-inclusions-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
+}
+.itn-inc-card {
+  padding: 2rem; border-radius: 1rem;
+}
+.itn-inc-card.itn-included {
+  background: rgba(27,94,32,0.05); border: 1px solid rgba(27,94,32,0.15);
+}
+.itn-inc-card.itn-excluded {
+  background: rgba(239,68,68,0.03); border: 1px solid rgba(239,68,68,0.15);
+}
+.itn-inc-card h3 {
+  display: flex; align-items: center; gap: 0.5rem;
+  font-size: 1.1rem; font-weight: 700; margin-bottom: 1.25rem;
+}
+.itn-included h3 { color: var(--primary); }
+.itn-excluded h3 { color: #EF4444; }
+.itn-included h3 svg { color: var(--primary); }
+.itn-excluded h3 svg { color: #EF4444; }
+
+.itn-inc-card ul li {
+  font-size: 0.9rem; color: rgba(51,51,51,0.75);
+  padding: 0.5rem 0; padding-left: 1.25rem;
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.itn-inc-card ul li:last-child { border-bottom: none; }
+.itn-inc-card ul li::before {
+  content: '';
+  position: absolute; left: 0; top: 0.85rem;
+  width: 6px; height: 6px; border-radius: 50%;
+}
+.itn-included ul li::before { background: var(--primary); }
+.itn-excluded ul li::before { background: #EF4444; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .itn-hero-content h1 { font-size: 2.25rem; }
+  .itn-hero-route { font-size: 1rem; }
+  .itn-hero-meta { gap: 0.75rem; }
+
+  .itn-day {
+    grid-template-columns: 1fr;
+  }
+  .itn-day-reverse { direction: ltr; }
+  .itn-day-image { min-height: 250px; }
+  .itn-day-content { padding: 2rem 1.5rem; }
+  .itn-day-content h3 { font-size: 1.25rem; }
+
+  .itn-pricing-grid { grid-template-columns: 1fr; }
+  .itn-inclusions-grid { grid-template-columns: 1fr; }
+
+  .featured-package-card { grid-template-columns: 1fr !important; }
+}

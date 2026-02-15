@@ -16,6 +16,32 @@ include 'includes/tours-data.php';
   </div>
 </section>
 
+<!-- Featured Seasonal Package -->
+<section class="py-20 bg-white">
+  <div class="container-md">
+    <div class="section-heading reveal">
+      <span class="section-subtitle">Featured Package</span>
+      <h2 class="section-title">Seasonal Safari Deals</h2>
+      <p class="section-desc">Limited-time safari packages at special rates. Book early to secure your spot.</p>
+    </div>
+    <a href="feb-march-2026-safari.php" class="featured-package-card reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:0;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.10);text-decoration:none;color:inherit;transition:transform 0.3s,box-shadow 0.3s;">
+      <div style="position:relative;overflow:hidden;min-height:300px;">
+        <img src="images/itinerary-serengeti.jpg" alt="Serengeti Safari" style="width:100%;height:100%;object-fit:cover;">
+        <span style="position:absolute;top:16px;left:16px;background:var(--secondary);color:#fff;padding:6px 16px;border-radius:20px;font-size:0.85rem;font-weight:600;">Feb & March 2026</span>
+      </div>
+      <div style="padding:2.5rem;display:flex;flex-direction:column;justify-content:center;">
+        <span style="color:var(--primary);font-weight:600;font-size:0.85rem;text-transform:uppercase;letter-spacing:1px;">5 Nights / 6 Days</span>
+        <h3 style="font-size:1.6rem;margin:0.5rem 0;color:#1a1a1a;">Tarangire, Serengeti & Ngorongoro Crater</h3>
+        <p style="color:#666;line-height:1.7;margin-bottom:1.5rem;">Experience the best of Northern Tanzania's wildlife circuit. Witness the Great Migration, explore the Ngorongoro Crater, and encounter elephants in Tarangire — with 4 accommodation options from Budget to Premium.</p>
+        <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;">
+          <span style="font-size:1.3rem;font-weight:700;color:var(--primary);">From $1,476 <span style="font-size:0.85rem;font-weight:400;color:#999;">per person</span></span>
+          <span style="display:inline-flex;align-items:center;gap:6px;color:var(--secondary);font-weight:600;font-size:0.95rem;">View Itinerary <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
 <!-- Tour Listings -->
 <section class="py-20 bg-sand">
   <div class="container-md">

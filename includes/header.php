@@ -24,6 +24,14 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-TT57GCJT');</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RY4C6XBE9S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RY4C6XBE9S');
+  </script>
   <?php if (isset($extra_head)) echo $extra_head; ?>
 </head>
 <body>
