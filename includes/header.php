@@ -17,7 +17,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=20260216b">
+  <link rel="stylesheet" href="css/styles.css?v=20260216c">
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -34,7 +34,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
   </script>
   <?php if (isset($extra_head)) echo $extra_head; ?>
 </head>
-<body>
+<body<?php if($current_page=='blog-post') echo ' class="blog-page"'; ?>>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TT57GCJT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
