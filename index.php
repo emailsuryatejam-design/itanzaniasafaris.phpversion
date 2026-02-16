@@ -385,6 +385,43 @@ include 'includes/header.php';
 </section>
 
 <!-- ============================================================
+     BLOG / SAFARI JOURNAL
+     ============================================================ -->
+<section class="py-20 bg-sand">
+  <div class="container">
+    <div class="section-heading reveal">
+      <span class="section-subtitle">Safari Journal</span>
+      <h2 class="section-title">Travel Tips & Guides</h2>
+      <p class="section-desc">Expert advice and insider knowledge to help you plan the perfect Tanzania adventure.</p>
+    </div>
+    <?php include 'includes/blog-data.php'; ?>
+    <div class="blog-home-grid reveal">
+      <?php foreach (array_slice($blogPosts, 0, 3) as $post): ?>
+      <a href="blog-post.php?slug=<?php echo $post['slug']; ?>" class="blog-card">
+        <div class="blog-card-img">
+          <img src="<?php echo $post['image']; ?>" alt="<?php echo htmlspecialchars($post['title']); ?>" loading="lazy">
+          <span class="blog-card-cat"><?php echo $post['category']; ?></span>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span><?php echo date('M j, Y', strtotime($post['date'])); ?></span>
+            <span class="blog-meta-dot"></span>
+            <span><?php echo $post['read_time']; ?></span>
+          </div>
+          <h3><?php echo htmlspecialchars($post['title']); ?></h3>
+          <p><?php echo htmlspecialchars($post['excerpt']); ?></p>
+          <span class="blog-read-more">Read Article <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+        </div>
+      </a>
+      <?php endforeach; ?>
+    </div>
+    <div class="text-center" style="margin-top:2.5rem;">
+      <a href="blog.php" class="btn btn-secondary btn-lg">View All Articles</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
      CTA BANNER
      ============================================================ -->
 <?php include 'includes/cta-banner.php'; ?>

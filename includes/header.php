@@ -17,7 +17,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=20260216">
+  <link rel="stylesheet" href="css/styles.css?v=20260216b">
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -54,6 +54,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
       <a href="zanzibar.php" <?php if($current_page=='zanzibar') echo 'style="color:var(--secondary)"'; ?>>Zanzibar</a>
       <a href="accommodations.php" <?php if($current_page=='accommodations') echo 'style="color:var(--secondary)"'; ?>>Accommodations</a>
       <a href="about.php" <?php if($current_page=='about') echo 'style="color:var(--secondary)"'; ?>>About</a>
+      <a href="blog.php" <?php if($current_page=='blog' || $current_page=='blog-post') echo 'style="color:var(--secondary)"'; ?>>Blog</a>
       <a href="contact.php" <?php if($current_page=='contact') echo 'style="color:var(--secondary)"'; ?>>Contact</a>
       <a href="contact.php" class="nav-cta">Plan Your Safari</a>
     </div>
@@ -78,6 +79,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
   <a href="zanzibar.php">Zanzibar</a>
   <a href="accommodations.php">Accommodations</a>
   <a href="about.php">About</a>
+  <a href="blog.php">Blog</a>
   <a href="contact.php">Contact</a>
   <a href="contact.php" class="nav-cta" style="margin-top:1rem;">Plan Your Safari</a>
 </div>

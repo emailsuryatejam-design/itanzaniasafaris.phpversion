@@ -59,6 +59,7 @@
       <ul>
         <li><a href="contact.php">Get a Free Quote</a></li>
         <li><a href="safaris.php">Browse Packages</a></li>
+        <li><a href="blog.php">Safari Blog</a></li>
         <li><a href="contact.php">Group Bookings</a></li>
       </ul>
     </div>
