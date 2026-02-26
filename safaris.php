@@ -99,5 +99,47 @@ include 'includes/header.php';
   </div>
 </section>
 
+<!-- FAQ Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "When is the best time to go on safari in Tanzania?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The best time for Tanzania safaris is during the dry season (June-October) for prime wildlife viewing. The Great Migration river crossings happen July-September. The green season (November-May) offers lush landscapes, fewer crowds, and lower prices."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What animals will I see on a Tanzania safari?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tanzania is home to the Big Five (lion, leopard, elephant, buffalo, rhino) plus cheetah, giraffe, zebra, wildebeest, hippo, and over 500 bird species. The Serengeti and Ngorongoro Crater offer the highest concentration of wildlife."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Tanzania safaris safe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tanzania is one of the safest safari destinations in Africa. Our guides are highly trained professionals, vehicles are equipped with safety gear, and we maintain radio contact with park authorities at all times."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I pack for a Tanzania safari?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pack neutral-colored clothing (khaki, green, brown), comfortable walking shoes, sun protection, binoculars, camera with zoom lens, and layers for cool mornings. We provide a detailed packing list upon booking."
+      }
+    }
+  ]
+}
+</script>
+
 <?php include 'includes/cta-banner.php'; ?>
 <?php include 'includes/footer.php'; ?>

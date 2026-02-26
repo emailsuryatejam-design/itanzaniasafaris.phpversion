@@ -8,11 +8,16 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php echo isset($page_title) ? $page_title . ' | iTanzania Safaris' : 'iTanzania Safaris - Authentic Tanzania Safari Adventures'; ?></title>
   <meta name="description" content="<?php echo isset($page_description) ? $page_description : 'Premium Tanzania safari operator specializing in wildlife safaris, Kilimanjaro climbing, and Zanzibar beach holidays. Locally owned DMC based in Arusha.'; ?>">
-  <meta property="og:title" content="<?php echo isset($og_title) ? $og_title : 'iTanzania Safaris'; ?>">
-  <meta property="og:description" content="<?php echo isset($og_description) ? $og_description : 'Authentic Tanzania Safari Adventures'; ?>">
-  <meta property="og:image" content="<?php echo isset($og_image) ? $og_image : 'images/og-image.jpg'; ?>">
+  <meta property="og:title" content="<?php echo isset($page_title) ? $page_title . ' | iTanzania Safaris' : 'iTanzania Safaris'; ?>">
+  <meta property="og:description" content="<?php echo isset($page_description) ? $page_description : 'Authentic Tanzania Safari Adventures'; ?>">
+  <meta property="og:image" content="<?php echo isset($og_image) ? $og_image : 'https://www.itanzaniasafaris.com/images/og-image.jpg'; ?>">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="iTanzania Safaris">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="<?php echo isset($page_title) ? $page_title . ' | iTanzania Safaris' : 'iTanzania Safaris'; ?>">
+  <meta name="twitter:description" content="<?php echo isset($page_description) ? $page_description : 'Authentic Tanzania Safari Adventures'; ?>">
+  <meta name="twitter:image" content="<?php echo isset($og_image) ? $og_image : 'https://www.itanzaniasafaris.com/images/og-image.jpg'; ?>">
+  <link rel="canonical" href="https://www.itanzaniasafaris.com/<?php echo ($current_page == 'index') ? '' : $current_page . '.php'; ?>">
   <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

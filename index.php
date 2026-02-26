@@ -68,18 +68,33 @@ include 'includes/header.php';
      ============================================================ -->
 <section style="padding:3rem 0;background:var(--primary);">
   <div class="container">
-    <a href="feb-march-2026-safari.php" style="display:flex;align-items:center;justify-content:space-between;gap:2rem;text-decoration:none;color:#fff;flex-wrap:wrap;">
-      <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;">
-        <span style="background:var(--secondary);color:#fff;padding:8px 20px;border-radius:24px;font-weight:700;font-size:0.85rem;letter-spacing:0.5px;white-space:nowrap;">LIMITED TIME</span>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;">
+      <!-- 5N/6D Safari Deal -->
+      <a href="feb-march-2026-safari.php" style="display:flex;align-items:center;justify-content:space-between;gap:1.5rem;text-decoration:none;color:#fff;background:rgba(255,255,255,0.08);padding:1.25rem 1.5rem;border-radius:12px;transition:background 0.3s;flex-wrap:wrap;">
         <div>
-          <h3 style="font-size:1.35rem;font-weight:700;margin:0;color:#fff;">Feb & March 2026 Safari Package — 5N/6D from $1,476pp</h3>
-          <p style="margin:4px 0 0;opacity:0.85;font-size:0.95rem;">Tarangire, Serengeti & Ngorongoro Crater · 4 accommodation options</p>
+          <span style="display:inline-block;background:var(--secondary);color:#fff;padding:4px 12px;border-radius:16px;font-weight:700;font-size:0.75rem;letter-spacing:0.5px;margin-bottom:6px;">FEB &amp; MAR 2026</span>
+          <h3 style="font-size:1.1rem;font-weight:700;margin:0;color:#fff;">5N/6D Safari &mdash; From $1,476pp</h3>
+          <p style="margin:4px 0 0;opacity:0.85;font-size:0.85rem;">Tarangire, Serengeti &amp; Ngorongoro Crater</p>
         </div>
-      </div>
-      <span style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);padding:10px 24px;border-radius:8px;font-weight:600;font-size:0.95rem;white-space:nowrap;transition:background 0.3s;">View Itinerary <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
-    </a>
+        <span style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.15);padding:8px 16px;border-radius:8px;font-weight:600;font-size:0.85rem;white-space:nowrap;">View <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+      </a>
+      <!-- 7N/8D Safari + Zanzibar Deal -->
+      <a href="mar-april-2026-safari-zanzibar.php" style="display:flex;align-items:center;justify-content:space-between;gap:1.5rem;text-decoration:none;color:#fff;background:rgba(255,255,255,0.08);padding:1.25rem 1.5rem;border-radius:12px;transition:background 0.3s;flex-wrap:wrap;">
+        <div>
+          <span style="display:inline-block;background:var(--secondary);color:#fff;padding:4px 12px;border-radius:16px;font-weight:700;font-size:0.75rem;letter-spacing:0.5px;margin-bottom:6px;">MAR &amp; APR 2026</span>
+          <h3 style="font-size:1.1rem;font-weight:700;margin:0;color:#fff;">7N/8D Safari + Zanzibar &mdash; From $2,417pp</h3>
+          <p style="margin:4px 0 0;opacity:0.85;font-size:0.85rem;">Safari Circuit + Zanzibar Beach Holiday</p>
+        </div>
+        <span style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.15);padding:8px 16px;border-radius:8px;font-weight:600;font-size:0.85rem;white-space:nowrap;">View <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+      </a>
+    </div>
   </div>
 </section>
+<style>
+@media(max-width:768px){
+  .container > [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important;}
+}
+</style>
 
 <!-- ============================================================
      FEATURED TOURS
@@ -92,93 +107,60 @@ include 'includes/header.php';
       <p class="section-desc">From thrilling wildlife encounters to luxury beach escapes, discover our most sought-after Tanzania experiences.</p>
     </div>
 
-    <div class="grid grid-1 md-grid-3 gap-8 mb-12">
-      <!-- Card 1: Big Five Luxury Safari -->
+    <div class="grid grid-1 md-grid-2 gap-8 mb-12">
+      <!-- Card 1: 5N/6D Tarangire, Serengeti & Ngorongoro -->
       <div class="reveal reveal-delay-1">
-        <a href="safaris.php" class="tour-card">
+        <a href="feb-march-2026-safari.php" class="tour-card">
           <div class="tour-card-image">
-            <div class="card-bg" style="background-image: url('images/big-five.jpg')"></div>
+            <div class="card-bg" style="background-image: url('images/itinerary-serengeti.jpg')"></div>
             <div class="card-gradient"></div>
-            <span class="card-badge">Premium</span>
+            <span class="card-badge">Feb &amp; Mar 2026</span>
             <div class="card-duration">
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
               6 Days / 5 Nights
             </div>
           </div>
           <div class="tour-card-content">
-            <h3>Big Five Luxury Safari</h3>
-            <p class="card-desc">An exclusive luxury safari experience with premium lodges, private game drives, and intimate wildlife encounters in the finest parks.</p>
+            <h3>Tarangire, Serengeti &amp; Ngorongoro Crater</h3>
+            <p class="card-desc">Experience the best of Northern Tanzania's wildlife circuit. Witness the Great Migration, explore the Ngorongoro Crater, and encounter elephants in Tarangire &mdash; with 4 accommodation options from Budget to Premium.</p>
             <div class="tour-card-footer">
               <div>
                 <div class="card-price-label">From</div>
                 <div class="card-price">
-                  <span class="current">$5,800</span>
+                  <span class="current">$1,476</span>
                 </div>
                 <div class="card-price-per">per person</div>
               </div>
-              <span class="card-view-details">View Details <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>
+              <span class="card-view-details">View Itinerary <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>
             </div>
           </div>
         </a>
       </div>
 
-      <!-- Card 2: Great Migration Safari -->
+      <!-- Card 2: 7N/8D Safari + Zanzibar Beach -->
       <div class="reveal reveal-delay-2">
-        <a href="safaris.php" class="tour-card">
+        <a href="mar-april-2026-safari-zanzibar.php" class="tour-card">
           <div class="tour-card-image">
-            <div class="card-bg" style="background-image: url('images/serengeti.jpg')"></div>
+            <div class="card-bg" style="background-image: url('images/safari-beach.jpg')"></div>
             <div class="card-gradient"></div>
-            <span class="card-badge">Most Popular</span>
-            <span class="card-spots">Only 4 spots left</span>
+            <span class="card-badge">Mar &amp; Apr 2026</span>
             <div class="card-duration">
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
               8 Days / 7 Nights
             </div>
           </div>
           <div class="tour-card-content">
-            <h3>Great Migration Safari</h3>
-            <p class="card-desc">Witness the greatest wildlife spectacle on Earth. Follow millions of wildebeest across the Serengeti in this once-in-a-lifetime safari.</p>
+            <h3>Safari &amp; Zanzibar Beach Holiday</h3>
+            <p class="card-desc">The ultimate Tanzania experience combining a 5-day safari through Tarangire, Serengeti and Ngorongoro with a relaxing 3-night all-inclusive Zanzibar beach holiday. Includes domestic flight and Stone Town tour.</p>
             <div class="tour-card-footer">
               <div>
                 <div class="card-price-label">From</div>
                 <div class="card-price">
-                  <span class="current">$4,500</span>
-                  <span class="original">$5,500</span>
+                  <span class="current">$2,417</span>
                 </div>
                 <div class="card-price-per">per person</div>
               </div>
-              <span class="card-view-details">View Details <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Card 3: Safari & Beach Combo -->
-      <div class="reveal reveal-delay-3">
-        <a href="zanzibar.php" class="tour-card">
-          <div class="tour-card-image">
-            <div class="card-bg" style="background-image: url('images/safari-beach.jpg')"></div>
-            <div class="card-gradient"></div>
-            <span class="card-badge">Best of Both</span>
-            <span class="card-spots">Only 3 spots left</span>
-            <div class="card-duration">
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              10 Days / 9 Nights
-            </div>
-          </div>
-          <div class="tour-card-content">
-            <h3>Safari &amp; Beach Combo</h3>
-            <p class="card-desc">The ultimate Tanzania experience combining world-class Serengeti safaris with Zanzibar beach relaxation.</p>
-            <div class="tour-card-footer">
-              <div>
-                <div class="card-price-label">From</div>
-                <div class="card-price">
-                  <span class="current">$5,200</span>
-                  <span class="original">$6,000</span>
-                </div>
-                <div class="card-price-per">per person</div>
-              </div>
-              <span class="card-view-details">View Details <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>
+              <span class="card-view-details">View Itinerary <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>
             </div>
           </div>
         </a>
