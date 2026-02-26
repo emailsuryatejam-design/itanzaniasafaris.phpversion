@@ -114,9 +114,9 @@
   "@context": "https://schema.org",
   "@type": "TravelAgency",
   "name": "iTanzania Safaris",
-  "url": "https://www.itanzaniasafaris.com",
-  "logo": "https://www.itanzaniasafaris.com/images/logo.png",
-  "image": "https://www.itanzaniasafaris.com/images/og-image.jpg",
+  "url": "https://itanzaniasafaris.com",
+  "logo": "https://itanzaniasafaris.com/images/logo.png",
+  "image": "https://itanzaniasafaris.com/images/og-image.jpg",
   "description": "Premium Tanzania safari operator specializing in wildlife safaris, Kilimanjaro climbing, and Zanzibar beach holidays. Locally owned DMC based in Arusha.",
   "telephone": "+13177601338",
   "email": "hello@itanzaniasafaris.com",
@@ -152,10 +152,10 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "iTanzania Safaris",
-  "url": "https://www.itanzaniasafaris.com",
+  "url": "https://itanzaniasafaris.com",
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "https://www.itanzaniasafaris.com/blog.php?q={search_term_string}",
+    "target": "https://itanzaniasafaris.com/blog.php?q={search_term_string}",
     "query-input": "required name=search_term_string"
   }
 }

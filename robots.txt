@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /includes/
 
-Sitemap: https://www.itanzaniasafaris.com/sitemap.xml
+Sitemap: https://itanzaniasafaris.com/sitemap.xml
