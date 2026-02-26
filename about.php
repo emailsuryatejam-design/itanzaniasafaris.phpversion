@@ -1,5 +1,5 @@
 <?php
-$page_title = 'About iTanzania Safaris | Local Arusha Operator';
+$page_title = 'About Us | Local Arusha Safari Operator';
 $page_description = 'iTanzania Safaris is a locally owned Destination Management Company based in Arusha, Tanzania. Licensed tour operator with experienced guides and personalized safari planning.';
 include 'includes/header.php';
 ?>

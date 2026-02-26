@@ -1,5 +1,5 @@
 <?php
-$page_title = 'Contact iTanzania Safaris | Free Quote in 24hrs';
+$page_title = 'Contact Us | Free Safari Quote in 24hrs';
 $page_description = 'Plan your dream Tanzania safari with iTanzania Safaris. Get a free, personalized quote from our Arusha-based team. Response within 24 hours.';
 include 'includes/header.php';
 ?>

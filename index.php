@@ -1,5 +1,5 @@
 <?php
-$page_title = 'Tanzania Safari Packages 2026 | iTanzania Safaris';
+$page_title = 'Tanzania Safari Packages 2026';
 $page_description = 'Book 2026 Tanzania safari packages with iTanzania Safaris. Serengeti, Ngorongoro, Kilimanjaro & Zanzibar. Locally owned Arusha-based operator. From $1,476pp.';
 include 'includes/header.php';
 ?>

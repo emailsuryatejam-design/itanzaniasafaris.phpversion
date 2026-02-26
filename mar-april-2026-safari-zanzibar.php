@@ -1,5 +1,5 @@
 <?php
-$page_title = 'March & April 2026 Safari + Zanzibar | 7N/8D Tanzania Safari & Beach Holiday';
+$page_title = '7N/8D Safari + Zanzibar Mar-Apr 2026';
 $page_description = 'Exclusive 7-night, 8-day Tanzania safari and Zanzibar beach package for March & April 2026. Safari through Tarangire, Serengeti, Ngorongoro plus 3 nights all-inclusive Zanzibar beach resort.';
 include 'includes/header.php';
 ?>

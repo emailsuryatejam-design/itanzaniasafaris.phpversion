@@ -1,5 +1,5 @@
 <?php
-$page_title = 'February & March 2026 Safari Package | 5N/6D Tarangire, Serengeti & Ngorongoro';
+$page_title = '5N/6D Safari Feb-Mar 2026 | From $1,476pp';
 $page_description = 'Exclusive 5-night, 6-day Tanzania safari package for February & March 2026. Explore Tarangire, Serengeti National Park, and Ngorongoro Crater with 4 accommodation options from budget to premium.';
 include 'includes/header.php';
 ?>
