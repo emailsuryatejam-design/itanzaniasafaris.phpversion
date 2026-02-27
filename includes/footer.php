@@ -90,6 +90,7 @@
       <span>Based in Arusha</span>
     </div>
     <p class="footer-copyright">&copy; <?php echo date('Y'); ?> iTanzania Safaris. All rights reserved.</p>
+    <p class="footer-powered" style="margin-top:6px;font-size:0.75rem;opacity:0.5;letter-spacing:0.3px;">Powered by <a href="https://vyomaai.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;text-underline-offset:2px;">VyomaAI Studios</a></p>
   </div>
 </footer>
 
