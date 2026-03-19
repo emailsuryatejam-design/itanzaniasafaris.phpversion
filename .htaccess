@@ -8,6 +8,30 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
 RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
 
+# English clean URL rewrites (redirect .php to clean URLs)
+RewriteRule ^safaris\.php$ /safaris [L,R=301]
+RewriteRule ^kilimanjaro\.php$ /kilimanjaro [L,R=301]
+RewriteRule ^zanzibar\.php$ /zanzibar [L,R=301]
+RewriteRule ^accommodations\.php$ /accommodations [L,R=301]
+RewriteRule ^about\.php$ /about [L,R=301]
+RewriteRule ^blog\.php$ /blog [L,R=301]
+RewriteRule ^blog-post\.php$ /blog-post [L,R=301]
+RewriteRule ^contact\.php$ /contact [L,R=301]
+RewriteRule ^feb-march-2026-safari\.php$ /feb-march-2026-safari [L,R=301]
+RewriteRule ^mar-april-2026-safari-zanzibar\.php$ /mar-april-2026-safari-zanzibar [L,R=301]
+
+# English clean URL internal rewrites
+RewriteRule ^safaris/?$ safaris.php [L,QSA]
+RewriteRule ^kilimanjaro/?$ kilimanjaro.php [L,QSA]
+RewriteRule ^zanzibar/?$ zanzibar.php [L,QSA]
+RewriteRule ^accommodations/?$ accommodations.php [L,QSA]
+RewriteRule ^about/?$ about.php [L,QSA]
+RewriteRule ^blog/?$ blog.php [L,QSA]
+RewriteRule ^blog-post/?$ blog-post.php [L,QSA]
+RewriteRule ^contact/?$ contact.php [L,QSA]
+RewriteRule ^feb-march-2026-safari/?$ feb-march-2026-safari.php [L,QSA]
+RewriteRule ^mar-april-2026-safari-zanzibar/?$ mar-april-2026-safari-zanzibar.php [L,QSA]
+
 # German language rewrites
 RewriteRule ^de/?$ index.php?lang=de [L,QSA]
 RewriteRule ^de/safaris/?$ safaris.php?lang=de [L,QSA]
