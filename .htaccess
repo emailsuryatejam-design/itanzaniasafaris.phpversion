@@ -19,6 +19,39 @@ RewriteRule ^de/blog/?$ blog.php?lang=de [L,QSA]
 RewriteRule ^de/blog-post/?$ blog-post.php?lang=de [L,QSA]
 RewriteRule ^de/kontakt/?$ contact.php?lang=de [L,QSA]
 
+# Spanish language rewrites
+RewriteRule ^es/?$ index.php?lang=es [L,QSA]
+RewriteRule ^es/safaris/?$ safaris.php?lang=es [L,QSA]
+RewriteRule ^es/kilimanjaro/?$ kilimanjaro.php?lang=es [L,QSA]
+RewriteRule ^es/zanzibar/?$ zanzibar.php?lang=es [L,QSA]
+RewriteRule ^es/alojamientos/?$ accommodations.php?lang=es [L,QSA]
+RewriteRule ^es/sobre-nosotros/?$ about.php?lang=es [L,QSA]
+RewriteRule ^es/blog/?$ blog.php?lang=es [L,QSA]
+RewriteRule ^es/blog-post/?$ blog-post.php?lang=es [L,QSA]
+RewriteRule ^es/contacto/?$ contact.php?lang=es [L,QSA]
+
+# Chinese language rewrites
+RewriteRule ^zh/?$ index.php?lang=zh [L,QSA]
+RewriteRule ^zh/safaris/?$ safaris.php?lang=zh [L,QSA]
+RewriteRule ^zh/kilimanjaro/?$ kilimanjaro.php?lang=zh [L,QSA]
+RewriteRule ^zh/zanzibar/?$ zanzibar.php?lang=zh [L,QSA]
+RewriteRule ^zh/accommodations/?$ accommodations.php?lang=zh [L,QSA]
+RewriteRule ^zh/about/?$ about.php?lang=zh [L,QSA]
+RewriteRule ^zh/blog/?$ blog.php?lang=zh [L,QSA]
+RewriteRule ^zh/blog-post/?$ blog-post.php?lang=zh [L,QSA]
+RewriteRule ^zh/contact/?$ contact.php?lang=zh [L,QSA]
+
+# Turkish language rewrites
+RewriteRule ^tr/?$ index.php?lang=tr [L,QSA]
+RewriteRule ^tr/safariler/?$ safaris.php?lang=tr [L,QSA]
+RewriteRule ^tr/kilimanjaro/?$ kilimanjaro.php?lang=tr [L,QSA]
+RewriteRule ^tr/zanzibar/?$ zanzibar.php?lang=tr [L,QSA]
+RewriteRule ^tr/konaklamalar/?$ accommodations.php?lang=tr [L,QSA]
+RewriteRule ^tr/hakkimizda/?$ about.php?lang=tr [L,QSA]
+RewriteRule ^tr/blog/?$ blog.php?lang=tr [L,QSA]
+RewriteRule ^tr/blog-yazisi/?$ blog-post.php?lang=tr [L,QSA]
+RewriteRule ^tr/iletisim/?$ contact.php?lang=tr [L,QSA]
+
 # Custom 404
 ErrorDocument 404 /index.php
 

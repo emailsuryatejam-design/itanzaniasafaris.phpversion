@@ -20,6 +20,9 @@ return [
     'lang' => [
         'en' => 'English',
         'de' => 'Deutsch',
+        'es' => 'Español',
+        'zh' => '中文',
+        'tr' => 'Türkçe',
         'switch' => 'Sprache',
     ],
 

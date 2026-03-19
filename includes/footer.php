@@ -116,15 +116,22 @@
   "@type": "TravelAgency",
   "name": "iTanzania Safaris",
   "url": "https://itanzaniasafaris.com",
-  "logo": "https://itanzaniasafaris.com/images/logo.png",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://itanzaniasafaris.com/images/logo.png",
+    "width": 200,
+    "height": 200
+  },
   "image": "https://itanzaniasafaris.com/images/og-image.jpg",
-  "description": "<?php echo t('seo.default_description'); ?>",
+  "description": "<?php echo addslashes(t('seo.default_description')); ?>",
   "inLanguage": "<?php echo $current_lang; ?>",
   "telephone": "+13177601338",
   "email": "hello@itanzaniasafaris.com",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "Arusha City Centre",
     "addressLocality": "Arusha",
+    "addressRegion": "Arusha Region",
     "addressCountry": "TZ"
   },
   "geo": {
@@ -143,10 +150,61 @@
     "https://www.instagram.com/itanzania.safaris"
   ],
   "priceRange": "$1,476 - $4,865",
-  "areaServed": {
-    "@type": "Country",
-    "name": "Tanzania"
-  }
+  "currenciesAccepted": "USD",
+  "paymentAccepted": "Bank Transfer, Credit Card",
+  "areaServed": [
+    {"@type": "Country", "name": "Tanzania"},
+    {"@type": "Country", "name": "Kenya"}
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "127",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Tanzania Safari Packages",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "5N/6D Tanzania Wildlife Safari — Tarangire, Serengeti & Ngorongoro",
+        "description": "Witness the Great Migration, explore Ngorongoro Crater, and encounter elephant herds in Tarangire. 4 accommodation tiers available.",
+        "price": "1476",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://itanzaniasafaris.com/safaris.php"
+      },
+      {
+        "@type": "Offer",
+        "name": "7N/8D Safari + Zanzibar Beach Holiday",
+        "description": "Combine a 5-day Northern Circuit safari with a 3-night all-inclusive Zanzibar beach holiday. Domestic flight included.",
+        "price": "2417",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://itanzaniasafaris.com/safaris.php"
+      },
+      {
+        "@type": "Offer",
+        "name": "Kilimanjaro Climbing — Machame, Lemosho & Marangu Routes",
+        "description": "Climb Africa's highest peak with KINAPA-certified guides. 90%+ summit success rate.",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://itanzaniasafaris.com/kilimanjaro.php"
+      }
+    ]
+  },
+  "knowsAbout": [
+    "Tanzania Safari",
+    "Serengeti National Park",
+    "Ngorongoro Crater",
+    "Kilimanjaro Climbing",
+    "Zanzibar Beach Holidays",
+    "African Wildlife Safari",
+    "Great Migration",
+    "Tarangire National Park"
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -161,6 +219,54 @@
     "target": "https://itanzaniasafaris.com/blog.php?q={search_term_string}",
     "query-input": "required name=search_term_string"
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "When is the best time to go on safari in Tanzania?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The best time for Tanzania safaris is during the dry season (June-October) for prime wildlife viewing. The Great Migration river crossings happen July-September. The green season (November-May) offers lush landscapes, fewer crowds, and lower prices."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a Tanzania safari cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "iTanzania Safaris offers Tanzania safari packages starting from $1,476 per person for a 5-night/6-day wildlife safari covering Tarangire, Serengeti and Ngorongoro. A 7-night/8-day Safari + Zanzibar beach combo starts from $2,417 per person."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What animals will I see on a Tanzania safari?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tanzania is home to the Big Five (lion, leopard, elephant, buffalo, rhino) plus cheetah, giraffe, zebra, wildebeest, hippo, and over 500 bird species. The Serengeti and Ngorongoro Crater offer the highest concentration of wildlife in Africa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fit do I need to be to climb Kilimanjaro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kilimanjaro doesn't require technical climbing skills, but good general fitness is essential. We recommend starting a training program 3-4 months before your climb, focusing on cardio and hiking. Our guides maintain a 90%+ summit success rate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Tanzania a safe safari destination?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tanzania is one of the safest safari destinations in Africa. Our guides are highly trained professionals, vehicles are equipped with safety gear, and we maintain radio contact with park authorities at all times."
+      }
+    }
+  ]
 }
 </script>
 
