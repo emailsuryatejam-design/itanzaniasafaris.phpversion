@@ -7,7 +7,7 @@ include 'includes/tours-data.php';
 ?>
 
 <section class="page-hero">
-  <div class="page-hero-bg" style="background-image: url('images/zanzibar-beach.jpg')"></div>
+  <div class="page-hero-bg" style="background-image: url('/images/zanzibar-beach.jpg')"></div>
   <div class="page-hero-overlay" style="background:rgba(0,0,0,0.4)"></div>
   <div class="page-hero-content">
     <span class="hero-subtitle"><?php echo t('zanzibar.hero_subtitle'); ?></span>
@@ -55,7 +55,7 @@ include 'includes/tours-data.php';
     </div>
     <a href="<?php echo lang_url('mar-april-2026-safari-zanzibar.php'); ?>" class="featured-package-card reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:0;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.10);text-decoration:none;color:inherit;transition:transform 0.3s,box-shadow 0.3s;">
       <div style="position:relative;overflow:hidden;min-height:300px;">
-        <img src="images/safari-beach.jpg" alt="Safari and Zanzibar Beach" style="width:100%;height:100%;object-fit:cover;">
+        <img src="/images/safari-beach.jpg" alt="Safari and Zanzibar Beach" style="width:100%;height:100%;object-fit:cover;">
         <span style="position:absolute;top:16px;left:16px;background:var(--secondary);color:#fff;padding:6px 16px;border-radius:20px;font-size:0.85rem;font-weight:600;">Mar & April 2026</span>
       </div>
       <div style="padding:2.5rem;display:flex;flex-direction:column;justify-content:center;">

@@ -26,7 +26,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=20260216e">
+  <link rel="stylesheet" href="/css/styles.css?v=20260216e">
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -52,7 +52,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
   <nav class="header-nav">
     <!-- Logo -->
     <a href="<?php echo lang_url('index.php'); ?>" class="header-logo" style="z-index:1001;flex-shrink:0;">
-      <img src="images/logo.png" alt="iTanzania Safaris">
+      <img src="/images/logo.png" alt="iTanzania Safaris">
     </a>
 
     <!-- Desktop Navigation -->
@@ -91,7 +91,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
 
 <!-- Mobile Menu -->
 <div class="mobile-menu" id="mobile-menu">
-  <img src="images/logo.png" alt="iTanzania Safaris" class="mobile-logo" style="border-radius:50%;">
+  <img src="/images/logo.png" alt="iTanzania Safaris" class="mobile-logo" style="border-radius:50%;">
   <a href="<?php echo lang_url('index.php'); ?>"><?php echo t('nav.home'); ?></a>
   <a href="<?php echo lang_url('safaris.php'); ?>"><?php echo t('nav.safaris'); ?></a>
   <a href="<?php echo lang_url('kilimanjaro.php'); ?>"><?php echo t('nav.kilimanjaro'); ?></a>

@@ -54,7 +54,7 @@ $related = getRelatedPosts($post['slug'], $post['category']);
       <h1><?php echo htmlspecialchars($post['title']); ?></h1>
       <div class="blog-article-meta">
         <div class="blog-author-row">
-          <img src="images/logo.png" alt="iTanzania Safaris" class="blog-author-avatar">
+          <img src="/images/logo.png" alt="iTanzania Safaris" class="blog-author-avatar">
           <div>
             <strong><?php echo $post['author']; ?></strong>
             <span><?php echo t('blog_post.safari_experts'); ?></span>

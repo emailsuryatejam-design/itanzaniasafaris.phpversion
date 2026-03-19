@@ -17,7 +17,7 @@
     <!-- Brand -->
     <div class="footer-brand">
       <div class="footer-brand-header">
-        <img src="images/logo.png" alt="iTanzania Safaris">
+        <img src="/images/logo.png" alt="iTanzania Safaris">
         <div>
           <span class="footer-brand-name">iTanzania <span class="safaris">Safaris</span></span>
         </div>
@@ -180,6 +180,6 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!-- Main JS -->
-<script src="js/main.js"></script>
+<script src="/js/main.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <!-- CTA Banner -->
 <section class="cta-banner">
-  <div class="cta-bg" style="background-image: url('images/cta-bg.jpg')"></div>
+  <div class="cta-bg" style="background-image: url('/images/cta-bg.jpg')"></div>
   <div class="cta-overlay"></div>
   <div class="cta-banner-content reveal">
     <span class="cta-badge"><?php echo t('cta.badge'); ?></span>

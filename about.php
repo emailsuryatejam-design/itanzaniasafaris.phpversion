@@ -6,7 +6,7 @@ include 'includes/header.php';
 ?>
 
 <section class="page-hero">
-  <div class="page-hero-bg" style="background-image: url('images/team.jpg')"></div>
+  <div class="page-hero-bg" style="background-image: url('/images/team.jpg')"></div>
   <div class="page-hero-overlay"></div>
   <div class="page-hero-content">
     <span class="hero-subtitle"><?php echo t('about.hero_subtitle'); ?></span>
@@ -27,7 +27,7 @@ include 'includes/header.php';
         <p style="color:rgba(51,51,51,0.7);line-height:1.75;"><?php echo t('about.mission_p3'); ?></p>
       </div>
       <div class="about-story-image">
-        <div class="story-img" style="background-image: url('images/about-story.jpg')"></div>
+        <div class="story-img" style="background-image: url('/images/about-story.jpg')"></div>
         <div class="story-badge">
           <div class="badge-value">100%</div>
           <div class="badge-label"><?php echo t('about.locally_owned'); ?></div>
@@ -63,7 +63,7 @@ include 'includes/header.php';
     </div>
     <div class="team-grid">
       <div class="team-card reveal">
-        <div class="team-card-image" style="background-image: url('images/team-1.jpg')"></div>
+        <div class="team-card-image" style="background-image: url('/images/team-1.jpg')"></div>
         <div class="team-card-info">
           <h3><?php echo t('about.guide1_name'); ?></h3>
           <p class="team-role"><?php echo t('about.guide1_role'); ?></p>
@@ -71,7 +71,7 @@ include 'includes/header.php';
         </div>
       </div>
       <div class="team-card reveal reveal-delay-1">
-        <div class="team-card-image" style="background-image: url('images/team-2.jpg')"></div>
+        <div class="team-card-image" style="background-image: url('/images/team-2.jpg')"></div>
         <div class="team-card-info">
           <h3><?php echo t('about.guide2_name'); ?></h3>
           <p class="team-role"><?php echo t('about.guide2_role'); ?></p>
@@ -79,7 +79,7 @@ include 'includes/header.php';
         </div>
       </div>
       <div class="team-card reveal reveal-delay-2">
-        <div class="team-card-image" style="background-image: url('images/team-3.jpg')"></div>
+        <div class="team-card-image" style="background-image: url('/images/team-3.jpg')"></div>
         <div class="team-card-info">
           <h3><?php echo t('about.guide3_name'); ?></h3>
           <p class="team-role"><?php echo t('about.guide3_role'); ?></p>

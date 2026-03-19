@@ -6,7 +6,7 @@ include 'includes/header.php';
 
 <!-- Hero Section -->
 <section class="itn-hero">
-  <div class="itn-hero-bg" style="background-image: url('images/itinerary-hero.jpg')"></div>
+  <div class="itn-hero-bg" style="background-image: url('/images/itinerary-hero.jpg')"></div>
   <div class="itn-hero-overlay"></div>
   <div class="itn-hero-content">
     <span class="itn-hero-badge">February & March 2026</span>
@@ -37,7 +37,7 @@ include 'includes/header.php';
   <!-- Day 1 -->
   <div class="itn-day reveal" id="day-1">
     <div class="itn-day-image">
-      <img src="images/itinerary-arusha.jpg" alt="Arusha town arrival" loading="lazy">
+      <img src="/images/itinerary-arusha.jpg" alt="Arusha town arrival" loading="lazy">
     </div>
     <div class="itn-day-content">
       <div class="itn-day-badge">Day 1</div>
@@ -63,7 +63,7 @@ include 'includes/header.php';
   <!-- Day 2 -->
   <div class="itn-day itn-day-reverse reveal" id="day-2">
     <div class="itn-day-image">
-      <img src="images/itinerary-tarangire.jpg" alt="Tarangire National Park elephants" loading="lazy">
+      <img src="/images/itinerary-tarangire.jpg" alt="Tarangire National Park elephants" loading="lazy">
     </div>
     <div class="itn-day-content">
       <div class="itn-day-badge">Day 2</div>
@@ -89,7 +89,7 @@ include 'includes/header.php';
   <!-- Day 3 -->
   <div class="itn-day reveal" id="day-3">
     <div class="itn-day-image">
-      <img src="images/itinerary-serengeti.jpg" alt="Serengeti National Park vast plains" loading="lazy">
+      <img src="/images/itinerary-serengeti.jpg" alt="Serengeti National Park vast plains" loading="lazy">
     </div>
     <div class="itn-day-content">
       <div class="itn-day-badge">Day 3</div>
@@ -115,7 +115,7 @@ include 'includes/header.php';
   <!-- Day 4 -->
   <div class="itn-day itn-day-reverse reveal" id="day-4">
     <div class="itn-day-image">
-      <img src="images/itinerary-game-drive.jpg" alt="Full day Serengeti game drive" loading="lazy">
+      <img src="/images/itinerary-game-drive.jpg" alt="Full day Serengeti game drive" loading="lazy">
     </div>
     <div class="itn-day-content">
       <div class="itn-day-badge">Day 4</div>
@@ -141,7 +141,7 @@ include 'includes/header.php';
   <!-- Day 5 -->
   <div class="itn-day reveal" id="day-5">
     <div class="itn-day-image">
-      <img src="images/itinerary-ngorongoro.jpg" alt="Ngorongoro Crater game drive" loading="lazy">
+      <img src="/images/itinerary-ngorongoro.jpg" alt="Ngorongoro Crater game drive" loading="lazy">
     </div>
     <div class="itn-day-content">
       <div class="itn-day-badge">Day 5</div>
@@ -167,7 +167,7 @@ include 'includes/header.php';
   <!-- Day 6 -->
   <div class="itn-day itn-day-reverse reveal" id="day-6">
     <div class="itn-day-image">
-      <img src="images/itinerary-departure.jpg" alt="Safari departure Kilimanjaro Airport" loading="lazy">
+      <img src="/images/itinerary-departure.jpg" alt="Safari departure Kilimanjaro Airport" loading="lazy">
     </div>
     <div class="itn-day-content">
       <div class="itn-day-badge">Day 6</div>

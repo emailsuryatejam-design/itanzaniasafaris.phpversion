@@ -11,17 +11,17 @@ include 'includes/header.php';
 <section class="hero">
   <!-- Slide 1 -->
   <div class="hero-slide active">
-    <div class="hero-bg" style="background-image: url('images/hero-serengeti.jpg')"></div>
+    <div class="hero-bg" style="background-image: url('/images/hero-serengeti.jpg')"></div>
     <div class="hero-overlay"></div>
   </div>
   <!-- Slide 2 -->
   <div class="hero-slide">
-    <div class="hero-bg" style="background-image: url('images/hero-kilimanjaro.jpg')"></div>
+    <div class="hero-bg" style="background-image: url('/images/hero-kilimanjaro.jpg')"></div>
     <div class="hero-overlay"></div>
   </div>
   <!-- Slide 3 -->
   <div class="hero-slide">
-    <div class="hero-bg" style="background-image: url('images/hero-zanzibar.jpg')"></div>
+    <div class="hero-bg" style="background-image: url('/images/hero-zanzibar.jpg')"></div>
     <div class="hero-overlay"></div>
   </div>
 
@@ -113,7 +113,7 @@ include 'includes/header.php';
       <div class="reveal reveal-delay-1">
         <a href="<?php echo lang_url('feb-march-2026-safari.php'); ?>" class="tour-card">
           <div class="tour-card-image">
-            <div class="card-bg" style="background-image: url('images/itinerary-serengeti.jpg')"></div>
+            <div class="card-bg" style="background-image: url('/images/itinerary-serengeti.jpg')"></div>
             <div class="card-gradient"></div>
             <span class="card-badge"><?php echo t('home.featured_badge_1'); ?></span>
             <div class="card-duration">
@@ -142,7 +142,7 @@ include 'includes/header.php';
       <div class="reveal reveal-delay-2">
         <a href="<?php echo lang_url('mar-april-2026-safari-zanzibar.php'); ?>" class="tour-card">
           <div class="tour-card-image">
-            <div class="card-bg" style="background-image: url('images/safari-beach.jpg')"></div>
+            <div class="card-bg" style="background-image: url('/images/safari-beach.jpg')"></div>
             <div class="card-gradient"></div>
             <span class="card-badge"><?php echo t('home.featured_badge_2'); ?></span>
             <div class="card-duration">

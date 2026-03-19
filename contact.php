@@ -6,7 +6,7 @@ include 'includes/header.php';
 ?>
 
 <section class="page-hero short overlay-primary">
-  <div class="page-hero-bg" style="background-image: url('images/cta-bg.jpg')"></div>
+  <div class="page-hero-bg" style="background-image: url('/images/cta-bg.jpg')"></div>
   <div class="page-hero-overlay"></div>
   <div class="page-hero-content">
     <span class="hero-subtitle"><?php echo t('contact.hero_subtitle'); ?></span>

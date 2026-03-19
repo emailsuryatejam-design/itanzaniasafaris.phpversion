@@ -6,7 +6,7 @@ include 'includes/header.php';
 ?>
 
 <section class="page-hero">
-  <div class="page-hero-bg" style="background-image: url('images/serengeti.jpg')"></div>
+  <div class="page-hero-bg" style="background-image: url('/images/serengeti.jpg')"></div>
   <div class="page-hero-overlay"></div>
   <div class="page-hero-content">
     <span class="hero-subtitle"><?php echo t('accommodations.hero_subtitle'); ?></span>
@@ -27,7 +27,7 @@ include 'includes/header.php';
       <!-- Karibu Camps -->
       <div class="partner-card reveal">
         <div class="partner-card-grid">
-          <div class="partner-image" style="background-image: url('images/serengeti.jpg')"></div>
+          <div class="partner-image" style="background-image: url('/images/serengeti.jpg')"></div>
           <div class="partner-content">
             <span class="partner-type"><?php echo t('accommodations.camps_type'); ?></span>
             <h2><?php echo t('accommodations.camps_name'); ?></h2>
@@ -54,7 +54,7 @@ include 'includes/header.php';
       <!-- Four Points -->
       <div class="partner-card reveal reveal-delay-1">
         <div class="partner-card-grid">
-          <div class="partner-image" style="background-image: url('images/about-story.jpg')"></div>
+          <div class="partner-image" style="background-image: url('/images/about-story.jpg')"></div>
           <div class="partner-content">
             <span class="partner-type"><?php echo t('accommodations.hotel_type'); ?></span>
             <h2><?php echo t('accommodations.hotel_name'); ?></h2>
