@@ -4,7 +4,8 @@ $page_title = t('seo.blog.title');
 $page_description = t('seo.blog.description');
 include 'includes/header.php';
 include 'includes/blog-data.php';
-$featured = array_values(getFeaturedPosts());
+$featured = array_values(array_map(fn($p) => localizePost($p, $current_lang), getFeaturedPosts()));
+$blogPosts = array_map(fn($p) => localizePost($p, $current_lang), $blogPosts);
 ?>
 
 <!-- Hero -->

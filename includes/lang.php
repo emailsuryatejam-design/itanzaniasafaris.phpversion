@@ -140,14 +140,16 @@ function get_lang_switch_url($target_lang) {
     $current_page = basename($_SERVER['PHP_SELF'], '.php');
     $params = $_GET;
     unset($params['lang']);
-    $query = !empty($params) ? '?' . http_build_query($params) : '';
+    // Always include lang param so the cookie gets updated on every language switch
+    $params['lang'] = $target_lang;
+    $query = '?' . http_build_query($params);
 
     if ($target_lang === 'en') {
-        return $current_page === 'index' ? '/' . ltrim($query, '') : '/' . $current_page . '.php' . $query;
+        return $current_page === 'index' ? '/' . $query : '/' . $current_page . '.php' . $query;
     }
 
     $slug = isset($slug_map[$current_page][$target_lang]) ? $slug_map[$current_page][$target_lang] : $current_page;
-    if ($slug === '') return '/' . $target_lang . '/' . ltrim($query, '');
+    if ($slug === '') return '/' . $target_lang . '/' . $query;
     return '/' . $target_lang . '/' . $slug . $query;
 }
 
