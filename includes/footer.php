@@ -4,10 +4,10 @@
 <div class="footer-cta-strip">
   <div class="footer-cta-inner">
     <div>
-      <h3>Ready to Experience Tanzania?</h3>
-      <p>Get a free, no-obligation quote for your dream safari</p>
+      <h3><?php echo t('footer.cta_title'); ?></h3>
+      <p><?php echo t('footer.cta_desc'); ?></p>
     </div>
-    <a href="contact.php" class="btn btn-white btn-md">Get Free Quote</a>
+    <a href="<?php echo lang_url('contact.php'); ?>" class="btn btn-white btn-md"><?php echo t('footer.cta_button'); ?></a>
   </div>
 </div>
 
@@ -22,7 +22,7 @@
           <span class="footer-brand-name">iTanzania <span class="safaris">Safaris</span></span>
         </div>
       </div>
-      <p>Your trusted Destination Management Company for authentic Tanzanian experiences. Locally owned and operated from Arusha.</p>
+      <p><?php echo t('footer.brand_desc'); ?></p>
       <div class="social-links">
         <a href="https://www.facebook.com/share/181WegW4kF/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
           <svg fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
@@ -38,29 +38,29 @@
 
     <!-- Link Columns -->
     <div class="footer-links">
-      <h4>Safari Experiences</h4>
+      <h4><?php echo t('footer.safari_experiences'); ?></h4>
       <ul>
-        <li><a href="safaris.php">Wildlife Safaris</a></li>
-        <li><a href="kilimanjaro.php">Kilimanjaro Climbing</a></li>
-        <li><a href="zanzibar.php">Zanzibar Beach</a></li>
-        <li><a href="accommodations.php">Accommodations</a></li>
+        <li><a href="<?php echo lang_url('safaris.php'); ?>"><?php echo t('footer.wildlife_safaris'); ?></a></li>
+        <li><a href="<?php echo lang_url('kilimanjaro.php'); ?>"><?php echo t('footer.kili_climbing'); ?></a></li>
+        <li><a href="<?php echo lang_url('zanzibar.php'); ?>"><?php echo t('footer.zanzibar_beach'); ?></a></li>
+        <li><a href="<?php echo lang_url('accommodations.php'); ?>"><?php echo t('footer.accommodations'); ?></a></li>
       </ul>
     </div>
     <div class="footer-links">
-      <h4>Company</h4>
+      <h4><?php echo t('footer.company'); ?></h4>
       <ul>
-        <li><a href="about.php">About Us</a></li>
-        <li><a href="about.php#team">Our Guides</a></li>
-        <li><a href="contact.php">Contact Us</a></li>
+        <li><a href="<?php echo lang_url('about.php'); ?>"><?php echo t('footer.about_us'); ?></a></li>
+        <li><a href="<?php echo lang_url('about.php'); ?>#team"><?php echo t('footer.our_guides'); ?></a></li>
+        <li><a href="<?php echo lang_url('contact.php'); ?>"><?php echo t('footer.contact_us'); ?></a></li>
       </ul>
     </div>
     <div class="footer-links">
-      <h4>Plan Your Trip</h4>
+      <h4><?php echo t('footer.plan_trip'); ?></h4>
       <ul>
-        <li><a href="contact.php">Get a Free Quote</a></li>
-        <li><a href="safaris.php">Browse Packages</a></li>
-        <li><a href="blog.php">Safari Blog</a></li>
-        <li><a href="contact.php">Group Bookings</a></li>
+        <li><a href="<?php echo lang_url('contact.php'); ?>"><?php echo t('footer.free_quote'); ?></a></li>
+        <li><a href="<?php echo lang_url('safaris.php'); ?>"><?php echo t('footer.browse_packages'); ?></a></li>
+        <li><a href="<?php echo lang_url('blog.php'); ?>"><?php echo t('footer.safari_blog'); ?></a></li>
+        <li><a href="<?php echo lang_url('contact.php'); ?>"><?php echo t('footer.group_bookings'); ?></a></li>
       </ul>
     </div>
   </div>
@@ -78,7 +78,7 @@
       </div>
       <div class="footer-contact-item">
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        <span>Mon - Sun: 8:00 AM - 8:00 PM (EAT)</span>
+        <span><?php echo t('footer.hours'); ?></span>
       </div>
     </div>
   </div>
@@ -86,10 +86,10 @@
   <!-- Bottom -->
   <div class="footer-bottom">
     <div class="footer-badges">
-      <span>Licensed Tour Operator</span>
-      <span>Based in Arusha</span>
+      <span><?php echo t('footer.licensed'); ?></span>
+      <span><?php echo t('footer.based_in'); ?></span>
     </div>
-    <p class="footer-copyright">&copy; <?php echo date('Y'); ?> iTanzania Safaris. All rights reserved.</p>
+    <p class="footer-copyright"><?php echo sprintf(t('footer.copyright'), date('Y')); ?></p>
     <p class="footer-powered" style="margin-top:6px;font-size:0.75rem;opacity:0.5;letter-spacing:0.3px;">Powered by <a href="https://vyomaai.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;text-underline-offset:2px;">VyomaAI Studios</a></p>
   </div>
 </footer>
@@ -118,7 +118,8 @@
   "url": "https://itanzaniasafaris.com",
   "logo": "https://itanzaniasafaris.com/images/logo.png",
   "image": "https://itanzaniasafaris.com/images/og-image.jpg",
-  "description": "Premium Tanzania safari operator specializing in wildlife safaris, Kilimanjaro climbing, and Zanzibar beach holidays. Locally owned DMC based in Arusha.",
+  "description": "<?php echo t('seo.default_description'); ?>",
+  "inLanguage": "<?php echo $current_lang; ?>",
   "telephone": "+13177601338",
   "email": "hello@itanzaniasafaris.com",
   "address": {
@@ -154,12 +155,28 @@
   "@type": "WebSite",
   "name": "iTanzania Safaris",
   "url": "https://itanzaniasafaris.com",
+  "inLanguage": "<?php echo $current_lang; ?>",
   "potentialAction": {
     "@type": "SearchAction",
     "target": "https://itanzaniasafaris.com/blog.php?q={search_term_string}",
     "query-input": "required name=search_term_string"
   }
 }
+</script>
+
+<!-- Language Switcher JS -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var toggle = document.querySelector('.lang-toggle');
+  var dropdown = document.querySelector('.lang-dropdown');
+  if (toggle && dropdown) {
+    toggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+    });
+    document.addEventListener('click', function() { dropdown.style.display = 'none'; });
+  }
+});
 </script>
 
 <!-- Main JS -->

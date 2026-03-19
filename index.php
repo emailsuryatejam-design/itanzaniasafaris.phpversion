@@ -1,6 +1,7 @@
 <?php
-$page_title = 'Tanzania Safari Packages 2026';
-$page_description = 'Book 2026 Tanzania safari packages with iTanzania Safaris. Serengeti, Ngorongoro, Kilimanjaro & Zanzibar. Locally owned Arusha-based operator. From $1,476pp.';
+include_once 'includes/lang.php';
+$page_title = t('seo.index.title');
+$page_description = t('seo.index.description');
 include 'includes/header.php';
 ?>
 
@@ -27,12 +28,12 @@ include 'includes/header.php';
   <!-- Content -->
   <div class="hero-content">
     <div class="hero-text">
-      <span class="hero-subtitle">Unforgettable Tanzania Safari Adventures</span>
-      <h1 class="hero-title">Experience the Wild Heart of Africa</h1>
-      <p class="hero-desc">Discover Tanzania with our expert local guides. From the Serengeti to Kilimanjaro to Zanzibar &mdash; your dream adventure starts here.</p>
+      <span class="hero-subtitle"><?php echo t('home.hero_subtitle'); ?></span>
+      <h1 class="hero-title"><?php echo t('home.hero_title'); ?></h1>
+      <p class="hero-desc"><?php echo t('home.hero_desc'); ?></p>
       <div class="hero-buttons">
-        <a href="contact.php" class="btn btn-primary btn-lg">Plan Your Safari</a>
-        <a href="safaris.php" class="btn btn-outline btn-lg">Explore Packages</a>
+        <a href="<?php echo lang_url('contact.php'); ?>" class="btn btn-primary btn-lg"><?php echo t('home.plan_safari'); ?></a>
+        <a href="<?php echo lang_url('safaris.php'); ?>" class="btn btn-outline btn-lg"><?php echo t('home.explore_packages'); ?></a>
       </div>
     </div>
   </div>
@@ -55,11 +56,11 @@ include 'includes/header.php';
      ============================================================ -->
 <section class="trust-bar">
   <div class="trust-bar-inner container">
-    <span><strong>Locally Owned</strong> &amp; Operated</span>
+    <span><?php echo t('home.trust_locally'); ?></span>
     <span class="divider">|</span>
-    <span><strong>Licensed</strong> Tour Operator</span>
+    <span><?php echo t('home.trust_licensed'); ?></span>
     <span class="divider">|</span>
-    <span><strong>Based in</strong> Arusha, Tanzania</span>
+    <span><?php echo t('home.trust_based'); ?></span>
   </div>
 </section>
 
@@ -70,22 +71,22 @@ include 'includes/header.php';
   <div class="container">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;">
       <!-- 5N/6D Safari Deal -->
-      <a href="feb-march-2026-safari.php" style="display:flex;align-items:center;justify-content:space-between;gap:1.5rem;text-decoration:none;color:#fff;background:rgba(255,255,255,0.08);padding:1.25rem 1.5rem;border-radius:12px;transition:background 0.3s;flex-wrap:wrap;">
+      <a href="<?php echo lang_url('feb-march-2026-safari.php'); ?>" style="display:flex;align-items:center;justify-content:space-between;gap:1.5rem;text-decoration:none;color:#fff;background:rgba(255,255,255,0.08);padding:1.25rem 1.5rem;border-radius:12px;transition:background 0.3s;flex-wrap:wrap;">
         <div>
-          <span style="display:inline-block;background:var(--secondary);color:#fff;padding:4px 12px;border-radius:16px;font-weight:700;font-size:0.75rem;letter-spacing:0.5px;margin-bottom:6px;">FEB &amp; MAR 2026</span>
-          <h3 style="font-size:1.1rem;font-weight:700;margin:0;color:#fff;">5N/6D Safari &mdash; From $1,476pp</h3>
-          <p style="margin:4px 0 0;opacity:0.85;font-size:0.85rem;">Tarangire, Serengeti &amp; Ngorongoro Crater</p>
+          <span style="display:inline-block;background:var(--secondary);color:#fff;padding:4px 12px;border-radius:16px;font-weight:700;font-size:0.75rem;letter-spacing:0.5px;margin-bottom:6px;"><?php echo t('home.deal_badge_1'); ?></span>
+          <h3 style="font-size:1.1rem;font-weight:700;margin:0;color:#fff;"><?php echo t('home.deal_title_1'); ?></h3>
+          <p style="margin:4px 0 0;opacity:0.85;font-size:0.85rem;"><?php echo t('home.deal_desc_1'); ?></p>
         </div>
-        <span style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.15);padding:8px 16px;border-radius:8px;font-weight:600;font-size:0.85rem;white-space:nowrap;">View <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+        <span style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.15);padding:8px 16px;border-radius:8px;font-weight:600;font-size:0.85rem;white-space:nowrap;"><?php echo t('home.view'); ?> <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
       </a>
       <!-- 7N/8D Safari + Zanzibar Deal -->
-      <a href="mar-april-2026-safari-zanzibar.php" style="display:flex;align-items:center;justify-content:space-between;gap:1.5rem;text-decoration:none;color:#fff;background:rgba(255,255,255,0.08);padding:1.25rem 1.5rem;border-radius:12px;transition:background 0.3s;flex-wrap:wrap;">
+      <a href="<?php echo lang_url('mar-april-2026-safari-zanzibar.php'); ?>" style="display:flex;align-items:center;justify-content:space-between;gap:1.5rem;text-decoration:none;color:#fff;background:rgba(255,255,255,0.08);padding:1.25rem 1.5rem;border-radius:12px;transition:background 0.3s;flex-wrap:wrap;">
         <div>
-          <span style="display:inline-block;background:var(--secondary);color:#fff;padding:4px 12px;border-radius:16px;font-weight:700;font-size:0.75rem;letter-spacing:0.5px;margin-bottom:6px;">MAR &amp; APR 2026</span>
-          <h3 style="font-size:1.1rem;font-weight:700;margin:0;color:#fff;">7N/8D Safari + Zanzibar &mdash; From $2,417pp</h3>
-          <p style="margin:4px 0 0;opacity:0.85;font-size:0.85rem;">Safari Circuit + Zanzibar Beach Holiday</p>
+          <span style="display:inline-block;background:var(--secondary);color:#fff;padding:4px 12px;border-radius:16px;font-weight:700;font-size:0.75rem;letter-spacing:0.5px;margin-bottom:6px;"><?php echo t('home.deal_badge_2'); ?></span>
+          <h3 style="font-size:1.1rem;font-weight:700;margin:0;color:#fff;"><?php echo t('home.deal_title_2'); ?></h3>
+          <p style="margin:4px 0 0;opacity:0.85;font-size:0.85rem;"><?php echo t('home.deal_desc_2'); ?></p>
         </div>
-        <span style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.15);padding:8px 16px;border-radius:8px;font-weight:600;font-size:0.85rem;white-space:nowrap;">View <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+        <span style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.15);padding:8px 16px;border-radius:8px;font-weight:600;font-size:0.85rem;white-space:nowrap;"><?php echo t('home.view'); ?> <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
       </a>
     </div>
   </div>
@@ -102,36 +103,36 @@ include 'includes/header.php';
 <section class="py-20 bg-white">
   <div class="container">
     <div class="section-heading reveal">
-      <span class="section-subtitle">Our Top Experiences</span>
-      <h2 class="section-title">Handpicked Safari Adventures</h2>
-      <p class="section-desc">From thrilling wildlife encounters to luxury beach escapes, discover our most sought-after Tanzania experiences.</p>
+      <span class="section-subtitle"><?php echo t('home.featured_subtitle'); ?></span>
+      <h2 class="section-title"><?php echo t('home.featured_title'); ?></h2>
+      <p class="section-desc"><?php echo t('home.featured_desc'); ?></p>
     </div>
 
     <div class="grid grid-1 md-grid-2 gap-8 mb-12">
       <!-- Card 1: 5N/6D Tarangire, Serengeti & Ngorongoro -->
       <div class="reveal reveal-delay-1">
-        <a href="feb-march-2026-safari.php" class="tour-card">
+        <a href="<?php echo lang_url('feb-march-2026-safari.php'); ?>" class="tour-card">
           <div class="tour-card-image">
             <div class="card-bg" style="background-image: url('images/itinerary-serengeti.jpg')"></div>
             <div class="card-gradient"></div>
-            <span class="card-badge">Feb &amp; Mar 2026</span>
+            <span class="card-badge"><?php echo t('home.featured_badge_1'); ?></span>
             <div class="card-duration">
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
               6 Days / 5 Nights
             </div>
           </div>
           <div class="tour-card-content">
-            <h3>Tarangire, Serengeti &amp; Ngorongoro Crater</h3>
-            <p class="card-desc">Experience the best of Northern Tanzania's wildlife circuit. Witness the Great Migration, explore the Ngorongoro Crater, and encounter elephants in Tarangire &mdash; with 4 accommodation options from Budget to Premium.</p>
+            <h3><?php echo t('tours.safari1.title'); ?></h3>
+            <p class="card-desc"><?php echo t('tours.safari1.short_desc'); ?></p>
             <div class="tour-card-footer">
               <div>
-                <div class="card-price-label">From</div>
+                <div class="card-price-label"><?php echo t('home.from'); ?></div>
                 <div class="card-price">
                   <span class="current">$1,476</span>
                 </div>
-                <div class="card-price-per">per person</div>
+                <div class="card-price-per"><?php echo t('home.per_person'); ?></div>
               </div>
-              <span class="card-view-details">View Itinerary <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>
+              <span class="card-view-details"><?php echo t('home.view_itinerary'); ?> <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>
             </div>
           </div>
         </a>
@@ -139,28 +140,28 @@ include 'includes/header.php';
 
       <!-- Card 2: 7N/8D Safari + Zanzibar Beach -->
       <div class="reveal reveal-delay-2">
-        <a href="mar-april-2026-safari-zanzibar.php" class="tour-card">
+        <a href="<?php echo lang_url('mar-april-2026-safari-zanzibar.php'); ?>" class="tour-card">
           <div class="tour-card-image">
             <div class="card-bg" style="background-image: url('images/safari-beach.jpg')"></div>
             <div class="card-gradient"></div>
-            <span class="card-badge">Mar &amp; Apr 2026</span>
+            <span class="card-badge"><?php echo t('home.featured_badge_2'); ?></span>
             <div class="card-duration">
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
               8 Days / 7 Nights
             </div>
           </div>
           <div class="tour-card-content">
-            <h3>Safari &amp; Zanzibar Beach Holiday</h3>
-            <p class="card-desc">The ultimate Tanzania experience combining a 5-day safari through Tarangire, Serengeti and Ngorongoro with a relaxing 3-night all-inclusive Zanzibar beach holiday. Includes domestic flight and Stone Town tour.</p>
+            <h3><?php echo t('tours.safari2.title'); ?></h3>
+            <p class="card-desc"><?php echo t('tours.safari2.short_desc'); ?></p>
             <div class="tour-card-footer">
               <div>
-                <div class="card-price-label">From</div>
+                <div class="card-price-label"><?php echo t('home.from'); ?></div>
                 <div class="card-price">
                   <span class="current">$2,417</span>
                 </div>
-                <div class="card-price-per">per person</div>
+                <div class="card-price-per"><?php echo t('home.per_person'); ?></div>
               </div>
-              <span class="card-view-details">View Itinerary <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>
+              <span class="card-view-details"><?php echo t('home.view_itinerary'); ?> <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>
             </div>
           </div>
         </a>
@@ -168,7 +169,7 @@ include 'includes/header.php';
     </div>
 
     <div class="text-center">
-      <a href="safaris.php" class="btn btn-secondary btn-lg">View All Packages</a>
+      <a href="<?php echo lang_url('safaris.php'); ?>" class="btn btn-secondary btn-lg"><?php echo t('home.view_all_packages'); ?></a>
     </div>
   </div>
 </section>
@@ -179,9 +180,9 @@ include 'includes/header.php';
 <section class="py-20 bg-sand">
   <div class="container">
     <div class="section-heading reveal">
-      <span class="section-subtitle">Why iTanzania Safaris</span>
-      <h2 class="section-title">Your Trusted Safari Partner</h2>
-      <p class="section-desc">Locally owned and operated from Arusha, we bring deep local knowledge and genuine passion to every safari we craft.</p>
+      <span class="section-subtitle"><?php echo t('home.why_subtitle'); ?></span>
+      <h2 class="section-title"><?php echo t('home.why_title'); ?></h2>
+      <p class="section-desc"><?php echo t('home.why_desc'); ?></p>
     </div>
 
     <div class="grid grid-1 sm-grid-2 lg-grid-4 gap-8">
@@ -190,8 +191,8 @@ include 'includes/header.php';
           <div class="why-icon">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
           </div>
-          <h3>Licensed &amp; Certified</h3>
-          <p>Fully licensed tour operator with comprehensive insurance and safety protocols.</p>
+          <h3><?php echo t('home.why_card_1_title'); ?></h3>
+          <p><?php echo t('home.why_card_1_desc'); ?></p>
         </div>
       </div>
       <div class="reveal reveal-delay-2">
@@ -199,8 +200,8 @@ include 'includes/header.php';
           <div class="why-icon">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
-          <h3>Local Expertise</h3>
-          <p>Born and raised in Tanzania, our guides bring intimate knowledge of wildlife, culture, and hidden gems.</p>
+          <h3><?php echo t('home.why_card_2_title'); ?></h3>
+          <p><?php echo t('home.why_card_2_desc'); ?></p>
         </div>
       </div>
       <div class="reveal reveal-delay-3">
@@ -208,8 +209,8 @@ include 'includes/header.php';
           <div class="why-icon">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
           </div>
-          <h3>Tailor-Made Trips</h3>
-          <p>Every itinerary is customized to your preferences, pace, and budget. No cookie-cutter tours here.</p>
+          <h3><?php echo t('home.why_card_3_title'); ?></h3>
+          <p><?php echo t('home.why_card_3_desc'); ?></p>
         </div>
       </div>
       <div class="reveal reveal-delay-4">
@@ -217,8 +218,8 @@ include 'includes/header.php';
           <div class="why-icon">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           </div>
-          <h3>Fair &amp; Transparent Pricing</h3>
-          <p>No hidden costs or surprise charges. What we quote is what you pay, with everything clearly itemized.</p>
+          <h3><?php echo t('home.why_card_4_title'); ?></h3>
+          <p><?php echo t('home.why_card_4_desc'); ?></p>
         </div>
       </div>
     </div>
@@ -232,19 +233,19 @@ include 'includes/header.php';
   <div class="stats-grid">
     <div class="stat-item reveal">
       <div class="stat-value" data-target="2500" data-suffix="+">0</div>
-      <div class="stat-label">Happy Travelers</div>
+      <div class="stat-label"><?php echo t('home.stat_label_1'); ?></div>
     </div>
     <div class="stat-item reveal reveal-delay-1">
       <div class="stat-value" data-target="850" data-suffix="+">0</div>
-      <div class="stat-label">Safari Tours Completed</div>
+      <div class="stat-label"><?php echo t('home.stat_label_2'); ?></div>
     </div>
     <div class="stat-item reveal reveal-delay-2">
       <div class="stat-value" data-target="420" data-suffix="+">0</div>
-      <div class="stat-label">Kilimanjaro Summits</div>
+      <div class="stat-label"><?php echo t('home.stat_label_3'); ?></div>
     </div>
     <div class="stat-item reveal reveal-delay-3">
       <div class="stat-value" data-target="12" data-suffix="+">0</div>
-      <div class="stat-label">Years of Experience</div>
+      <div class="stat-label"><?php echo t('home.stat_label_4'); ?></div>
     </div>
   </div>
 </section>
@@ -255,9 +256,9 @@ include 'includes/header.php';
 <section class="py-20 bg-white">
   <div class="container">
     <div class="section-heading reveal">
-      <span class="section-subtitle">Traveler Stories</span>
-      <h2 class="section-title">What Our Guests Say</h2>
-      <p class="section-desc">Real experiences from real travelers. See why our guests rate us 4.9 out of 5 stars.</p>
+      <span class="section-subtitle"><?php echo t('home.testimonials_subtitle'); ?></span>
+      <h2 class="section-title"><?php echo t('home.testimonials_title'); ?></h2>
+      <p class="section-desc"><?php echo t('home.testimonials_desc'); ?></p>
     </div>
 
     <div style="max-width:896px;margin:0 auto;" class="reveal">
@@ -372,14 +373,14 @@ include 'includes/header.php';
 <section class="py-20 bg-sand">
   <div class="container">
     <div class="section-heading reveal">
-      <span class="section-subtitle">Safari Journal</span>
-      <h2 class="section-title">Travel Tips & Guides</h2>
-      <p class="section-desc">Expert advice and insider knowledge to help you plan the perfect Tanzania adventure.</p>
+      <span class="section-subtitle"><?php echo t('home.blog_subtitle'); ?></span>
+      <h2 class="section-title"><?php echo t('home.blog_title'); ?></h2>
+      <p class="section-desc"><?php echo t('home.blog_desc'); ?></p>
     </div>
     <?php include 'includes/blog-data.php'; ?>
     <div class="blog-home-grid reveal">
       <?php foreach (array_slice($blogPosts, 0, 3) as $post): ?>
-      <a href="blog-post.php?slug=<?php echo $post['slug']; ?>" class="blog-card">
+      <a href="<?php echo lang_url('blog-post.php?slug=' . $post['slug']); ?>" class="blog-card">
         <div class="blog-card-img">
           <img src="<?php echo $post['image']; ?>" alt="<?php echo htmlspecialchars($post['title']); ?>" loading="lazy">
           <span class="blog-card-cat"><?php echo $post['category']; ?></span>
@@ -392,13 +393,13 @@ include 'includes/header.php';
           </div>
           <h3><?php echo htmlspecialchars($post['title']); ?></h3>
           <p><?php echo htmlspecialchars($post['excerpt']); ?></p>
-          <span class="blog-read-more">Read Article <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+          <span class="blog-read-more"><?php echo t('home.read_article'); ?> <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
         </div>
       </a>
       <?php endforeach; ?>
     </div>
     <div class="text-center" style="margin-top:2.5rem;">
-      <a href="blog.php" class="btn btn-secondary btn-lg">View All Articles</a>
+      <a href="<?php echo lang_url('blog.php'); ?>" class="btn btn-secondary btn-lg"><?php echo t('home.view_all_articles'); ?></a>
     </div>
   </div>
 </section>

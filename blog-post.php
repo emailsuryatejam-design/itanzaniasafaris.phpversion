@@ -1,8 +1,9 @@
 <?php
+include_once 'includes/lang.php';
 include 'includes/blog-data.php';
 $slug = isset($_GET['slug']) ? $_GET['slug'] : '';
 $post = getBlogBySlug($slug);
-if (!$post) { header('Location: blog.php'); exit; }
+if (!$post) { header('Location: ' . lang_url('blog.php')); exit; }
 
 $page_title = $post['title'];
 $page_description = $post['meta_description'];
@@ -17,6 +18,7 @@ $schema = [
   'headline' => $post['title'],
   'description' => $post['meta_description'],
   'image' => 'https://itanzaniasafaris.com/' . $post['image'],
+  'inLanguage' => $current_lang,
   'author' => ['@type' => 'Organization', 'name' => 'iTanzania Safaris'],
   'publisher' => [
     '@type' => 'Organization',
@@ -25,10 +27,9 @@ $schema = [
   ],
   'datePublished' => $post['date'],
   'dateModified' => $post['date'],
-  'mainEntityOfPage' => ['@type' => 'WebPage', '@id' => 'https://itanzaniasafaris.com/blog-post.php?slug=' . $post['slug']]
+  'mainEntityOfPage' => ['@type' => 'WebPage', '@id' => get_canonical_url()]
 ];
 $extra_head = '<script type="application/ld+json">' . json_encode($schema, JSON_UNESCAPED_SLASHES) . '</script>';
-$extra_head .= '<link rel="canonical" href="https://itanzaniasafaris.com/blog-post.php?slug=' . $post['slug'] . '">';
 
 include 'includes/header.php';
 $related = getRelatedPosts($post['slug'], $post['category']);
@@ -38,9 +39,9 @@ $related = getRelatedPosts($post['slug'], $post['category']);
   <!-- Breadcrumb -->
   <nav class="blog-breadcrumb" aria-label="Breadcrumb">
     <div class="container-sm">
-      <a href="index.php">Home</a>
+      <a href="<?php echo lang_url('index.php'); ?>"><?php echo t('blog_post.breadcrumb_home'); ?></a>
       <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-      <a href="blog.php">Blog</a>
+      <a href="<?php echo lang_url('blog.php'); ?>"><?php echo t('blog_post.breadcrumb_blog'); ?></a>
       <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
       <span><?php echo htmlspecialchars($post['title']); ?></span>
     </div>
@@ -56,7 +57,7 @@ $related = getRelatedPosts($post['slug'], $post['category']);
           <img src="images/logo.png" alt="iTanzania Safaris" class="blog-author-avatar">
           <div>
             <strong><?php echo $post['author']; ?></strong>
-            <span>Safari Experts &middot; Arusha, Tanzania</span>
+            <span><?php echo t('blog_post.safari_experts'); ?></span>
           </div>
         </div>
         <div class="blog-date-row">
@@ -88,22 +89,22 @@ $related = getRelatedPosts($post['slug'], $post['category']);
 
       <!-- CTA Box -->
       <div class="blog-cta-box">
-        <h3>Ready to Plan Your Tanzania Adventure?</h3>
-        <p>Our local safari experts in Arusha will craft a personalized itinerary just for you. No obligation, free consultation.</p>
-        <a href="contact.php" class="btn btn-primary btn-md">Get Your Free Quote</a>
+        <h3><?php echo t('blog_post.cta_title'); ?></h3>
+        <p><?php echo t('blog_post.cta_desc'); ?></p>
+        <a href="<?php echo lang_url('contact.php'); ?>" class="btn btn-primary btn-md"><?php echo t('blog_post.get_quote'); ?></a>
       </div>
 
       <!-- Share -->
       <div class="blog-share">
-        <span>Share this article:</span>
+        <span><?php echo t('blog_post.share'); ?></span>
         <div class="blog-share-links">
-          <a href="https://twitter.com/intent/tweet?text=<?php echo urlencode($post['title']); ?>&url=<?php echo urlencode('https://itanzaniasafaris.com/blog-post.php?slug=' . $post['slug']); ?>" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter">
+          <a href="https://twitter.com/intent/tweet?text=<?php echo urlencode($post['title']); ?>&url=<?php echo urlencode(get_canonical_url()); ?>" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter">
             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
           </a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode('https://itanzaniasafaris.com/blog-post.php?slug=' . $post['slug']); ?>" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_canonical_url()); ?>" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook">
             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
           </a>
-          <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo urlencode('https://itanzaniasafaris.com/blog-post.php?slug=' . $post['slug']); ?>&title=<?php echo urlencode($post['title']); ?>" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo urlencode(get_canonical_url()); ?>&title=<?php echo urlencode($post['title']); ?>" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           </a>
         </div>
@@ -117,12 +118,12 @@ $related = getRelatedPosts($post['slug'], $post['category']);
 <section class="py-20 bg-sand">
   <div class="container-md">
     <div class="section-heading">
-      <span class="section-subtitle">Keep Reading</span>
-      <h2 class="section-title">Related Articles</h2>
+      <span class="section-subtitle"><?php echo t('blog_post.related_subtitle'); ?></span>
+      <h2 class="section-title"><?php echo t('blog_post.related_title'); ?></h2>
     </div>
     <div class="blog-grid" style="grid-template-columns:repeat(3,1fr);">
       <?php foreach ($related as $rp): ?>
-      <a href="blog-post.php?slug=<?php echo $rp['slug']; ?>" class="blog-card">
+      <a href="<?php echo lang_url('blog-post.php?slug=' . $rp['slug']); ?>" class="blog-card">
         <div class="blog-card-img">
           <img src="<?php echo $rp['image']; ?>" alt="<?php echo htmlspecialchars($rp['title']); ?>" loading="lazy">
           <span class="blog-card-cat"><?php echo $rp['category']; ?></span>
@@ -134,7 +135,7 @@ $related = getRelatedPosts($post['slug'], $post['category']);
             <span><?php echo $rp['read_time']; ?></span>
           </div>
           <h3><?php echo htmlspecialchars($rp['title']); ?></h3>
-          <span class="blog-read-more">Read Article <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+          <span class="blog-read-more"><?php echo t('blog.read_article'); ?> <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
         </div>
       </a>
       <?php endforeach; ?>

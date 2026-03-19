@@ -1,6 +1,7 @@
 <?php
-$page_title = 'Kilimanjaro Climbing Packages | All Routes & Budgets';
-$page_description = 'Climb Mount Kilimanjaro with experienced local guides. Machame, Lemosho, and Marangu routes available. 90%+ summit success rate with professional KINAPA-certified guides.';
+include_once 'includes/lang.php';
+$page_title = t('seo.kilimanjaro.title');
+$page_description = t('seo.kilimanjaro.description');
 include 'includes/header.php';
 include 'includes/tours-data.php';
 ?>
@@ -10,9 +11,9 @@ include 'includes/tours-data.php';
   <div class="page-hero-bg" style="background-image: url('images/machame.jpg')"></div>
   <div class="page-hero-overlay"></div>
   <div class="page-hero-content">
-    <span class="hero-subtitle">The Roof of Africa</span>
-    <h1>Kilimanjaro Climbing Tours</h1>
-    <p>Stand on the summit of Africa's highest peak at 5,895m. Professional guides, quality equipment, and an experience you'll never forget.</p>
+    <span class="hero-subtitle"><?php echo t('kili.hero_subtitle'); ?></span>
+    <h1><?php echo t('kili.hero_title'); ?></h1>
+    <p><?php echo t('kili.hero_desc'); ?></p>
   </div>
 </section>
 
@@ -20,27 +21,27 @@ include 'includes/tours-data.php';
 <section class="py-16 bg-white">
   <div class="container-md">
     <div class="section-heading reveal">
-      <span class="section-subtitle">Compare Routes</span>
-      <h2 class="section-title">Find Your Path to the Summit</h2>
-      <p class="section-desc">Each route offers a unique experience. Choose based on your fitness level, time, and the scenery you prefer.</p>
+      <span class="section-subtitle"><?php echo t('kili.routes_subtitle'); ?></span>
+      <h2 class="section-title"><?php echo t('kili.routes_title'); ?></h2>
+      <p class="section-desc"><?php echo t('kili.routes_desc'); ?></p>
     </div>
     <div class="reveal" style="overflow-x:auto;">
       <table class="comparison-table">
         <thead>
           <tr>
-            <th style="text-align:left;">Feature</th>
-            <th>Machame</th>
-            <th>Lemosho</th>
-            <th>Marangu</th>
+            <th style="text-align:left;"><?php echo t('kili.feature'); ?></th>
+            <th><?php echo t('kili.machame'); ?></th>
+            <th><?php echo t('kili.lemosho'); ?></th>
+            <th><?php echo t('kili.marangu'); ?></th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>Duration</td><td>7 Days</td><td>8 Days</td><td>6 Days</td></tr>
-          <tr><td>Difficulty</td><td>Moderate-Hard</td><td>Moderate</td><td>Moderate</td></tr>
-          <tr><td>Success Rate</td><td class="highlight">90%+</td><td class="highlight">95%+</td><td>80%+</td></tr>
-          <tr><td>Scenery</td><td>Excellent</td><td>Best</td><td>Good</td></tr>
-          <tr><td>Accommodation</td><td>Camping</td><td>Camping</td><td>Huts</td></tr>
-          <tr><td>Crowding</td><td>Medium</td><td>Low</td><td>High</td></tr>
+          <tr><td><?php echo t('kili.duration'); ?></td><td><?php echo t('kili.days_7'); ?></td><td><?php echo t('kili.days_8'); ?></td><td><?php echo t('kili.days_6'); ?></td></tr>
+          <tr><td><?php echo t('kili.difficulty'); ?></td><td><?php echo t('kili.mod_hard'); ?></td><td><?php echo t('kili.moderate'); ?></td><td><?php echo t('kili.moderate'); ?></td></tr>
+          <tr><td><?php echo t('kili.success_rate'); ?></td><td class="highlight">90%+</td><td class="highlight">95%+</td><td>80%+</td></tr>
+          <tr><td><?php echo t('kili.scenery'); ?></td><td><?php echo t('kili.excellent'); ?></td><td><?php echo t('kili.best'); ?></td><td><?php echo t('kili.good'); ?></td></tr>
+          <tr><td><?php echo t('kili.accommodation'); ?></td><td><?php echo t('kili.camping'); ?></td><td><?php echo t('kili.camping'); ?></td><td><?php echo t('kili.huts'); ?></td></tr>
+          <tr><td><?php echo t('kili.crowding'); ?></td><td><?php echo t('kili.medium'); ?></td><td><?php echo t('kili.low'); ?></td><td><?php echo t('kili.high'); ?></td></tr>
         </tbody>
       </table>
     </div>
@@ -51,11 +52,11 @@ include 'includes/tours-data.php';
 <section class="py-20 bg-sand">
   <div class="container-md" style="text-align:center;">
     <div class="section-heading reveal">
-      <span class="section-subtitle">Ready to Climb?</span>
-      <h2 class="section-title">Plan Your Kilimanjaro Adventure</h2>
-      <p class="section-desc">Contact us for a personalized Kilimanjaro climbing quote. We'll tailor the perfect route and package to match your experience level and budget.</p>
+      <span class="section-subtitle"><?php echo t('kili.ready_subtitle'); ?></span>
+      <h2 class="section-title"><?php echo t('kili.ready_title'); ?></h2>
+      <p class="section-desc"><?php echo t('kili.ready_desc'); ?></p>
     </div>
-    <a href="contact.php" class="btn btn-primary btn-lg">Get a Free Quote</a>
+    <a href="<?php echo lang_url('contact.php'); ?>" class="btn btn-primary btn-lg"><?php echo t('kili.get_quote'); ?></a>
   </div>
 </section>
 
@@ -63,38 +64,38 @@ include 'includes/tours-data.php';
 <section class="py-20 bg-white">
   <div class="container-sm">
     <div class="section-heading reveal">
-      <span class="section-subtitle">Common Questions</span>
-      <h2 class="section-title">Kilimanjaro FAQ</h2>
-      <p class="section-desc">Important answers for planning your Kilimanjaro climb.</p>
+      <span class="section-subtitle"><?php echo t('kili.faq_subtitle'); ?></span>
+      <h2 class="section-title"><?php echo t('kili.faq_title'); ?></h2>
+      <p class="section-desc"><?php echo t('kili.faq_desc'); ?></p>
     </div>
     <div class="reveal">
       <details class="faq-item">
         <summary>
-          <h3>How fit do I need to be to climb Kilimanjaro?</h3>
+          <h3><?php echo t('kili.faq1_q'); ?></h3>
           <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </summary>
-        <div class="faq-answer">Kilimanjaro doesn't require technical climbing skills, but good general fitness is essential. We recommend starting a training program 3-4 months before your climb, focusing on cardio and hiking with a loaded pack.</div>
+        <div class="faq-answer"><?php echo t('kili.faq1_a'); ?></div>
       </details>
       <details class="faq-item">
         <summary>
-          <h3>Which Kilimanjaro route has the highest success rate?</h3>
+          <h3><?php echo t('kili.faq2_q'); ?></h3>
           <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </summary>
-        <div class="faq-answer">The Lemosho 8-day route has the highest summit success rate at 95%+ due to its excellent acclimatization profile. The 7-day Machame route also has a high success rate of 90%+.</div>
+        <div class="faq-answer"><?php echo t('kili.faq2_a'); ?></div>
       </details>
       <details class="faq-item">
         <summary>
-          <h3>What is the best time to climb Kilimanjaro?</h3>
+          <h3><?php echo t('kili.faq3_q'); ?></h3>
           <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </summary>
-        <div class="faq-answer">The best months to climb are January-March and June-October. January-March offers clearer skies on the summit, while June-October is the driest period.</div>
+        <div class="faq-answer"><?php echo t('kili.faq3_a'); ?></div>
       </details>
       <details class="faq-item">
         <summary>
-          <h3>Is altitude sickness a concern on Kilimanjaro?</h3>
+          <h3><?php echo t('kili.faq4_q'); ?></h3>
           <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </summary>
-        <div class="faq-answer">Altitude sickness can affect anyone regardless of fitness level. Our guides are trained in altitude illness recognition and management. We use pulse oximeters to monitor your health.</div>
+        <div class="faq-answer"><?php echo t('kili.faq4_a'); ?></div>
       </details>
     </div>
   </div>

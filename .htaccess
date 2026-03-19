@@ -8,6 +8,17 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
 RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
 
+# German language rewrites
+RewriteRule ^de/?$ index.php?lang=de [L,QSA]
+RewriteRule ^de/safaris/?$ safaris.php?lang=de [L,QSA]
+RewriteRule ^de/kilimanjaro/?$ kilimanjaro.php?lang=de [L,QSA]
+RewriteRule ^de/sansibar/?$ zanzibar.php?lang=de [L,QSA]
+RewriteRule ^de/unterkuenfte/?$ accommodations.php?lang=de [L,QSA]
+RewriteRule ^de/ueber-uns/?$ about.php?lang=de [L,QSA]
+RewriteRule ^de/blog/?$ blog.php?lang=de [L,QSA]
+RewriteRule ^de/blog-post/?$ blog-post.php?lang=de [L,QSA]
+RewriteRule ^de/kontakt/?$ contact.php?lang=de [L,QSA]
+
 # Custom 404
 ErrorDocument 404 /index.php
 
