@@ -1276,27 +1276,26 @@ textarea.form-input { resize: none; }
 .footer-contact-item a:hover { color: var(--white); }
 
 /* Certification Badges */
-.footer-certs {
-  display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;
+.footer-trust-strip {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0;
   border-top: 1px solid rgba(255,255,255,0.1);
-  padding: 1.5rem 1rem;
+  padding: 1.25rem 2rem;
   max-width: 1280px; margin: 0 auto;
 }
-.footer-cert-item { display: flex; }
-.cert-badge {
-  display: flex; flex-direction: column; align-items: center; gap: 2px;
-  padding: 10px 16px; border-radius: 8px;
-  border: 1px solid rgba(255,255,255,0.15);
-  color: rgba(255,255,255,0.85); text-align: center; min-width: 90px;
-  transition: border-color 0.2s, background 0.2s;
+.fts-item {
+  display: flex; flex-direction: row; align-items: center; gap: 10px;
+  padding: 10px 20px; color: rgba(255,255,255,0.85);
 }
-.cert-badge:hover { border-color: rgba(255,255,255,0.4); background: rgba(255,255,255,0.05); }
-.cert-tato { border-color: rgba(245,158,11,0.5); }
-.cert-tato span { color: #F59E0B; font-weight: 700; font-size: 0.9rem; letter-spacing: 1px; }
-.cert-tato svg { color: #F59E0B; }
-.cert-badge span { font-weight: 700; font-size: 0.85rem; }
-.cert-badge small { font-size: 0.65rem; color: rgba(255,255,255,0.5); white-space: nowrap; }
-.cert-rating span { color: #F59E0B; }
+.fts-item svg { flex-shrink: 0; }
+.fts-text { display: flex; flex-direction: column; line-height: 1.2; }
+.fts-text strong { font-size: 0.88rem; font-weight: 700; color: #fff; }
+.fts-text span { font-size: 0.7rem; color: rgba(255,255,255,0.5); white-space: nowrap; }
+.fts-divider { width: 1px; height: 32px; background: rgba(255,255,255,0.12); flex-shrink: 0; }
+@media (max-width: 640px) {
+  .footer-trust-strip { gap: 0; padding: 1rem; }
+  .fts-item { padding: 8px 12px; }
+  .fts-divider { display: none; }
+}
 
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.1);

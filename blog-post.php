@@ -4,6 +4,7 @@ include 'includes/blog-data.php';
 $slug = isset($_GET['slug']) ? $_GET['slug'] : '';
 $post = getBlogBySlug($slug);
 if (!$post) { header('Location: ' . lang_url('blog.php')); exit; }
+$post = localizePost($post, $current_lang);
 
 $page_title = $post['title'];
 $page_description = $post['meta_description'];
@@ -67,7 +68,7 @@ $extra_head  = '<script type="application/ld+json">' . json_encode($schema, JSON
 $extra_head .= '<script type="application/ld+json">' . json_encode($breadcrumb, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
 
 include 'includes/header.php';
-$related = getRelatedPosts($post['slug'], $post['category']);
+$related = array_map(fn($p) => localizePost($p, $current_lang), getRelatedPosts($post['slug'], $post['category']));
 ?>
 
 <article class="blog-article">
@@ -85,7 +86,7 @@ $related = getRelatedPosts($post['slug'], $post['category']);
   <!-- Header -->
   <header class="blog-header">
     <div class="container-sm">
-      <span class="blog-card-cat"><?php echo $post['category']; ?></span>
+      <span class="blog-card-cat"><?php echo htmlspecialchars($post['category']); ?></span>
       <h1><?php echo htmlspecialchars($post['title']); ?></h1>
       <div class="blog-article-meta">
         <div class="blog-author-row">
@@ -164,7 +165,7 @@ $related = getRelatedPosts($post['slug'], $post['category']);
       <a href="<?php echo lang_url('blog-post.php?slug=' . $rp['slug']); ?>" class="blog-card">
         <div class="blog-card-img">
           <img src="<?php echo $rp['image']; ?>" alt="<?php echo htmlspecialchars($rp['title']); ?>" loading="lazy">
-          <span class="blog-card-cat"><?php echo $rp['category']; ?></span>
+          <span class="blog-card-cat"><?php echo htmlspecialchars($rp['category']); ?></span>
         </div>
         <div class="blog-card-body">
           <div class="blog-card-meta">

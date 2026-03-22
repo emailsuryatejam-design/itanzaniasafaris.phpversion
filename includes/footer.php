@@ -83,42 +83,31 @@
     </div>
   </div>
 
-  <!-- Certification Badges -->
-  <div class="footer-certs">
-    <div class="footer-cert-item" title="Tanzania Association of Tour Operators — Registered Member">
-      <div class="cert-badge cert-tato">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-        <span>TATO</span>
-        <small>Registered Member</small>
-      </div>
+  <!-- Trust Strip -->
+  <div class="footer-trust-strip">
+    <div class="fts-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+      <div class="fts-text"><strong>TATO</strong><span>Registered Member</span></div>
     </div>
-    <div class="footer-cert-item" title="4.9/5 Average Guest Rating">
-      <div class="cert-badge cert-rating">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B"><path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
-        <span>4.9 / 5</span>
-        <small>Guest Rating</small>
-      </div>
+    <div class="fts-divider"></div>
+    <div class="fts-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B"><path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+      <div class="fts-text"><strong>4.9 / 5</strong><span>Guest Rating</span></div>
     </div>
-    <div class="footer-cert-item" title="KINAPA Certified Kilimanjaro Guides">
-      <div class="cert-badge cert-kinapa">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3l14 9-14 9V3z"/></svg>
-        <span>KINAPA</span>
-        <small>Certified Guides</small>
-      </div>
+    <div class="fts-divider"></div>
+    <div class="fts-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21l9-18 9 18M9 13h6"/></svg>
+      <div class="fts-text"><strong>90%+</strong><span>Summit Success</span></div>
     </div>
-    <div class="footer-cert-item" title="90%+ Kilimanjaro Summit Success Rate">
-      <div class="cert-badge cert-summit">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21l9-18 9 18M9 13h6"/></svg>
-        <span>90%+</span>
-        <small>Summit Success</small>
-      </div>
+    <div class="fts-divider"></div>
+    <div class="fts-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+      <div class="fts-text"><strong>KINAPA</strong><span>Certified Guides</span></div>
     </div>
-    <div class="footer-cert-item" title="Licensed Tanzania Tour Operator">
-      <div class="cert-badge cert-licensed">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg>
-        <span>Licensed</span>
-        <small>Tour Operator</small>
-      </div>
+    <div class="fts-divider"></div>
+    <div class="fts-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+      <div class="fts-text"><strong>Licensed</strong><span>Tour Operator</span></div>
     </div>
   </div>
 
