@@ -11,3 +11,4 @@ User-agent: Googlebot-Image
 Allow: /images/
 
 Sitemap: https://itanzaniasafaris.com/sitemap.xml
+Sitemap: https://itanzaniasafaris.com/sitemap-images.xml

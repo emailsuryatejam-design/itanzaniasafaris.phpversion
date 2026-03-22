@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://itanzaniasafaris.com/</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/hero-serengeti.jpg</image:loc>
+      <image:title>Serengeti Safari – Tanzania Wildlife Safari</image:title>
+      <image:caption>Stunning Serengeti landscape with Africa's iconic wildlife, Tanzania</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/big-five.jpg</image:loc>
+      <image:title>Africa Big Five – Lion, Elephant, Buffalo, Leopard, Rhino in Tanzania</image:title>
+      <image:caption>The iconic Big Five wildlife of Tanzania's national parks</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/family-safari.jpg</image:loc>
+      <image:title>Family Safari Tanzania – Safari Adventures for All Ages</image:title>
+      <image:caption>Families enjoying a game drive safari in Tanzania</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/cta-bg.jpg</image:loc>
+      <image:title>Plan Your Tanzania Safari – Contact iTanzania Safaris</image:title>
+      <image:caption>Safari vehicle at sunset in Tanzania national park</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Safaris Page -->
+  <url>
+    <loc>https://itanzaniasafaris.com/safaris</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/serengeti.jpg</image:loc>
+      <image:title>Serengeti Safari – Game Drives in Serengeti National Park</image:title>
+      <image:caption>Wildlife game drive in the Serengeti National Park, Tanzania</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/itinerary-serengeti.jpg</image:loc>
+      <image:title>Serengeti Itinerary – Multi-Day Safari Routes in Serengeti</image:title>
+      <image:caption>Safari itinerary through the Serengeti ecosystem</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/itinerary-ngorongoro.jpg</image:loc>
+      <image:title>Ngorongoro Crater Safari – Wildlife in the World's Largest Caldera</image:title>
+      <image:caption>Descent into the Ngorongoro Crater, Tanzania</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/itinerary-tarangire.jpg</image:loc>
+      <image:title>Tarangire National Park Safari – Elephant Herds and Baobab Trees</image:title>
+      <image:caption>Elephants in Tarangire National Park, Tanzania</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/itinerary-arusha.jpg</image:loc>
+      <image:title>Arusha Tanzania – Gateway to Tanzania Safari</image:title>
+      <image:caption>Arusha city, the safari capital of Tanzania</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Kilimanjaro Page -->
+  <url>
+    <loc>https://itanzaniasafaris.com/kilimanjaro</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/hero-kilimanjaro.jpg</image:loc>
+      <image:title>Mount Kilimanjaro – Africa's Highest Mountain Climbing</image:title>
+      <image:caption>Mount Kilimanjaro peak rising above the clouds, Tanzania</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/machame.jpg</image:loc>
+      <image:title>Machame Route Kilimanjaro – The Whiskey Route</image:title>
+      <image:caption>Hikers on the Machame Route up Mount Kilimanjaro</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/lemosho.jpg</image:loc>
+      <image:title>Lemosho Route Kilimanjaro – Scenic Western Approach</image:title>
+      <image:caption>The scenic Lemosho Route on Mount Kilimanjaro</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/marangu.jpg</image:loc>
+      <image:title>Marangu Route Kilimanjaro – The Coca-Cola Route</image:title>
+      <image:caption>The Marangu Route, the classic path up Kilimanjaro</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Zanzibar Page -->
+  <url>
+    <loc>https://itanzaniasafaris.com/zanzibar</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/hero-zanzibar.jpg</image:loc>
+      <image:title>Zanzibar Beach – Turquoise Waters and White Sand Beaches</image:title>
+      <image:caption>Pristine white sand beach in Zanzibar, Tanzania</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/zanzibar-beach.jpg</image:loc>
+      <image:title>Zanzibar Beach Holiday – Perfect Safari and Beach Combination</image:title>
+      <image:caption>Crystal clear Indian Ocean waters at a Zanzibar beach resort</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/safari-beach.jpg</image:loc>
+      <image:title>Safari and Beach Combination – Tanzania's Best of Both Worlds</image:title>
+      <image:caption>Combining a Tanzania safari with a Zanzibar beach holiday</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://itanzaniasafaris.com/about</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/about-story.jpg</image:loc>
+      <image:title>About iTanzania Safaris – Our Story and Mission</image:title>
+      <image:caption>The iTanzania Safaris team in the field in Tanzania</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/team.jpg</image:loc>
+      <image:title>iTanzania Safaris Team – Expert Local Safari Guides</image:title>
+      <image:caption>Our team of experienced Tanzania safari guides and experts</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/team-1.jpg</image:loc>
+      <image:title>Safari Guide Tanzania – Experienced Wildlife Expert</image:title>
+      <image:caption>Expert safari guide from the iTanzania Safaris team</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/team-2.jpg</image:loc>
+      <image:title>Tanzania Safari Expert – Local Knowledge and Experience</image:title>
+      <image:caption>Local Tanzania expert and guide from iTanzania Safaris</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/team-3.jpg</image:loc>
+      <image:title>Tanzania Wildlife Guide – Professional Safari Specialist</image:title>
+      <image:caption>Professional safari specialist at iTanzania Safaris</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/honeymoon.jpg</image:loc>
+      <image:title>Honeymoon Safari Tanzania – Romantic Luxury Experiences</image:title>
+      <image:caption>Romantic sunset during a Tanzania honeymoon safari</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Best Time to Visit Tanzania -->
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=best-time-to-visit-tanzania-safari</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/blog/best-time-tanzania.jpg</image:loc>
+      <image:title>Best Time to Visit Tanzania for Safari – Month-by-Month Guide 2026</image:title>
+      <image:caption>Wildlife viewing during Tanzania's peak safari season</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Tanzania Safari Cost -->
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=tanzania-safari-cost-budget-guide</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/blog/safari-cost-guide.jpg</image:loc>
+      <image:title>Tanzania Safari Cost 2026 – Complete Budget Breakdown</image:title>
+      <image:caption>Luxury safari lodge in Tanzania for budget planning</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Serengeti Safari Guide -->
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=serengeti-national-park-safari-guide</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/blog/serengeti-guide.jpg</image:loc>
+      <image:title>Serengeti National Park Safari Guide – Ultimate Wildlife Experience</image:title>
+      <image:caption>Iconic Serengeti landscape with wildlife in Tanzania</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Ngorongoro Crater -->
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=ngorongoro-crater-safari-guide</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/blog/ngorongoro-guide.jpg</image:loc>
+      <image:title>Ngorongoro Crater Safari – Wildlife in Africa's Eden</image:title>
+      <image:caption>The Ngorongoro Crater, Tanzania – UNESCO World Heritage Site</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Great Migration -->
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=great-migration-tanzania-when-where</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/blog/great-migration.jpg</image:loc>
+      <image:title>Great Migration Tanzania – Wildebeest River Crossings</image:title>
+      <image:caption>Wildebeest crossing the Mara River during the Great Migration</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Safari Packing List -->
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=tanzania-safari-packing-list</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/blog/packing-list.jpg</image:loc>
+      <image:title>Tanzania Safari Packing List – Essential Gear and Clothing</image:title>
+      <image:caption>Essential safari gear and packing tips for Tanzania</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Kilimanjaro Climbing Guide -->
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=mount-kilimanjaro-climbing-guide</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/blog/kilimanjaro-guide.jpg</image:loc>
+      <image:title>Mount Kilimanjaro Climbing Guide – Summit Africa's Highest Peak</image:title>
+      <image:caption>Climbers ascending Mount Kilimanjaro toward the summit</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Visa & Vaccinations -->
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=tanzania-visa-requirements-vaccinations</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/blog/visa-health.jpg</image:loc>
+      <image:title>Tanzania Visa Requirements and Health Vaccinations 2026</image:title>
+      <image:caption>Travel documentation and health preparation for Tanzania</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Zanzibar Beach Holiday -->
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=zanzibar-beach-holiday-after-safari</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/blog/zanzibar-beach.jpg</image:loc>
+      <image:title>Zanzibar Beach Holiday After Safari – Perfect Tanzania Combination</image:title>
+      <image:caption>Stunning Zanzibar beach for a post-safari beach holiday</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Budget vs Luxury Safari -->
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=budget-vs-luxury-safari-tanzania</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/blog/budget-vs-luxury.jpg</image:loc>
+      <image:title>Budget vs Luxury Safari Tanzania – Which is Right for You?</image:title>
+      <image:caption>Comparing budget and luxury safari options in Tanzania</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Tanzania vs Kenya Safari -->
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=tanzania-vs-kenya-safari</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/blog/tanzania-vs-kenya-safari.jpg</image:loc>
+      <image:title>Tanzania vs Kenya Safari – Which Destination is Better?</image:title>
+      <image:caption>African safari landscape comparison between Tanzania and Kenya</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Kilimanjaro Routes Comparison -->
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=kilimanjaro-routes-comparison</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/blog/kilimanjaro-routes-comparison.jpg</image:loc>
+      <image:title>Kilimanjaro Routes Compared – Machame, Lemosho, Rongai, Marangu</image:title>
+      <image:caption>Comparing the routes up Mount Kilimanjaro, Tanzania</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Tarangire Safari Guide -->
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=tarangire-national-park-safari-guide</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/blog/tarangire-national-park-safari-guide.jpg</image:loc>
+      <image:title>Tarangire National Park Safari – Elephants and Baobab Trees</image:title>
+      <image:caption>Giant elephant herds among ancient baobab trees in Tarangire National Park</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Family Safari Guide -->
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=tanzania-safari-family-guide</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/blog/tanzania-safari-family-guide.jpg</image:loc>
+      <image:title>Tanzania Safari with Kids – Family Safari Planning Guide</image:title>
+      <image:caption>Family enjoying a wildlife game drive in Tanzania together</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Honeymoon Safari -->
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=honeymoon-safari-tanzania</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/blog/honeymoon-safari-tanzania.jpg</image:loc>
+      <image:title>Honeymoon Safari Tanzania – Most Romantic Safari Destinations 2026</image:title>
+      <image:caption>Romantic sunset during a Tanzania honeymoon safari experience</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Great Migration Calendar -->
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=great-migration-serengeti-calendar</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/blog/great-migration-serengeti-calendar.jpg</image:loc>
+      <image:title>Great Migration Serengeti Calendar 2026 – When and Where to Watch</image:title>
+      <image:caption>Wildebeest herd on the Serengeti plains during the Great Migration</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Packing List 2026 -->
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=tanzania-safari-packing-list-2026</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/blog/tanzania-safari-packing-list-2026.jpg</image:loc>
+      <image:title>Tanzania Safari Packing List 2026 – What to Bring on Safari</image:title>
+      <image:caption>Essential safari packing gear and equipment for Tanzania 2026</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Nyerere & Ruaha Southern Circuit -->
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=nyerere-ruaha-southern-circuit-safari</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/blog/nyerere-ruaha-southern-circuit-safari.jpg</image:loc>
+      <image:title>Southern Tanzania Safari – Nyerere and Ruaha National Parks</image:title>
+      <image:caption>Untouched wilderness of Southern Tanzania's Nyerere National Park</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Tanzania Visa Guide 2026 -->
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=tanzania-visa-guide-2026</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/blog/tanzania-visa-guide-2026.jpg</image:loc>
+      <image:title>Tanzania Visa Requirements 2026 – E-Visa Application Guide</image:title>
+      <image:caption>Travel documentation required for visiting Tanzania in 2026</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Special Packages -->
+  <url>
+    <loc>https://itanzaniasafaris.com/feb-march-2026-safari</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/itinerary-hero.jpg</image:loc>
+      <image:title>Feb-March 2026 Tanzania Safari – Special Group Departure</image:title>
+      <image:caption>Special safari departure in Tanzania during Feb-March 2026</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://itanzaniasafaris.com/mar-april-2026-safari-zanzibar</loc>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/itinerary-hero.jpg</image:loc>
+      <image:title>March-April 2026 Safari and Zanzibar – Combined Group Tour</image:title>
+      <image:caption>Tanzania safari combined with Zanzibar beach holiday package</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://itanzaniasafaris.com/images/hero-zanzibar.jpg</image:loc>
+      <image:title>Zanzibar Beach Holiday – Safari and Beach Combination Package</image:title>
+      <image:caption>Beautiful Zanzibar beaches included in the safari-beach combination package</image:caption>
+    </image:image>
+  </url>
+
+</urlset>

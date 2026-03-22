@@ -2,6 +2,19 @@
 include_once 'includes/lang.php';
 $page_title = t('seo.safaris.title');
 $page_description = t('seo.safaris.description');
+$faq_schema = [
+  '@context' => 'https://schema.org',
+  '@type' => 'FAQPage',
+  'mainEntity' => [
+    ['@type'=>'Question','name'=>'How much does a Tanzania safari cost?','acceptedAnswer'=>['@type'=>'Answer','text'=>'Tanzania safari packages at iTanzania Safaris start from $1,476 per person for a 5-night/6-day Northern Circuit safari covering Tarangire, Serengeti and Ngorongoro Crater. Luxury lodge safaris range from $4,000–$8,000+ per person. The cost depends on accommodation tier, duration, and parks visited.']],
+    ['@type'=>'Question','name'=>'What is the best time to go on safari in Tanzania?','acceptedAnswer'=>['@type'=>'Answer','text'=>'The best time for Tanzania safari is the dry season from June to October, when animals concentrate around water sources and vegetation is sparse for easy viewing. The Great Migration river crossings happen July–October in the northern Serengeti. The green season (November–May) offers lush scenery, newborn animals, and lower prices.']],
+    ['@type'=>'Question','name'=>'What animals will I see on a Tanzania safari?','acceptedAnswer'=>['@type'=>'Answer','text'=>'Tanzania is home to the Big Five — lion, leopard, elephant, buffalo and rhino — plus cheetah, giraffe, zebra, hippo, crocodile, wildebeest and over 500 bird species. The Serengeti has the largest lion population in Africa (~3,000) and the Ngorongoro Crater offers the highest density of wildlife anywhere on Earth.']],
+    ['@type'=>'Question','name'=>'How many days do I need for a Tanzania safari?','acceptedAnswer'=>['@type'=>'Answer','text'=>'A minimum of 5 nights/6 days is recommended to cover the Northern Circuit (Tarangire, Serengeti, Ngorongoro). For a more relaxed pace with better wildlife viewing, 7–10 days is ideal. Adding Zanzibar beach extends the trip by 3–5 days.']],
+    ['@type'=>'Question','name'=>'Is Tanzania safe for tourists?','acceptedAnswer'=>['@type'=>'Answer','text'=>'Tanzania is one of the safest safari destinations in Africa. The national parks and tourist areas have strong security. iTanzania Safaris guides are TATO-registered professionals who maintain radio contact with park authorities throughout all game drives.']],
+    ['@type'=>'Question','name'=>'Do I need vaccinations for Tanzania?','acceptedAnswer'=>['@type'=>'Answer','text'=>'Yellow fever vaccination is mandatory if arriving from a yellow fever endemic country. Recommended vaccinations include hepatitis A, typhoid, and tetanus. Malaria prophylaxis is strongly advised. Consult your doctor 6–8 weeks before travel.']],
+  ]
+];
+$extra_head = (isset($extra_head) ? $extra_head : '') . '<script type="application/ld+json">' . json_encode($faq_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
 include 'includes/header.php';
 ?>
 
@@ -141,6 +154,97 @@ include 'includes/header.php';
   ]
 }
 </script>
+
+<?php include_once 'includes/blog-data.php'; ?>
+<?php
+$safari_posts = array_slice(array_filter(array_map(fn($p) => localizePost($p, $current_lang), $blogPosts), fn($p) => in_array($p['category'], ['Planning', 'Destinations'])), 0, 3);
+$safari_posts = array_values($safari_posts);
+?>
+<section class="py-20 bg-sand">
+  <div class="container-md">
+    <div class="section-heading reveal">
+      <span class="section-subtitle"><?php echo t('blog.hero_subtitle'); ?></span>
+      <h2 class="section-title"><?php echo t('blog.featured_title'); ?></h2>
+    </div>
+    <div class="blog-grid reveal">
+      <?php foreach (array_slice($safari_posts, 0, 3) as $post_s): ?>
+      <a href="<?php echo lang_url('blog-post.php?slug=' . $post_s['slug']); ?>" class="blog-card">
+        <div class="blog-card-img">
+          <img src="<?php echo $post_s['image']; ?>" alt="<?php echo htmlspecialchars($post_s['title']); ?>" loading="lazy">
+          <span class="blog-card-cat"><?php echo htmlspecialchars($post_s['category']); ?></span>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span><?php echo date('M j, Y', strtotime($post_s['date'])); ?></span>
+            <span class="blog-meta-dot"></span>
+            <span><?php echo $post_s['read_time']; ?></span>
+          </div>
+          <h3><?php echo htmlspecialchars($post_s['title']); ?></h3>
+          <p><?php echo htmlspecialchars($post_s['excerpt']); ?></p>
+          <span class="blog-read-more"><?php echo t('blog.read_article'); ?> <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+        </div>
+      </a>
+      <?php endforeach; ?>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="<?php echo lang_url('blog.php'); ?>" class="btn btn-outline btn-md"><?php echo t('nav.blog'); ?> &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-20 bg-white">
+  <div class="container-sm">
+    <div class="section-heading reveal">
+      <span class="section-subtitle">FREQUENTLY ASKED QUESTIONS</span>
+      <h2 class="section-title">Tanzania Safari FAQ</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          How much does a Tanzania safari cost?
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer"><p>Tanzania safari packages at iTanzania Safaris start from <strong>$1,476 per person</strong> for a 5-night/6-day Northern Circuit safari covering Tarangire, Serengeti and Ngorongoro Crater. Luxury lodge safaris range from $4,000–$8,000+ per person. The cost depends on accommodation tier, duration, and parks visited.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          What is the best time to go on safari in Tanzania?
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer"><p>The best time is the <strong>dry season June–October</strong>, when wildlife concentrates around water and vegetation is sparse. Great Migration river crossings peak July–October. The green season (November–May) offers lower prices and newborn animals.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          What animals will I see on a Tanzania safari?
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer"><p>Tanzania is home to the <strong>Big Five</strong> — lion, leopard, elephant, buffalo and rhino — plus cheetah, giraffe, zebra, wildebeest and 500+ bird species. The Serengeti has Africa's largest lion population (~3,000) and Ngorongoro Crater the highest wildlife density on Earth.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          How many days do I need for a Tanzania safari?
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer"><p>A minimum of <strong>5 nights/6 days</strong> covers the Northern Circuit (Tarangire, Serengeti, Ngorongoro). For a relaxed pace, 7–10 days is ideal. Add 3–5 days for Zanzibar beach.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          Is Tanzania safe for tourists?
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer"><p>Tanzania is one of the <strong>safest safari destinations in Africa</strong>. iTanzania Safaris guides are TATO-registered and maintain radio contact with park authorities throughout all game drives.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          Do I need vaccinations for Tanzania?
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer"><p><strong>Yellow fever certificate is mandatory</strong> if arriving from an endemic country. Recommended: hepatitis A, typhoid, tetanus. Malaria prophylaxis is strongly advised. See your doctor 6–8 weeks before travel.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <?php include 'includes/cta-banner.php'; ?>
 <?php include 'includes/footer.php'; ?>

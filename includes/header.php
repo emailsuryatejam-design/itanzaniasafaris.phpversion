@@ -13,6 +13,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
   <meta property="og:title" content="<?php echo isset($page_title) ? $page_title . ' | iTanzania Safaris' : t('seo.default_title'); ?>">
   <meta property="og:description" content="<?php echo isset($page_description) ? $page_description : t('seo.default_description'); ?>">
   <meta property="og:image" content="<?php echo isset($og_image) ? $og_image : 'https://itanzaniasafaris.com/images/og-image.jpg'; ?>">
+  <meta property="og:url" content="<?php echo get_canonical_url(); ?>">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="iTanzania Safaris">
   <meta property="og:locale" content="<?php echo $current_lang === 'zh' ? 'zh_CN' : ($current_lang === 'de' ? 'de_DE' : ($current_lang === 'es' ? 'es_ES' : ($current_lang === 'tr' ? 'tr_TR' : 'en_US'))); ?>">
@@ -28,6 +29,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
   <link rel="alternate" hreflang="tr" href="<?php echo get_canonical_url('tr'); ?>">
   <link rel="alternate" hreflang="x-default" href="<?php echo get_canonical_url('en'); ?>">
   <link rel="icon" type="image/png" href="/images/logo.png">
+  <link rel="preload" href="/css/styles.css?v=20260322" as="style">
   <!-- Google Search Console Verification — replace content value with your code from search.google.com/search-console -->
   <!-- <meta name="google-site-verification" content="PASTE_YOUR_CODE_HERE"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
