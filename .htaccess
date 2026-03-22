@@ -79,6 +79,9 @@ RewriteRule ^tr/iletisim/?$ contact.php?lang=tr [L,QSA]
 # Custom 404
 ErrorDocument 404 /index.php
 
+# Proper MIME type for sitemap
+AddType application/xml .xml
+
 # Cache static assets
 <IfModule mod_expires.c>
   ExpiresActive On
