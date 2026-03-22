@@ -114,9 +114,12 @@ $related = getRelatedPosts($post['slug'], $post['category']);
   <div class="blog-content">
     <div class="container-sm">
       <?php
-      $content_file = 'includes/blog-content/' . $post['slug'] . '.php';
-      if (file_exists($content_file)) {
-        include $content_file;
+      $lang_content_file = 'includes/blog-content/' . $post['slug'] . '.' . $current_lang . '.php';
+      $default_content_file = 'includes/blog-content/' . $post['slug'] . '.php';
+      if ($current_lang !== 'en' && file_exists($lang_content_file)) {
+        include $lang_content_file;
+      } elseif (file_exists($default_content_file)) {
+        include $default_content_file;
       } else {
         echo '<p>' . htmlspecialchars($post['excerpt']) . '</p>';
       }
