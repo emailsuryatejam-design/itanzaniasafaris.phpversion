@@ -2,522 +2,318 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- HOME -->
+  <!-- ============================================================
+       CORE PAGES — with full hreflang for all 5 languages
+       ============================================================ -->
   <url>
     <loc>https://itanzaniasafaris.com/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq><priority>1.0</priority><lastmod>2026-03-22</lastmod>
   </url>
 
-  <!-- SAFARIS -->
   <url>
     <loc>https://itanzaniasafaris.com/safaris</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/safaris"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/safaris"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/safaris"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/safaris"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/safariler"/>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/safaris"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/safaris"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/safaris"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/safaris"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/safariler"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/safaris"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <changefreq>weekly</changefreq><priority>0.95</priority><lastmod>2026-03-22</lastmod>
   </url>
 
-  <!-- KILIMANJARO -->
   <url>
     <loc>https://itanzaniasafaris.com/kilimanjaro</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/kilimanjaro"/>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/kilimanjaro"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/kilimanjaro"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/kilimanjaro"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/kilimanjaro"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/kilimanjaro"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/kilimanjaro"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <changefreq>weekly</changefreq><priority>0.95</priority><lastmod>2026-03-22</lastmod>
   </url>
 
-  <!-- ZANZIBAR -->
   <url>
     <loc>https://itanzaniasafaris.com/zanzibar</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/zanzibar"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/sansibar"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/zanzibar"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/zanzibar"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/zanzibar"/>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/zanzibar"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/sansibar"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/zanzibar"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/zanzibar"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/zanzibar"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/zanzibar"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>weekly</changefreq><priority>0.90</priority><lastmod>2026-03-22</lastmod>
   </url>
 
-  <!-- CONTACT -->
-  <url>
-    <loc>https://itanzaniasafaris.com/contact</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/contact"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/kontakt"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/contacto"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/contact"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/iletisim"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/contact"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <!-- ACCOMMODATIONS -->
   <url>
     <loc>https://itanzaniasafaris.com/accommodations</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/accommodations"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/unterkuenfte"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/alojamientos"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/accommodations"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/konaklamalar"/>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/accommodations"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/unterkuenfte"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/alojamientos"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/accommodations"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/konaklamalar"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/accommodations"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <changefreq>monthly</changefreq><priority>0.80</priority><lastmod>2026-03-22</lastmod>
   </url>
 
-  <!-- ABOUT -->
   <url>
     <loc>https://itanzaniasafaris.com/about</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/about"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/ueber-uns"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/sobre-nosotros"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/about"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/hakkimizda"/>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/about"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/ueber-uns"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/sobre-nosotros"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/about"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/hakkimizda"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/about"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <changefreq>monthly</changefreq><priority>0.75</priority><lastmod>2026-03-22</lastmod>
   </url>
 
-  <!-- BLOG -->
+  <url>
+    <loc>https://itanzaniasafaris.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/contacto"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/contact"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/iletisim"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/contact"/>
+    <changefreq>monthly</changefreq><priority>0.70</priority><lastmod>2026-03-22</lastmod>
+  </url>
+
   <url>
     <loc>https://itanzaniasafaris.com/blog</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/blog"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/blog"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/blog"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/blog"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/blog"/>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/blog"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/blog"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/blog"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/blog"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
+    <changefreq>weekly</changefreq><priority>0.85</priority><lastmod>2026-03-22</lastmod>
   </url>
 
-  <!-- DATED SAFARI LANDING PAGES (English only — high purchase intent) -->
   <url>
     <loc>https://itanzaniasafaris.com/feb-march-2026-safari</loc>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <changefreq>monthly</changefreq><priority>0.70</priority><lastmod>2026-03-22</lastmod>
   </url>
+
   <url>
     <loc>https://itanzaniasafaris.com/mar-april-2026-safari-zanzibar</loc>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <changefreq>monthly</changefreq><priority>0.70</priority><lastmod>2026-03-22</lastmod>
   </url>
 
-  <!-- GERMAN LANGUAGE URLS -->
+  <!-- ============================================================
+       BLOG POSTS — 20 posts × 5 languages (hreflang on each)
+       ============================================================ -->
+
   <url>
-    <loc>https://itanzaniasafaris.com/de/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/de/safaris</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/safaris"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/safaris"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/safaris"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/safaris"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/safariler"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/safaris"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/de/kilimanjaro</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/kilimanjaro"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/de/sansibar</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/zanzibar"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/sansibar"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/zanzibar"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/zanzibar"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/zanzibar"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/zanzibar"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/de/unterkuenfte</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/accommodations"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/unterkuenfte"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/alojamientos"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/accommodations"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/konaklamalar"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/accommodations"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/de/ueber-uns</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/about"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/ueber-uns"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/sobre-nosotros"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/about"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/hakkimizda"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/about"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/de/kontakt</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/contact"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/kontakt"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/contacto"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/contact"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/iletisim"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/contact"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/de/blog</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/blog"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/blog"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/blog"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/blog"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/blog"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=best-time-to-visit-tanzania-safari</loc>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/blog-post?slug=best-time-to-visit-tanzania-safari"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/blog-post?slug=best-time-to-visit-tanzania-safari"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/blog-post?slug=best-time-to-visit-tanzania-safari"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/blog-post?slug=best-time-to-visit-tanzania-safari"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/blog-yazisi?slug=best-time-to-visit-tanzania-safari"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog-post?slug=best-time-to-visit-tanzania-safari"/>
+    <changefreq>monthly</changefreq><priority>0.80</priority><lastmod>2026-01-15</lastmod>
   </url>
 
-  <!-- SPANISH LANGUAGE URLS -->
   <url>
-    <loc>https://itanzaniasafaris.com/es/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/es/safaris</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/safaris"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/safaris"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/safaris"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/safaris"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/safariler"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/safaris"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/es/kilimanjaro</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/kilimanjaro"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/es/zanzibar</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/zanzibar"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/sansibar"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/zanzibar"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/zanzibar"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/zanzibar"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/zanzibar"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/es/alojamientos</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/accommodations"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/unterkuenfte"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/alojamientos"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/accommodations"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/konaklamalar"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/accommodations"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/es/sobre-nosotros</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/about"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/ueber-uns"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/sobre-nosotros"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/about"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/hakkimizda"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/about"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/es/contacto</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/contact"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/kontakt"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/contacto"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/contact"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/iletisim"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/contact"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/es/blog</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/blog"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/blog"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/blog"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/blog"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/blog"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=tanzania-safari-cost-budget-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/blog-post?slug=tanzania-safari-cost-budget-guide"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/blog-post?slug=tanzania-safari-cost-budget-guide"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/blog-post?slug=tanzania-safari-cost-budget-guide"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/blog-post?slug=tanzania-safari-cost-budget-guide"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/blog-yazisi?slug=tanzania-safari-cost-budget-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog-post?slug=tanzania-safari-cost-budget-guide"/>
+    <changefreq>monthly</changefreq><priority>0.80</priority><lastmod>2026-01-22</lastmod>
   </url>
 
-  <!-- CHINESE LANGUAGE URLS -->
   <url>
-    <loc>https://itanzaniasafaris.com/zh/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/zh/safaris</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/safaris"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/safaris"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/safaris"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/safaris"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/safariler"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/safaris"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/zh/kilimanjaro</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/kilimanjaro"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/zh/zanzibar</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/zanzibar"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/sansibar"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/zanzibar"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/zanzibar"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/zanzibar"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/zanzibar"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/zh/accommodations</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/accommodations"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/unterkuenfte"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/alojamientos"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/accommodations"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/konaklamalar"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/accommodations"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/zh/about</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/about"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/ueber-uns"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/sobre-nosotros"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/about"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/hakkimizda"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/about"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/zh/contact</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/contact"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/kontakt"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/contacto"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/contact"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/iletisim"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/contact"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://itanzaniasafaris.com/zh/blog</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/blog"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/blog"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/blog"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/blog"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/blog"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=serengeti-national-park-safari-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/blog-post?slug=serengeti-national-park-safari-guide"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/blog-post?slug=serengeti-national-park-safari-guide"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/blog-post?slug=serengeti-national-park-safari-guide"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/blog-post?slug=serengeti-national-park-safari-guide"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/blog-yazisi?slug=serengeti-national-park-safari-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog-post?slug=serengeti-national-park-safari-guide"/>
+    <changefreq>monthly</changefreq><priority>0.80</priority><lastmod>2026-02-01</lastmod>
   </url>
 
-  <!-- TURKISH LANGUAGE URLS -->
   <url>
-    <loc>https://itanzaniasafaris.com/tr/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=ngorongoro-crater-safari-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/blog-post?slug=ngorongoro-crater-safari-guide"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/blog-post?slug=ngorongoro-crater-safari-guide"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/blog-post?slug=ngorongoro-crater-safari-guide"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/blog-post?slug=ngorongoro-crater-safari-guide"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/blog-yazisi?slug=ngorongoro-crater-safari-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog-post?slug=ngorongoro-crater-safari-guide"/>
+    <changefreq>monthly</changefreq><priority>0.80</priority><lastmod>2026-02-05</lastmod>
   </url>
+
   <url>
-    <loc>https://itanzaniasafaris.com/tr/safariler</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/safaris"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/safaris"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/safaris"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/safaris"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/safariler"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/safaris"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=great-migration-tanzania-when-where</loc>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/blog-post?slug=great-migration-tanzania-when-where"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/blog-post?slug=great-migration-tanzania-when-where"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/blog-post?slug=great-migration-tanzania-when-where"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/blog-post?slug=great-migration-tanzania-when-where"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/blog-yazisi?slug=great-migration-tanzania-when-where"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog-post?slug=great-migration-tanzania-when-where"/>
+    <changefreq>monthly</changefreq><priority>0.80</priority><lastmod>2026-02-08</lastmod>
   </url>
+
   <url>
-    <loc>https://itanzaniasafaris.com/tr/kilimanjaro</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/kilimanjaro"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/kilimanjaro"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=tanzania-safari-packing-list</loc>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/blog-post?slug=tanzania-safari-packing-list"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/blog-post?slug=tanzania-safari-packing-list"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/blog-post?slug=tanzania-safari-packing-list"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/blog-post?slug=tanzania-safari-packing-list"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/blog-yazisi?slug=tanzania-safari-packing-list"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog-post?slug=tanzania-safari-packing-list"/>
+    <changefreq>monthly</changefreq><priority>0.75</priority><lastmod>2026-02-10</lastmod>
   </url>
+
   <url>
-    <loc>https://itanzaniasafaris.com/tr/zanzibar</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/zanzibar"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/sansibar"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/zanzibar"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/zanzibar"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/zanzibar"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/zanzibar"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=mount-kilimanjaro-climbing-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/blog-post?slug=mount-kilimanjaro-climbing-guide"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/blog-post?slug=mount-kilimanjaro-climbing-guide"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/blog-post?slug=mount-kilimanjaro-climbing-guide"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/blog-post?slug=mount-kilimanjaro-climbing-guide"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/blog-yazisi?slug=mount-kilimanjaro-climbing-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog-post?slug=mount-kilimanjaro-climbing-guide"/>
+    <changefreq>monthly</changefreq><priority>0.80</priority><lastmod>2026-02-12</lastmod>
   </url>
+
   <url>
-    <loc>https://itanzaniasafaris.com/tr/konaklamalar</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/accommodations"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/unterkuenfte"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/alojamientos"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/accommodations"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/konaklamalar"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/accommodations"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=tanzania-visa-requirements-vaccinations</loc>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/blog-post?slug=tanzania-visa-requirements-vaccinations"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/blog-post?slug=tanzania-visa-requirements-vaccinations"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/blog-post?slug=tanzania-visa-requirements-vaccinations"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/blog-post?slug=tanzania-visa-requirements-vaccinations"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/blog-yazisi?slug=tanzania-visa-requirements-vaccinations"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog-post?slug=tanzania-visa-requirements-vaccinations"/>
+    <changefreq>monthly</changefreq><priority>0.75</priority><lastmod>2026-02-14</lastmod>
   </url>
+
   <url>
-    <loc>https://itanzaniasafaris.com/tr/hakkimizda</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/about"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/ueber-uns"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/sobre-nosotros"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/about"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/hakkimizda"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/about"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=zanzibar-beach-holiday-after-safari</loc>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/blog-post?slug=zanzibar-beach-holiday-after-safari"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/blog-post?slug=zanzibar-beach-holiday-after-safari"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/blog-post?slug=zanzibar-beach-holiday-after-safari"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/blog-post?slug=zanzibar-beach-holiday-after-safari"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/blog-yazisi?slug=zanzibar-beach-holiday-after-safari"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog-post?slug=zanzibar-beach-holiday-after-safari"/>
+    <changefreq>monthly</changefreq><priority>0.75</priority><lastmod>2026-02-16</lastmod>
   </url>
+
   <url>
-    <loc>https://itanzaniasafaris.com/tr/iletisim</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/contact"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/kontakt"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/contacto"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/contact"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/iletisim"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/contact"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=budget-vs-luxury-safari-tanzania</loc>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/blog-post?slug=budget-vs-luxury-safari-tanzania"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/blog-post?slug=budget-vs-luxury-safari-tanzania"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/blog-post?slug=budget-vs-luxury-safari-tanzania"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/blog-post?slug=budget-vs-luxury-safari-tanzania"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/blog-yazisi?slug=budget-vs-luxury-safari-tanzania"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog-post?slug=budget-vs-luxury-safari-tanzania"/>
+    <changefreq>monthly</changefreq><priority>0.75</priority><lastmod>2026-02-16</lastmod>
   </url>
+
   <url>
-    <loc>https://itanzaniasafaris.com/tr/blog</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://itanzaniasafaris.com/blog"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://itanzaniasafaris.com/de/blog"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://itanzaniasafaris.com/es/blog"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://itanzaniasafaris.com/zh/blog"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://itanzaniasafaris.com/tr/blog"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=tanzania-vs-kenya-safari</loc>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/blog-post?slug=tanzania-vs-kenya-safari"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/blog-post?slug=tanzania-vs-kenya-safari"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/blog-post?slug=tanzania-vs-kenya-safari"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/blog-post?slug=tanzania-vs-kenya-safari"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/blog-yazisi?slug=tanzania-vs-kenya-safari"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog-post?slug=tanzania-vs-kenya-safari"/>
+    <changefreq>monthly</changefreq><priority>0.80</priority><lastmod>2026-03-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=kilimanjaro-routes-comparison</loc>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/blog-post?slug=kilimanjaro-routes-comparison"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/blog-post?slug=kilimanjaro-routes-comparison"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/blog-post?slug=kilimanjaro-routes-comparison"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/blog-post?slug=kilimanjaro-routes-comparison"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/blog-yazisi?slug=kilimanjaro-routes-comparison"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog-post?slug=kilimanjaro-routes-comparison"/>
+    <changefreq>monthly</changefreq><priority>0.80</priority><lastmod>2026-03-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=tarangire-national-park-safari-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/blog-post?slug=tarangire-national-park-safari-guide"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/blog-post?slug=tarangire-national-park-safari-guide"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/blog-post?slug=tarangire-national-park-safari-guide"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/blog-post?slug=tarangire-national-park-safari-guide"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/blog-yazisi?slug=tarangire-national-park-safari-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog-post?slug=tarangire-national-park-safari-guide"/>
+    <changefreq>monthly</changefreq><priority>0.75</priority><lastmod>2026-03-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=tanzania-safari-family-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/blog-post?slug=tanzania-safari-family-guide"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/blog-post?slug=tanzania-safari-family-guide"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/blog-post?slug=tanzania-safari-family-guide"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/blog-post?slug=tanzania-safari-family-guide"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/blog-yazisi?slug=tanzania-safari-family-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog-post?slug=tanzania-safari-family-guide"/>
+    <changefreq>monthly</changefreq><priority>0.75</priority><lastmod>2026-03-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=honeymoon-safari-tanzania</loc>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/blog-post?slug=honeymoon-safari-tanzania"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/blog-post?slug=honeymoon-safari-tanzania"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/blog-post?slug=honeymoon-safari-tanzania"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/blog-post?slug=honeymoon-safari-tanzania"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/blog-yazisi?slug=honeymoon-safari-tanzania"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog-post?slug=honeymoon-safari-tanzania"/>
+    <changefreq>monthly</changefreq><priority>0.75</priority><lastmod>2026-03-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=great-migration-serengeti-calendar</loc>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/blog-post?slug=great-migration-serengeti-calendar"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/blog-post?slug=great-migration-serengeti-calendar"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/blog-post?slug=great-migration-serengeti-calendar"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/blog-post?slug=great-migration-serengeti-calendar"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/blog-yazisi?slug=great-migration-serengeti-calendar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog-post?slug=great-migration-serengeti-calendar"/>
+    <changefreq>monthly</changefreq><priority>0.80</priority><lastmod>2026-03-15</lastmod>
+  </url>
+
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=tanzania-safari-packing-list-2026</loc>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/blog-post?slug=tanzania-safari-packing-list-2026"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/blog-post?slug=tanzania-safari-packing-list-2026"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/blog-post?slug=tanzania-safari-packing-list-2026"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/blog-post?slug=tanzania-safari-packing-list-2026"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/blog-yazisi?slug=tanzania-safari-packing-list-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog-post?slug=tanzania-safari-packing-list-2026"/>
+    <changefreq>monthly</changefreq><priority>0.75</priority><lastmod>2026-03-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=nyerere-ruaha-southern-circuit-safari</loc>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/blog-post?slug=nyerere-ruaha-southern-circuit-safari"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/blog-post?slug=nyerere-ruaha-southern-circuit-safari"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/blog-post?slug=nyerere-ruaha-southern-circuit-safari"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/blog-post?slug=nyerere-ruaha-southern-circuit-safari"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/blog-yazisi?slug=nyerere-ruaha-southern-circuit-safari"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog-post?slug=nyerere-ruaha-southern-circuit-safari"/>
+    <changefreq>monthly</changefreq><priority>0.75</priority><lastmod>2026-03-19</lastmod>
+  </url>
+
+  <url>
+    <loc>https://itanzaniasafaris.com/blog-post?slug=tanzania-visa-guide-2026</loc>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://itanzaniasafaris.com/blog-post?slug=tanzania-visa-guide-2026"/>
+    <xhtml:link rel="alternate" hreflang="de"      href="https://itanzaniasafaris.com/de/blog-post?slug=tanzania-visa-guide-2026"/>
+    <xhtml:link rel="alternate" hreflang="es"      href="https://itanzaniasafaris.com/es/blog-post?slug=tanzania-visa-guide-2026"/>
+    <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/blog-post?slug=tanzania-visa-guide-2026"/>
+    <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/blog-yazisi?slug=tanzania-visa-guide-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/blog-post?slug=tanzania-visa-guide-2026"/>
+    <changefreq>monthly</changefreq><priority>0.75</priority><lastmod>2026-03-20</lastmod>
   </url>
 
 </urlset>
