@@ -2,6 +2,23 @@
 include_once 'includes/lang.php';
 $page_title = t('seo.zanzibar.title');
 $page_description = t('seo.zanzibar.description');
+$zanzibar_schema = [
+  '@context' => 'https://schema.org',
+  '@type' => 'TouristDestination',
+  'name' => 'Zanzibar Beach Holiday',
+  'url' => 'https://itanzaniasafaris.com/zanzibar',
+  'description' => 'Zanzibar beach holidays combined with Tanzania safari. White sand beaches, turquoise waters, UNESCO Stone Town, and world-class snorkelling.',
+  'image' => 'https://itanzaniasafaris.com/images/zanzibar-beach.jpg',
+  'touristType' => ['Beach Travelers', 'Honeymooners', 'Safari & Beach Combo Seekers'],
+  'geo' => ['@type' => 'GeoCoordinates', 'latitude' => -6.1659, 'longitude' => 39.2026],
+  'includesAttraction' => [
+    ['@type' => 'TouristAttraction', 'name' => 'Stone Town Zanzibar', 'description' => 'UNESCO World Heritage Site with Swahili, Arab and colonial architecture.'],
+    ['@type' => 'TouristAttraction', 'name' => 'Nungwi Beach', 'description' => 'White sand beach in northern Zanzibar, ideal for snorkelling and diving.'],
+    ['@type' => 'TouristAttraction', 'name' => 'Kendwa Beach', 'description' => 'Pristine beach with calm waters perfect for swimming at low tide.'],
+  ],
+  'offers' => ['@type' => 'Offer', 'name' => '7N/8D Safari + Zanzibar Beach Holiday', 'price' => '2417', 'priceCurrency' => 'USD', 'availability' => 'https://schema.org/InStock', 'url' => 'https://itanzaniasafaris.com/zanzibar'],
+];
+$extra_head = (isset($extra_head) ? $extra_head : '') . '<script type="application/ld+json">' . json_encode($zanzibar_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
 include 'includes/header.php';
 include 'includes/tours-data.php';
 ?>

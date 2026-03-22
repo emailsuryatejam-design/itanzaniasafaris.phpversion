@@ -2,6 +2,16 @@
 include_once 'includes/lang.php';
 $page_title = t('seo.blog.title');
 $page_description = t('seo.blog.description');
+$blog_schema = [
+  '@context' => 'https://schema.org',
+  '@type' => 'Blog',
+  'name' => 'iTanzania Safaris Blog — Tanzania Safari & Travel Guides',
+  'url' => 'https://itanzaniasafaris.com/blog',
+  'description' => 'Expert guides on Tanzania safaris, Kilimanjaro climbing, Zanzibar travel, best time to visit, packing lists, costs and more.',
+  'inLanguage' => 'en',
+  'publisher' => ['@type' => 'Organization', 'name' => 'iTanzania Safaris', 'url' => 'https://itanzaniasafaris.com', 'logo' => ['@type' => 'ImageObject', 'url' => 'https://itanzaniasafaris.com/images/logo.png']],
+];
+$extra_head = (isset($extra_head) ? $extra_head : '') . '<script type="application/ld+json">' . json_encode($blog_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
 include 'includes/header.php';
 include 'includes/blog-data.php';
 $featured = array_values(array_map(fn($p) => localizePost($p, $current_lang), getFeaturedPosts()));

@@ -2,6 +2,21 @@
 include_once 'includes/lang.php';
 $page_title = t('seo.accommodations.title');
 $page_description = t('seo.accommodations.description');
+$accom_schema = [
+  '@context' => 'https://schema.org',
+  '@type' => 'ItemList',
+  'name' => 'Tanzania Safari Accommodation Tiers',
+  'url' => 'https://itanzaniasafaris.com/accommodations',
+  'description' => 'Safari accommodation options in Tanzania ranging from budget campsites to luxury lodges in Serengeti, Ngorongoro, and Tarangire.',
+  'numberOfItems' => 4,
+  'itemListElement' => [
+    ['@type' => 'ListItem', 'position' => 1, 'item' => ['@type' => 'LodgingBusiness', 'name' => 'Budget Safari Camping', 'description' => 'Comfortable public campsites in Tanzania national parks. Shared facilities, mess tent included.', 'starRating' => ['@type' => 'Rating', 'ratingValue' => '2']]],
+    ['@type' => 'ListItem', 'position' => 2, 'item' => ['@type' => 'LodgingBusiness', 'name' => 'Mid-Range Safari Lodges', 'description' => 'Comfortable lodge accommodation with en-suite facilities and dining inside the parks.', 'starRating' => ['@type' => 'Rating', 'ratingValue' => '3']]],
+    ['@type' => 'ListItem', 'position' => 3, 'item' => ['@type' => 'LodgingBusiness', 'name' => 'Comfort Safari Camps', 'description' => 'Semi-permanent luxury tented camps with private facilities and premium safari experience.', 'starRating' => ['@type' => 'Rating', 'ratingValue' => '4']]],
+    ['@type' => 'ListItem', 'position' => 4, 'item' => ['@type' => 'LodgingBusiness', 'name' => 'Premium Luxury Lodges', 'description' => 'Top-tier safari lodges and camps with private plunge pools, gourmet dining and exclusive game drives.', 'starRating' => ['@type' => 'Rating', 'ratingValue' => '5']]],
+  ],
+];
+$extra_head = (isset($extra_head) ? $extra_head : '') . '<script type="application/ld+json">' . json_encode($accom_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
 include 'includes/header.php';
 ?>
 

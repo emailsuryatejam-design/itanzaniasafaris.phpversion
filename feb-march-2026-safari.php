@@ -1,6 +1,33 @@
 <?php
+include_once 'includes/lang.php';
 $page_title = '5N/6D Safari Feb-Mar 2026 | From $1,476pp';
 $page_description = 'Exclusive 5-night, 6-day Tanzania safari package for February & March 2026. Explore Tarangire, Serengeti National Park, and Ngorongoro Crater with 4 accommodation options from budget to premium.';
+$pkg1_schema = [
+  '@context' => 'https://schema.org',
+  '@type' => 'TouristTrip',
+  'name' => '5 Night / 6 Day Tanzania Wildlife Safari — Tarangire, Serengeti & Ngorongoro',
+  'url' => 'https://itanzaniasafaris.com/feb-march-2026-safari',
+  'description' => 'Exclusive 5-night, 6-day Tanzania safari package. Explore Tarangire, Serengeti and Ngorongoro Crater with 4 accommodation tiers from budget to premium.',
+  'image' => 'https://itanzaniasafaris.com/images/itinerary-serengeti.jpg',
+  'provider' => ['@type' => 'TravelAgency', 'name' => 'iTanzania Safaris', 'url' => 'https://itanzaniasafaris.com'],
+  'touristType' => ['Wildlife Enthusiasts', 'First-time Safari Goers', 'Couples', 'Small Groups'],
+  'offers' => ['@type' => 'Offer', 'name' => '5N/6D Tanzania Safari from $1,476pp', 'price' => '1476', 'priceCurrency' => 'USD', 'availability' => 'https://schema.org/InStock', 'validFrom' => '2026-02-01', 'validThrough' => '2026-03-31'],
+  'itinerary' => [
+    '@type' => 'ItemList',
+    'name' => 'Safari Itinerary',
+    'numberOfItems' => 6,
+    'itemListElement' => [
+      ['@type' => 'ListItem', 'position' => 1, 'name' => 'Day 1: Arrive Arusha'],
+      ['@type' => 'ListItem', 'position' => 2, 'name' => 'Day 2: Tarangire National Park'],
+      ['@type' => 'ListItem', 'position' => 3, 'name' => 'Day 3: Central Serengeti'],
+      ['@type' => 'ListItem', 'position' => 4, 'name' => 'Day 4: Northern Serengeti'],
+      ['@type' => 'ListItem', 'position' => 5, 'name' => 'Day 5: Ngorongoro Crater'],
+      ['@type' => 'ListItem', 'position' => 6, 'name' => 'Day 6: Return Arusha'],
+    ],
+  ],
+];
+$extra_head = (isset($extra_head) ? $extra_head : '') . '<link rel="preload" href="/images/itinerary-hero.jpg" as="image" fetchpriority="high">';
+$extra_head .= '<script type="application/ld+json">' . json_encode($pkg1_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
 include 'includes/header.php';
 ?>
 

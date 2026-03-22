@@ -1,6 +1,35 @@
 <?php
+include_once 'includes/lang.php';
 $page_title = '7N/8D Safari + Zanzibar Mar-Apr 2026';
 $page_description = 'Exclusive 7-night, 8-day Tanzania safari and Zanzibar beach package for March & April 2026. Safari through Tarangire, Serengeti, Ngorongoro plus 3 nights all-inclusive Zanzibar beach resort.';
+$pkg2_schema = [
+  '@context' => 'https://schema.org',
+  '@type' => 'TouristTrip',
+  'name' => '7 Night / 8 Day Safari + Zanzibar Beach Holiday',
+  'url' => 'https://itanzaniasafaris.com/mar-april-2026-safari-zanzibar',
+  'description' => '5-day Northern Circuit safari combined with 3 nights all-inclusive Zanzibar beach resort. Domestic flight Arusha-Zanzibar included.',
+  'image' => 'https://itanzaniasafaris.com/images/safari-beach.jpg',
+  'provider' => ['@type' => 'TravelAgency', 'name' => 'iTanzania Safaris', 'url' => 'https://itanzaniasafaris.com'],
+  'touristType' => ['Honeymooners', 'Couples', 'Beach & Safari Seekers'],
+  'offers' => ['@type' => 'Offer', 'name' => '7N/8D Safari + Zanzibar from $2,417pp', 'price' => '2417', 'priceCurrency' => 'USD', 'availability' => 'https://schema.org/InStock', 'validFrom' => '2026-03-01', 'validThrough' => '2026-04-30'],
+  'itinerary' => [
+    '@type' => 'ItemList',
+    'name' => 'Safari + Zanzibar Itinerary',
+    'numberOfItems' => 8,
+    'itemListElement' => [
+      ['@type' => 'ListItem', 'position' => 1, 'name' => 'Day 1: Arrive Arusha'],
+      ['@type' => 'ListItem', 'position' => 2, 'name' => 'Day 2: Tarangire National Park'],
+      ['@type' => 'ListItem', 'position' => 3, 'name' => 'Day 3: Central Serengeti'],
+      ['@type' => 'ListItem', 'position' => 4, 'name' => 'Day 4: Northern Serengeti'],
+      ['@type' => 'ListItem', 'position' => 5, 'name' => 'Day 5: Ngorongoro Crater'],
+      ['@type' => 'ListItem', 'position' => 6, 'name' => 'Day 6: Fly to Zanzibar — Beach Resort'],
+      ['@type' => 'ListItem', 'position' => 7, 'name' => 'Day 7: Zanzibar — Stone Town & Spice Tour'],
+      ['@type' => 'ListItem', 'position' => 8, 'name' => 'Day 8: Departure from Zanzibar'],
+    ],
+  ],
+];
+$extra_head = (isset($extra_head) ? $extra_head : '') . '<link rel="preload" href="/images/safari-beach.jpg" as="image" fetchpriority="high">';
+$extra_head .= '<script type="application/ld+json">' . json_encode($pkg2_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
 include 'includes/header.php';
 ?>
 

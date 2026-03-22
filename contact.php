@@ -2,6 +2,26 @@
 include_once 'includes/lang.php';
 $page_title = t('seo.contact.title');
 $page_description = t('seo.contact.description');
+$contact_schema = [
+  '@context' => 'https://schema.org',
+  '@type' => 'LocalBusiness',
+  '@id' => 'https://itanzaniasafaris.com/#localbusiness',
+  'name' => 'iTanzania Safaris',
+  'url' => 'https://itanzaniasafaris.com',
+  'logo' => 'https://itanzaniasafaris.com/images/logo.png',
+  'image' => 'https://itanzaniasafaris.com/images/og-image.jpg',
+  'description' => 'TATO-registered Tanzania safari operator. Expert-guided wildlife safaris, Kilimanjaro climbing and Zanzibar beach holidays from Arusha.',
+  'telephone' => '+13177601338',
+  'email' => 'hello@itanzaniasafaris.com',
+  'address' => ['@type' => 'PostalAddress', 'streetAddress' => 'Arusha City Centre', 'addressLocality' => 'Arusha', 'addressRegion' => 'Arusha Region', 'postalCode' => '', 'addressCountry' => 'TZ'],
+  'geo' => ['@type' => 'GeoCoordinates', 'latitude' => -3.3869, 'longitude' => 36.6830],
+  'openingHoursSpecification' => ['@type' => 'OpeningHoursSpecification', 'dayOfWeek' => ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'], 'opens' => '08:00', 'closes' => '20:00'],
+  'contactPoint' => ['@type' => 'ContactPoint', 'contactType' => 'customer support', 'telephone' => '+13177601338', 'email' => 'hello@itanzaniasafaris.com', 'availableLanguage' => ['English','German','Spanish','Chinese','Turkish']],
+  'priceRange' => '$1,476 - $4,865',
+  'aggregateRating' => ['@type' => 'AggregateRating', 'ratingValue' => '4.9', 'reviewCount' => '127', 'bestRating' => '5'],
+  'sameAs' => ['https://www.facebook.com/share/181WegW4kF/', 'https://www.instagram.com/itanzania.safaris'],
+];
+$extra_head = (isset($extra_head) ? $extra_head : '') . '<script type="application/ld+json">' . json_encode($contact_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
 include 'includes/header.php';
 ?>
 

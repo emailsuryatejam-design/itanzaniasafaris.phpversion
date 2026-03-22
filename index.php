@@ -2,6 +2,7 @@
 include_once 'includes/lang.php';
 $page_title = t('seo.index.title');
 $page_description = t('seo.index.description');
+$extra_head = '<link rel="preload" href="/images/hero-serengeti.jpg" as="image" fetchpriority="high">';
 include 'includes/header.php';
 ?>
 

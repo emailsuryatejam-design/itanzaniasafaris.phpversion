@@ -14,7 +14,25 @@ $kili_faq_schema = [
     ['@type'=>'Question','name'=>'What is the best time to climb Kilimanjaro?','acceptedAnswer'=>['@type'=>'Answer','text'=>'The best times to climb Kilimanjaro are January–March and June–October when conditions are driest. December and January are particularly popular. The rainy seasons (April–May and November) bring more challenging conditions but fewer crowds and lower prices.']],
   ]
 ];
-$extra_head = (isset($extra_head) ? $extra_head : '') . '<script type="application/ld+json">' . json_encode($kili_faq_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
+$kili_attraction_schema = [
+  '@context' => 'https://schema.org',
+  '@type' => 'TouristAttraction',
+  'name' => 'Mount Kilimanjaro Climbing — iTanzania Safaris',
+  'url' => 'https://itanzaniasafaris.com/kilimanjaro',
+  'description' => 'Climb Africa\'s highest peak (5,895m) with KINAPA-certified guides. 90%+ summit success rate on Machame, Lemosho, and Marangu routes.',
+  'image' => 'https://itanzaniasafaris.com/images/machame.jpg',
+  'geo' => ['@type' => 'GeoCoordinates', 'latitude' => -3.0674, 'longitude' => 37.3556],
+  'address' => ['@type' => 'PostalAddress', 'addressLocality' => 'Moshi', 'addressRegion' => 'Kilimanjaro Region', 'addressCountry' => 'TZ'],
+  'touristType' => ['Adventure Trekkers', 'Summit Seekers', 'Experienced Hikers'],
+  'offers' => [
+    ['@type' => 'Offer', 'name' => 'Machame Route — 7 Days', 'price' => '2400', 'priceCurrency' => 'USD', 'availability' => 'https://schema.org/InStock'],
+    ['@type' => 'Offer', 'name' => 'Lemosho Route — 8 Days', 'price' => '2800', 'priceCurrency' => 'USD', 'availability' => 'https://schema.org/InStock'],
+    ['@type' => 'Offer', 'name' => 'Marangu Route — 6 Days', 'price' => '2100', 'priceCurrency' => 'USD', 'availability' => 'https://schema.org/InStock'],
+  ],
+  'aggregateRating' => ['@type' => 'AggregateRating', 'ratingValue' => '4.9', 'reviewCount' => '127', 'bestRating' => '5'],
+];
+$extra_head = (isset($extra_head) ? $extra_head : '') . '<script type="application/ld+json">' . json_encode($kili_attraction_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
+$extra_head .= '<script type="application/ld+json">' . json_encode($kili_faq_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
 include 'includes/header.php';
 include 'includes/tours-data.php';
 ?>

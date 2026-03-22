@@ -14,7 +14,46 @@ $faq_schema = [
     ['@type'=>'Question','name'=>'Do I need vaccinations for Tanzania?','acceptedAnswer'=>['@type'=>'Answer','text'=>'Yellow fever vaccination is mandatory if arriving from a yellow fever endemic country. Recommended vaccinations include hepatitis A, typhoid, and tetanus. Malaria prophylaxis is strongly advised. Consult your doctor 6–8 weeks before travel.']],
   ]
 ];
-$extra_head = (isset($extra_head) ? $extra_head : '') . '<script type="application/ld+json">' . json_encode($faq_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
+$safari_package_schema = [
+  '@context' => 'https://schema.org',
+  '@type' => 'ItemList',
+  'name' => 'Tanzania Safari Packages',
+  'url' => 'https://itanzaniasafaris.com/safaris',
+  'description' => 'Expert-guided Tanzania safari packages covering Serengeti, Ngorongoro Crater, and Tarangire National Park. Group sizes 2–12. All-inclusive from $1,476 per person.',
+  'numberOfItems' => 2,
+  'itemListElement' => [
+    [
+      '@type' => 'ListItem',
+      'position' => 1,
+      'item' => [
+        '@type' => 'TouristTrip',
+        'name' => '5N/6D Tanzania Wildlife Safari — Tarangire, Serengeti & Ngorongoro',
+        'url' => 'https://itanzaniasafaris.com/feb-march-2026-safari',
+        'description' => 'Witness the Great Migration, explore Ngorongoro Crater and encounter elephant herds in Tarangire. 4 accommodation tiers: budget, mid-range, comfort, and premium.',
+        'image' => 'https://itanzaniasafaris.com/images/itinerary-serengeti.jpg',
+        'touristType' => ['Wildlife Enthusiasts', 'First-time Safari Goers', 'Couples', 'Families'],
+        'itinerary' => ['@type' => 'ItemList', 'numberOfItems' => 6],
+        'offers' => ['@type' => 'Offer', 'price' => '1476', 'priceCurrency' => 'USD', 'availability' => 'https://schema.org/InStock'],
+      ],
+    ],
+    [
+      '@type' => 'ListItem',
+      'position' => 2,
+      'item' => [
+        '@type' => 'TouristTrip',
+        'name' => '7N/8D Safari + Zanzibar Beach Holiday',
+        'url' => 'https://itanzaniasafaris.com/mar-april-2026-safari-zanzibar',
+        'description' => 'Combine a 5-day Northern Circuit safari with a 3-night all-inclusive Zanzibar beach holiday. Domestic flight included.',
+        'image' => 'https://itanzaniasafaris.com/images/safari-beach.jpg',
+        'touristType' => ['Beach & Safari Combo Seekers', 'Honeymooners', 'Couples'],
+        'itinerary' => ['@type' => 'ItemList', 'numberOfItems' => 8],
+        'offers' => ['@type' => 'Offer', 'price' => '2417', 'priceCurrency' => 'USD', 'availability' => 'https://schema.org/InStock'],
+      ],
+    ],
+  ],
+];
+$extra_head = (isset($extra_head) ? $extra_head : '') . '<script type="application/ld+json">' . json_encode($safari_package_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
+$extra_head .= '<script type="application/ld+json">' . json_encode($faq_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
 include 'includes/header.php';
 ?>
 

@@ -2,6 +2,25 @@
 include_once 'includes/lang.php';
 $page_title = t('seo.about.title');
 $page_description = t('seo.about.description');
+$about_schema = [
+  '@context' => 'https://schema.org',
+  '@type' => 'Organization',
+  'name' => 'iTanzania Safaris',
+  'url' => 'https://itanzaniasafaris.com',
+  'logo' => 'https://itanzaniasafaris.com/images/logo.png',
+  'foundingDate' => '2018',
+  'foundingLocation' => ['@type' => 'Place', 'name' => 'Arusha, Tanzania'],
+  'description' => 'TATO-registered Tanzania safari operator based in Arusha. Specialists in wildlife safaris, Kilimanjaro climbing, and Zanzibar beach holidays.',
+  'email' => 'hello@itanzaniasafaris.com',
+  'telephone' => '+13177601338',
+  'address' => ['@type' => 'PostalAddress', 'streetAddress' => 'Arusha City Centre', 'addressLocality' => 'Arusha', 'addressRegion' => 'Arusha Region', 'addressCountry' => 'TZ'],
+  'numberOfEmployees' => ['@type' => 'QuantitativeValue', 'value' => 15],
+  'memberOf' => ['@type' => 'Organization', 'name' => 'TATO — Tanzania Association of Tour Operators'],
+  'areaServed' => [['@type' => 'Country', 'name' => 'Tanzania'], ['@type' => 'Country', 'name' => 'Kenya']],
+  'sameAs' => ['https://www.facebook.com/share/181WegW4kF/', 'https://www.instagram.com/itanzania.safaris'],
+  'knowsAbout' => ['Tanzania Safari', 'Kilimanjaro Climbing', 'Zanzibar Beach Holidays', 'Serengeti National Park', 'Ngorongoro Crater'],
+];
+$extra_head = (isset($extra_head) ? $extra_head : '') . '<script type="application/ld+json">' . json_encode($about_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
 include 'includes/header.php';
 ?>
 
