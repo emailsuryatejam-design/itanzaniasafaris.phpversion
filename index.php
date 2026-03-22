@@ -398,7 +398,7 @@ include 'includes/header.php';
     </div>
     <?php include 'includes/blog-data.php'; ?>
     <div class="blog-home-grid reveal">
-      <?php foreach (array_slice($blogPosts, 0, 3) as $post): ?>
+      <?php foreach (array_slice(array_map(fn($p) => localizePost($p, $current_lang), $blogPosts), 0, 3) as $post): ?>
       <a href="<?php echo lang_url('blog-post.php?slug=' . $post['slug']); ?>" class="blog-card">
         <div class="blog-card-img">
           <img src="<?php echo $post['image']; ?>" alt="<?php echo htmlspecialchars($post['title']); ?>" loading="lazy">
@@ -470,43 +470,6 @@ function handleNewsletterSubmit(e) {
   }
 }
 </script>
-
-<!-- Latest Blog Posts -->
-<?php
-$blogPosts_home = array_slice(array_map(fn($p) => localizePost($p, $current_lang), $blogPosts), 0, 3);
-?>
-<section class="py-20 bg-sand">
-  <div class="container-md">
-    <div class="section-heading reveal">
-      <span class="section-subtitle"><?php echo t('blog.hero_subtitle'); ?></span>
-      <h2 class="section-title"><?php echo t('blog.featured_title'); ?></h2>
-      <p class="section-desc"><?php echo t('blog.all_desc'); ?></p>
-    </div>
-    <div class="blog-grid reveal">
-      <?php foreach ($blogPosts_home as $post_h): ?>
-      <a href="<?php echo lang_url('blog-post.php?slug=' . $post_h['slug']); ?>" class="blog-card">
-        <div class="blog-card-img">
-          <img src="<?php echo $post_h['image']; ?>" alt="<?php echo htmlspecialchars($post_h['title']); ?>" loading="lazy">
-          <span class="blog-card-cat"><?php echo htmlspecialchars($post_h['category']); ?></span>
-        </div>
-        <div class="blog-card-body">
-          <div class="blog-card-meta">
-            <span><?php echo date('M j, Y', strtotime($post_h['date'])); ?></span>
-            <span class="blog-meta-dot"></span>
-            <span><?php echo $post_h['read_time']; ?></span>
-          </div>
-          <h3><?php echo htmlspecialchars($post_h['title']); ?></h3>
-          <p><?php echo htmlspecialchars($post_h['excerpt']); ?></p>
-          <span class="blog-read-more"><?php echo t('blog.read_article'); ?> <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
-        </div>
-      </a>
-      <?php endforeach; ?>
-    </div>
-    <div style="text-align:center;margin-top:2.5rem;">
-      <a href="<?php echo lang_url('blog.php'); ?>" class="btn btn-outline btn-md"><?php echo t('nav.blog'); ?> &rarr;</a>
-    </div>
-  </div>
-</section>
 
 <!-- ============================================================
      CTA BANNER
