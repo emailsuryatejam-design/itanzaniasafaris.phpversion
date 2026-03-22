@@ -27,6 +27,8 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
   <link rel="alternate" hreflang="tr" href="<?php echo get_canonical_url('tr'); ?>">
   <link rel="alternate" hreflang="x-default" href="<?php echo get_canonical_url('en'); ?>">
   <link rel="icon" type="image/png" href="/images/logo.png">
+  <!-- Google Search Console Verification — replace content value with your code from search.google.com/search-console -->
+  <!-- <meta name="google-site-verification" content="PASTE_YOUR_CODE_HERE"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">

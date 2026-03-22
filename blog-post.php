@@ -11,25 +11,60 @@ $og_title = $post['title'] . ' | iTanzania Safaris';
 $og_description = $post['meta_description'];
 $og_image = $post['image'];
 
-// Article schema JSON-LD
+// BlogPosting schema JSON-LD (rich result eligible)
+$canonical_url = get_canonical_url();
+$image_url = (strpos($post['image'], 'http') === 0) ? $post['image'] : 'https://itanzaniasafaris.com' . $post['image'];
 $schema = [
   '@context' => 'https://schema.org',
-  '@type' => 'Article',
+  '@type' => 'BlogPosting',
   'headline' => $post['title'],
   'description' => $post['meta_description'],
-  'image' => 'https://itanzaniasafaris.com/' . $post['image'],
+  'image' => [
+    '@type' => 'ImageObject',
+    'url' => $image_url,
+    'width' => 1200,
+    'height' => 630
+  ],
   'inLanguage' => $current_lang,
-  'author' => ['@type' => 'Organization', 'name' => 'iTanzania Safaris'],
+  'keywords' => isset($post['keywords']) ? $post['keywords'] : 'Tanzania safari, Africa safari',
+  'articleSection' => $post['category'],
+  'author' => [
+    '@type' => 'Organization',
+    'name' => 'iTanzania Safaris',
+    'url' => 'https://itanzaniasafaris.com',
+    'logo' => ['@type' => 'ImageObject', 'url' => 'https://itanzaniasafaris.com/images/logo.png']
+  ],
   'publisher' => [
     '@type' => 'Organization',
     'name' => 'iTanzania Safaris',
-    'logo' => ['@type' => 'ImageObject', 'url' => 'https://itanzaniasafaris.com/images/logo.png']
+    'url' => 'https://itanzaniasafaris.com',
+    'logo' => ['@type' => 'ImageObject', 'url' => 'https://itanzaniasafaris.com/images/logo.png', 'width' => 200, 'height' => 200]
   ],
   'datePublished' => $post['date'],
   'dateModified' => $post['date'],
-  'mainEntityOfPage' => ['@type' => 'WebPage', '@id' => get_canonical_url()]
+  'mainEntityOfPage' => ['@type' => 'WebPage', '@id' => $canonical_url],
+  'url' => $canonical_url,
+  'isPartOf' => [
+    '@type' => 'Blog',
+    '@id' => 'https://itanzaniasafaris.com/blog',
+    'name' => 'iTanzania Safaris Blog',
+    'publisher' => ['@type' => 'Organization', 'name' => 'iTanzania Safaris']
+  ]
 ];
-$extra_head = '<script type="application/ld+json">' . json_encode($schema, JSON_UNESCAPED_SLASHES) . '</script>';
+
+// BreadcrumbList schema
+$breadcrumb = [
+  '@context' => 'https://schema.org',
+  '@type' => 'BreadcrumbList',
+  'itemListElement' => [
+    ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => 'https://itanzaniasafaris.com/'],
+    ['@type' => 'ListItem', 'position' => 2, 'name' => 'Blog', 'item' => 'https://itanzaniasafaris.com/blog'],
+    ['@type' => 'ListItem', 'position' => 3, 'name' => $post['title'], 'item' => $canonical_url],
+  ]
+];
+
+$extra_head  = '<script type="application/ld+json">' . json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
+$extra_head .= '<script type="application/ld+json">' . json_encode($breadcrumb, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
 
 include 'includes/header.php';
 $related = getRelatedPosts($post['slug'], $post['category']);

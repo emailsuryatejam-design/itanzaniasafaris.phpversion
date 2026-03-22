@@ -1275,6 +1275,29 @@ textarea.form-input { resize: none; }
 }
 .footer-contact-item a:hover { color: var(--white); }
 
+/* Certification Badges */
+.footer-certs {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 1.5rem 1rem;
+  max-width: 1280px; margin: 0 auto;
+}
+.footer-cert-item { display: flex; }
+.cert-badge {
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+  padding: 10px 16px; border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.85); text-align: center; min-width: 90px;
+  transition: border-color 0.2s, background 0.2s;
+}
+.cert-badge:hover { border-color: rgba(255,255,255,0.4); background: rgba(255,255,255,0.05); }
+.cert-tato { border-color: rgba(245,158,11,0.5); }
+.cert-tato span { color: #F59E0B; font-weight: 700; font-size: 0.9rem; letter-spacing: 1px; }
+.cert-tato svg { color: #F59E0B; }
+.cert-badge span { font-weight: 700; font-size: 0.85rem; }
+.cert-badge small { font-size: 0.65rem; color: rgba(255,255,255,0.5); white-space: nowrap; }
+.cert-rating span { color: #F59E0B; }
+
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.1);
   padding-top: 2rem;

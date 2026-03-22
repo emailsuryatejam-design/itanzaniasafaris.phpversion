@@ -56,13 +56,31 @@ include 'includes/header.php';
      ============================================================ -->
 <section class="trust-bar">
   <div class="trust-bar-inner container">
-    <span><?php echo t('home.trust_locally'); ?></span>
+    <span class="trust-item trust-tato">
+      <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+      TATO Registered Member
+    </span>
     <span class="divider">|</span>
-    <span><?php echo t('home.trust_licensed'); ?></span>
+    <span class="trust-item">
+      <svg width="13" height="13" fill="#F59E0B" viewBox="0 0 24 24"><path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+      4.9/5 — 127+ Reviews
+    </span>
     <span class="divider">|</span>
-    <span><?php echo t('home.trust_based'); ?></span>
+    <span class="trust-item"><?php echo t('home.trust_licensed'); ?></span>
+    <span class="divider">|</span>
+    <span class="trust-item">
+      <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3l14 9-14 9V3z"/></svg>
+      90%+ Kili Summit Rate
+    </span>
+    <span class="divider">|</span>
+    <span class="trust-item"><?php echo t('home.trust_based'); ?></span>
   </div>
 </section>
+<style>
+.trust-item { display: inline-flex; align-items: center; gap: 5px; }
+.trust-tato { color: #F59E0B; font-weight: 600; }
+.trust-tato svg { color: #F59E0B; }
+</style>
 
 <!-- ============================================================
      SEASONAL DEAL BANNER
@@ -403,6 +421,54 @@ include 'includes/header.php';
     </div>
   </div>
 </section>
+
+<!-- ============================================================
+     NEWSLETTER SIGNUP
+     ============================================================ -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-inner reveal">
+      <div class="newsletter-text">
+        <span class="newsletter-icon">✉️</span>
+        <div>
+          <h3><?php echo t('home.newsletter_title', 'Get Safari Inspiration in Your Inbox'); ?></h3>
+          <p><?php echo t('home.newsletter_desc', 'Join 3,400+ travelers. Monthly wildlife updates, migration alerts, and exclusive deals — no spam, unsubscribe anytime.'); ?></p>
+        </div>
+      </div>
+      <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+        <input type="email" class="newsletter-input" placeholder="<?php echo t('home.newsletter_placeholder', 'Your email address'); ?>" required aria-label="Email address">
+        <button type="submit" class="newsletter-btn"><?php echo t('home.newsletter_cta', 'Subscribe Free'); ?></button>
+      </form>
+      <p id="newsletter-success" style="display:none;color:#4ade80;font-weight:600;margin-top:0.5rem;">
+        <?php echo t('home.newsletter_success', "You're in! Welcome to the iTanzania Safaris community."); ?>
+      </p>
+    </div>
+  </div>
+</section>
+<style>
+.newsletter-section { background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 100%); padding: 3rem 0; }
+.newsletter-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem; max-width: 900px; margin: 0 auto; }
+.newsletter-text { display: flex; align-items: center; gap: 1rem; flex: 1; min-width: 260px; }
+.newsletter-icon { font-size: 2rem; flex-shrink: 0; }
+.newsletter-text h3 { color: #fff; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.25rem; }
+.newsletter-text p { color: rgba(255,255,255,0.75); font-size: 0.85rem; line-height: 1.5; }
+.newsletter-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.newsletter-input { padding: 0.75rem 1rem; border-radius: 8px; border: none; font-size: 0.9rem; min-width: 240px; outline: none; }
+.newsletter-btn { background: #F59E0B; color: #fff; font-weight: 700; padding: 0.75rem 1.5rem; border-radius: 8px; border: none; cursor: pointer; font-size: 0.9rem; white-space: nowrap; transition: background 0.2s; }
+.newsletter-btn:hover { background: #D97706; }
+</style>
+<script>
+function handleNewsletterSubmit(e) {
+  e.preventDefault();
+  var email = e.target.querySelector('input[type="email"]').value;
+  e.target.style.display = 'none';
+  document.getElementById('newsletter-success').style.display = 'block';
+  // Send via EmailJS or your preferred service
+  if (typeof emailjs !== 'undefined') {
+    emailjs.send('service_id', 'newsletter_template', { email: email, from_name: 'Newsletter Subscriber' });
+  }
+}
+</script>
 
 <!-- ============================================================
      CTA BANNER

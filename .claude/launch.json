@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "php-server",
+      "runtimeExecutable": "/opt/homebrew/bin/php",
+      "runtimeArgs": ["-S", "localhost:8080", "-t", "/Users/suryateja/Projects/itanzaniasafaris.phpversion"],
+      "port": 8080
+    }
+  ]
+}
