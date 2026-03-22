@@ -1,5 +1,13 @@
 User-agent: *
 Allow: /
 Disallow: /includes/
+Disallow: /*?lang=en
+
+# Block crawling of duplicate query-string variants
+Disallow: /*?lang=en*
+
+# Allow Googlebot-specific image crawling
+User-agent: Googlebot-Image
+Allow: /images/
 
 Sitemap: https://itanzaniasafaris.com/sitemap.xml

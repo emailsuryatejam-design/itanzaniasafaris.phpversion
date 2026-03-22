@@ -7,6 +7,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <title><?php echo isset($page_title) ? $page_title . ' | iTanzania Safaris' : t('seo.default_title'); ?></title>
   <meta name="description" content="<?php echo isset($page_description) ? $page_description : t('seo.default_description'); ?>">
   <meta property="og:title" content="<?php echo isset($page_title) ? $page_title . ' | iTanzania Safaris' : t('seo.default_title'); ?>">
