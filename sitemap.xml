@@ -24,7 +24,7 @@
     <xhtml:link rel="alternate" hreflang="zh"      href="https://itanzaniasafaris.com/zh/safaris"/>
     <xhtml:link rel="alternate" hreflang="tr"      href="https://itanzaniasafaris.com/tr/safariler"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/safaris"/>
-    <changefreq>weekly</changefreq><priority>0.95</priority><lastmod>2026-03-22</lastmod>
+    <changefreq>weekly</changefreq><priority>0.95</priority><lastmod>2026-03-29</lastmod>
   </url>
 
   <url>
@@ -113,6 +113,17 @@
     <xhtml:link rel="alternate" hreflang="tr"        href="https://itanzaniasafaris.com/tr/mar-april-2026-safari-zanzibar"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/mar-april-2026-safari-zanzibar"/>
     <changefreq>monthly</changefreq><priority>0.70</priority><lastmod>2026-03-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://itanzaniasafaris.com/10-day-northern-circuit-safari</loc>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://itanzaniasafaris.com/10-day-northern-circuit-safari"/>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://itanzaniasafaris.com/de/10-day-northern-circuit-safari"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://itanzaniasafaris.com/es/10-day-northern-circuit-safari"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://itanzaniasafaris.com/zh/10-day-northern-circuit-safari"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://itanzaniasafaris.com/tr/10-day-northern-circuit-safari"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itanzaniasafaris.com/10-day-northern-circuit-safari"/>
+    <changefreq>monthly</changefreq><priority>0.90</priority><lastmod>2026-03-29</lastmod>
   </url>
 
   <!-- ============================================================

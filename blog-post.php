@@ -42,7 +42,7 @@ $schema = [
     'logo' => ['@type' => 'ImageObject', 'url' => 'https://itanzaniasafaris.com/images/logo.png', 'width' => 200, 'height' => 200]
   ],
   'datePublished' => $post['date'],
-  'dateModified' => $post['date'],
+  'dateModified' => isset($post['date_modified']) ? $post['date_modified'] : $post['date'],
   'mainEntityOfPage' => ['@type' => 'WebPage', '@id' => $canonical_url],
   'url' => $canonical_url,
   'isPartOf' => [
@@ -66,6 +66,20 @@ $breadcrumb = [
 
 $extra_head  = '<script type="application/ld+json">' . json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
 $extra_head .= '<script type="application/ld+json">' . json_encode($breadcrumb, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
+
+// FAQPage schema — added when post has faq_items
+if (!empty($post['faq_items'])) {
+  $faq_schema = [
+    '@context' => 'https://schema.org',
+    '@type' => 'FAQPage',
+    'mainEntity' => array_map(fn($item) => [
+      '@type' => 'Question',
+      'name' => $item['q'],
+      'acceptedAnswer' => ['@type' => 'Answer', 'text' => $item['a']],
+    ], $post['faq_items']),
+  ];
+  $extra_head .= '<script type="application/ld+json">' . json_encode($faq_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
+}
 
 include 'includes/header.php';
 $related = array_map(fn($p) => localizePost($p, $current_lang), getRelatedPosts($post['slug'], $post['category']));

@@ -20,7 +20,7 @@ $safari_package_schema = [
   'name' => 'Tanzania Safari Packages',
   'url' => 'https://itanzaniasafaris.com/safaris',
   'description' => 'Expert-guided Tanzania safari packages covering Serengeti, Ngorongoro Crater, and Tarangire National Park. Group sizes 2–12. All-inclusive from $1,476 per person.',
-  'numberOfItems' => 2,
+  'numberOfItems' => 3,
   'itemListElement' => [
     [
       '@type' => 'ListItem',
@@ -48,6 +48,20 @@ $safari_package_schema = [
         'touristType' => ['Beach & Safari Combo Seekers', 'Honeymooners', 'Couples'],
         'itinerary' => ['@type' => 'ItemList', 'numberOfItems' => 8],
         'offers' => ['@type' => 'Offer', 'price' => '2417', 'priceCurrency' => 'USD', 'availability' => 'https://schema.org/InStock'],
+      ],
+    ],
+    [
+      '@type' => 'ListItem',
+      'position' => 3,
+      'item' => [
+        '@type' => 'TouristTrip',
+        'name' => '9N/10D Northern Circuit Safari + Kilimanjaro Cultural Tour',
+        'url' => 'https://itanzaniasafaris.com/10-day-northern-circuit-safari',
+        'description' => 'Complete 10-day Tanzania safari: Tarangire, 3 nights Serengeti, Ngorongoro Crater, Arusha cultural tour, and a full-day Marangu Cultural Tour on the slopes of Kilimanjaro. 4 accommodation options, all-season pricing.',
+        'image' => 'https://itanzaniasafaris.com/images/marangu.jpg',
+        'touristType' => ['Wildlife Enthusiasts', 'Culture Travellers', 'Couples', 'Small Groups'],
+        'itinerary' => ['@type' => 'ItemList', 'numberOfItems' => 10],
+        'offers' => ['@type' => 'Offer', 'price' => '2508', 'priceCurrency' => 'USD', 'availability' => 'https://schema.org/InStock'],
       ],
     ],
   ],
@@ -93,7 +107,7 @@ include 'includes/header.php';
     </a>
 
     <!-- Featured Package 2: 7N/8D Safari + Zanzibar -->
-    <a href="<?php echo lang_url('mar-april-2026-safari-zanzibar.php'); ?>" class="featured-package-card reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:0;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.10);text-decoration:none;color:inherit;transition:transform 0.3s,box-shadow 0.3s;">
+    <a href="<?php echo lang_url('mar-april-2026-safari-zanzibar.php'); ?>" class="featured-package-card reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:0;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.10);text-decoration:none;color:inherit;transition:transform 0.3s,box-shadow 0.3s;margin-bottom:2.5rem;">
       <div style="position:relative;overflow:hidden;min-height:300px;">
         <img src="/images/safari-beach.jpg" alt="Safari and Zanzibar Beach" style="width:100%;height:100%;object-fit:cover;">
         <span style="position:absolute;top:16px;left:16px;background:var(--secondary);color:#fff;padding:6px 16px;border-radius:20px;font-size:0.85rem;font-weight:600;">Mar & April 2026</span>
@@ -104,6 +118,23 @@ include 'includes/header.php';
         <p style="color:#666;line-height:1.7;margin-bottom:1.5rem;"><?php echo t('tours.safari2.short_desc'); ?></p>
         <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;">
           <span style="font-size:1.3rem;font-weight:700;color:var(--primary);"><?php echo t('home.from'); ?> $2,417 <span style="font-size:0.85rem;font-weight:400;color:#999;"><?php echo t('home.per_person'); ?></span></span>
+          <span style="display:inline-flex;align-items:center;gap:6px;color:var(--secondary);font-weight:600;font-size:0.95rem;"><?php echo t('home.view_itinerary'); ?> <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Featured Package 3: 10-Day Northern Circuit + Kilimanjaro Cultural -->
+    <a href="<?php echo lang_url('10-day-northern-circuit-safari.php'); ?>" class="featured-package-card reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:0;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.10);text-decoration:none;color:inherit;transition:transform 0.3s,box-shadow 0.3s;">
+      <div style="position:relative;overflow:hidden;min-height:300px;">
+        <img src="/images/marangu.jpg" alt="10-day Tanzania Northern Circuit safari Kilimanjaro Marangu cultural tour" style="width:100%;height:100%;object-fit:cover;">
+        <span style="position:absolute;top:16px;left:16px;background:var(--secondary);color:#fff;padding:6px 16px;border-radius:20px;font-size:0.85rem;font-weight:600;">All Seasons 2026</span>
+      </div>
+      <div style="padding:2.5rem;display:flex;flex-direction:column;justify-content:center;">
+        <span style="color:var(--primary);font-weight:600;font-size:0.85rem;text-transform:uppercase;letter-spacing:1px;">9 Nights / 10 Days</span>
+        <h3 style="font-size:1.6rem;margin:0.5rem 0;color:#1a1a1a;">Northern Circuit + Kilimanjaro Cultural Tour</h3>
+        <p style="color:#666;line-height:1.7;margin-bottom:1.5rem;">The most complete Tanzania safari: Tarangire, 3 nights Serengeti, Ngorongoro Crater, Arusha cultural tour, and a full day on the slopes of Kilimanjaro in Marangu village. 4 accommodation tiers.</p>
+        <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;">
+          <span style="font-size:1.3rem;font-weight:700;color:var(--primary);"><?php echo t('home.from'); ?> $2,508 <span style="font-size:0.85rem;font-weight:400;color:#999;"><?php echo t('home.per_person'); ?></span></span>
           <span style="display:inline-flex;align-items:center;gap:6px;color:var(--secondary);font-weight:600;font-size:0.95rem;"><?php echo t('home.view_itinerary'); ?> <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
         </div>
       </div>
