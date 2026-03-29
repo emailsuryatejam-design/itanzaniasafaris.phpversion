@@ -90,6 +90,24 @@ include 'includes/header.php';
       <h2 class="section-title"><?php echo t('safaris.featured_title'); ?></h2>
       <p class="section-desc"><?php echo t('safaris.featured_desc'); ?></p>
     </div>
+    <!-- Featured Package 1: 10-Day Northern Circuit + Kilimanjaro Cultural -->
+    <a href="<?php echo lang_url('10-day-northern-circuit-safari.php'); ?>" class="featured-package-card reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:0;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.10);text-decoration:none;color:inherit;transition:transform 0.3s,box-shadow 0.3s;margin-bottom:2.5rem;">
+      <div style="position:relative;overflow:hidden;min-height:300px;">
+        <img src="/images/marangu.jpg" alt="10-day Tanzania Northern Circuit safari Kilimanjaro Marangu cultural tour" style="width:100%;height:100%;object-fit:cover;">
+        <span style="position:absolute;top:16px;left:16px;background:var(--secondary);color:#fff;padding:6px 16px;border-radius:20px;font-size:0.85rem;font-weight:600;">All Seasons 2026</span>
+      </div>
+      <div style="padding:2.5rem;display:flex;flex-direction:column;justify-content:center;">
+        <span style="color:var(--primary);font-weight:600;font-size:0.85rem;text-transform:uppercase;letter-spacing:1px;">9 Nights / 10 Days</span>
+        <h3 style="font-size:1.6rem;margin:0.5rem 0;color:#1a1a1a;">Northern Circuit + Kilimanjaro Cultural Tour</h3>
+        <p style="color:#666;line-height:1.7;margin-bottom:1.5rem;">The most complete Tanzania safari: Tarangire, 3 nights Serengeti, Ngorongoro Crater, Arusha cultural tour, and a full day on the slopes of Kilimanjaro in Marangu village. 4 accommodation tiers.</p>
+        <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;">
+          <span style="font-size:1.3rem;font-weight:700;color:var(--primary);"><?php echo t('home.from'); ?> $2,508 <span style="font-size:0.85rem;font-weight:400;color:#999;"><?php echo t('home.per_person'); ?></span></span>
+          <span style="display:inline-flex;align-items:center;gap:6px;color:var(--secondary);font-weight:600;font-size:0.95rem;"><?php echo t('home.view_itinerary'); ?> <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Featured Package 2: 5N/6D Safari -->
     <a href="<?php echo lang_url('feb-march-2026-safari.php'); ?>" class="featured-package-card reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:0;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.10);text-decoration:none;color:inherit;transition:transform 0.3s,box-shadow 0.3s;margin-bottom:2.5rem;">
       <div style="position:relative;overflow:hidden;min-height:300px;">
         <img src="/images/itinerary-serengeti.jpg" alt="Serengeti Safari" style="width:100%;height:100%;object-fit:cover;">
@@ -106,8 +124,8 @@ include 'includes/header.php';
       </div>
     </a>
 
-    <!-- Featured Package 2: 7N/8D Safari + Zanzibar -->
-    <a href="<?php echo lang_url('mar-april-2026-safari-zanzibar.php'); ?>" class="featured-package-card reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:0;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.10);text-decoration:none;color:inherit;transition:transform 0.3s,box-shadow 0.3s;margin-bottom:2.5rem;">
+    <!-- Featured Package 3: 7N/8D Safari + Zanzibar -->
+    <a href="<?php echo lang_url('mar-april-2026-safari-zanzibar.php'); ?>" class="featured-package-card reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:0;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.10);text-decoration:none;color:inherit;transition:transform 0.3s,box-shadow 0.3s;">
       <div style="position:relative;overflow:hidden;min-height:300px;">
         <img src="/images/safari-beach.jpg" alt="Safari and Zanzibar Beach" style="width:100%;height:100%;object-fit:cover;">
         <span style="position:absolute;top:16px;left:16px;background:var(--secondary);color:#fff;padding:6px 16px;border-radius:20px;font-size:0.85rem;font-weight:600;">Mar & April 2026</span>
@@ -118,23 +136,6 @@ include 'includes/header.php';
         <p style="color:#666;line-height:1.7;margin-bottom:1.5rem;"><?php echo t('tours.safari2.short_desc'); ?></p>
         <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;">
           <span style="font-size:1.3rem;font-weight:700;color:var(--primary);"><?php echo t('home.from'); ?> $2,417 <span style="font-size:0.85rem;font-weight:400;color:#999;"><?php echo t('home.per_person'); ?></span></span>
-          <span style="display:inline-flex;align-items:center;gap:6px;color:var(--secondary);font-weight:600;font-size:0.95rem;"><?php echo t('home.view_itinerary'); ?> <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
-        </div>
-      </div>
-    </a>
-
-    <!-- Featured Package 3: 10-Day Northern Circuit + Kilimanjaro Cultural -->
-    <a href="<?php echo lang_url('10-day-northern-circuit-safari.php'); ?>" class="featured-package-card reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:0;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.10);text-decoration:none;color:inherit;transition:transform 0.3s,box-shadow 0.3s;">
-      <div style="position:relative;overflow:hidden;min-height:300px;">
-        <img src="/images/marangu.jpg" alt="10-day Tanzania Northern Circuit safari Kilimanjaro Marangu cultural tour" style="width:100%;height:100%;object-fit:cover;">
-        <span style="position:absolute;top:16px;left:16px;background:var(--secondary);color:#fff;padding:6px 16px;border-radius:20px;font-size:0.85rem;font-weight:600;">All Seasons 2026</span>
-      </div>
-      <div style="padding:2.5rem;display:flex;flex-direction:column;justify-content:center;">
-        <span style="color:var(--primary);font-weight:600;font-size:0.85rem;text-transform:uppercase;letter-spacing:1px;">9 Nights / 10 Days</span>
-        <h3 style="font-size:1.6rem;margin:0.5rem 0;color:#1a1a1a;">Northern Circuit + Kilimanjaro Cultural Tour</h3>
-        <p style="color:#666;line-height:1.7;margin-bottom:1.5rem;">The most complete Tanzania safari: Tarangire, 3 nights Serengeti, Ngorongoro Crater, Arusha cultural tour, and a full day on the slopes of Kilimanjaro in Marangu village. 4 accommodation tiers.</p>
-        <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;">
-          <span style="font-size:1.3rem;font-weight:700;color:var(--primary);"><?php echo t('home.from'); ?> $2,508 <span style="font-size:0.85rem;font-weight:400;color:#999;"><?php echo t('home.per_person'); ?></span></span>
           <span style="display:inline-flex;align-items:center;gap:6px;color:var(--secondary);font-weight:600;font-size:0.95rem;"><?php echo t('home.view_itinerary'); ?> <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
         </div>
       </div>
