@@ -129,14 +129,14 @@ return [
         'why_card_4_desc' => 'No hidden costs or surprise charges. What we quote is what you pay, with everything clearly itemized.',
 
         // Stats
-        'stat_travelers' => 'Happy Travelers',
-        'stat_safaris' => 'Safari Tours Completed',
-        'stat_summits' => 'Kilimanjaro Summits',
-        'stat_years' => 'Years of Experience',
-        'stat_label_1' => 'Happy Travelers',
-        'stat_label_2' => 'Safari Tours Completed',
-        'stat_label_3' => 'Kilimanjaro Summits',
-        'stat_label_4' => 'Years of Experience',
+        'stat_travelers' => 'Guests Served by Our Team',
+        'stat_safaris' => 'Safaris Led by Our Guides',
+        'stat_summits' => 'Kilimanjaro Summits Guided',
+        'stat_years' => 'Years of Combined Guide Experience',
+        'stat_label_1' => 'Guests Served by Our Team',
+        'stat_label_2' => 'Safaris Led by Our Guides',
+        'stat_label_3' => 'Kilimanjaro Summits Guided',
+        'stat_label_4' => 'Years of Combined Guide Experience',
 
         // Testimonials
         'testimonials_subtitle' => 'Traveler Stories',

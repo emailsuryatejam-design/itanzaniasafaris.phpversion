@@ -133,10 +133,10 @@ return [
         'stat_safaris' => 'Durchgeführte Safari Touren',
         'stat_summits' => 'Kilimanjaro Gipfelbesteigungen',
         'stat_years' => 'Jahre Erfahrung',
-        'stat_label_1' => 'Zufriedene Reisende',
-        'stat_label_2' => 'Durchgeführte Safari Touren',
-        'stat_label_3' => 'Kilimanjaro Gipfelbesteigungen',
-        'stat_label_4' => 'Jahre Erfahrung',
+        'stat_label_1' => 'Von unserem Team betreute Gäste',
+        'stat_label_2' => 'Von unseren Guides geführte Safaris',
+        'stat_label_3' => 'Kilimanjaro-Gipfel durch unsere Guides',
+        'stat_label_4' => 'Jahre kombinierte Guide-Erfahrung',
 
         // Testimonials
         'testimonials_subtitle' => 'Reisendenerlebnisse',
