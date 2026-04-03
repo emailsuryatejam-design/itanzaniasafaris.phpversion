@@ -19,6 +19,7 @@ RewriteRule ^blog-post\.php$ /blog-post [L,R=301]
 RewriteRule ^contact\.php$ /contact [L,R=301]
 RewriteRule ^feb-march-2026-safari\.php$ /feb-march-2026-safari [L,R=301]
 RewriteRule ^mar-april-2026-safari-zanzibar\.php$ /mar-april-2026-safari-zanzibar [L,R=301]
+RewriteRule ^10-day-northern-circuit-safari\.php$ /10-day-northern-circuit-safari [L,R=301]
 
 # English clean URL internal rewrites
 RewriteRule ^safaris/?$ safaris.php [L,QSA]
@@ -31,6 +32,7 @@ RewriteRule ^blog-post/?$ blog-post.php [L,QSA]
 RewriteRule ^contact/?$ contact.php [L,QSA]
 RewriteRule ^feb-march-2026-safari/?$ feb-march-2026-safari.php [L,QSA]
 RewriteRule ^mar-april-2026-safari-zanzibar/?$ mar-april-2026-safari-zanzibar.php [L,QSA]
+RewriteRule ^10-day-northern-circuit-safari/?$ 10-day-northern-circuit-safari.php [L,QSA]
 
 # German language rewrites
 RewriteRule ^de/?$ index.php?lang=de [L,QSA]
