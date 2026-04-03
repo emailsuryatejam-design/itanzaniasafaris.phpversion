@@ -20,6 +20,9 @@ $slug_map = [
     'blog'           => ['en' => 'blog',             'de' => 'blog',           'es' => 'blog',           'zh' => 'blog',           'tr' => 'blog'],
     'blog-post'      => ['en' => 'blog-post',        'de' => 'blog-post',      'es' => 'blog-post',      'zh' => 'blog-post',      'tr' => 'blog-yazisi'],
     'contact'        => ['en' => 'contact',          'de' => 'kontakt',        'es' => 'contacto',       'zh' => 'contact',        'tr' => 'iletisim'],
+    '10-day-northern-circuit-safari' => ['en' => '10-day-northern-circuit-safari', 'de' => '10-day-northern-circuit-safari', 'es' => '10-day-northern-circuit-safari', 'zh' => '10-day-northern-circuit-safari', 'tr' => '10-day-northern-circuit-safari'],
+    'feb-march-2026-safari'          => ['en' => 'feb-march-2026-safari',          'de' => 'feb-march-2026-safari',          'es' => 'feb-march-2026-safari',          'zh' => 'feb-march-2026-safari',          'tr' => 'feb-march-2026-safari'],
+    'mar-april-2026-safari-zanzibar' => ['en' => 'mar-april-2026-safari-zanzibar', 'de' => 'mar-april-2026-safari-zanzibar', 'es' => 'mar-april-2026-safari-zanzibar', 'zh' => 'mar-april-2026-safari-zanzibar', 'tr' => 'mar-april-2026-safari-zanzibar'],
 ];
 
 /**
