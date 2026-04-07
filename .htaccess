@@ -41,7 +41,7 @@ RewriteRule ^10-day-northern-circuit-safari/?$ 10-day-northern-circuit-safari.ph
 # Blog post clean URLs — catch-all (must be last, after all specific rules)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([a-z][a-z0-9-]+)/?$ blog-post.php?slug=$1 [L,QSA]
+RewriteRule ^([a-z0-9][a-z0-9-]+)/?$ blog-post.php?slug=$1 [L,QSA]
 
 # German language rewrites
 RewriteRule ^de/?$ index.php?lang=de [L,QSA]
