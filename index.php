@@ -2,7 +2,59 @@
 include_once 'includes/lang.php';
 $page_title = t('seo.index.title');
 $page_description = t('seo.index.description');
-$extra_head = '<link rel="preload" href="/images/hero-serengeti.jpg" as="image" fetchpriority="high">';
+$schema_website = [
+  '@context' => 'https://schema.org',
+  '@type' => 'WebSite',
+  'name' => 'iTanzania Safaris',
+  'url' => 'https://itanzaniasafaris.com',
+  'potentialAction' => [
+    '@type' => 'SearchAction',
+    'target' => [
+      '@type' => 'EntryPoint',
+      'urlTemplate' => 'https://itanzaniasafaris.com/blog?q={search_term_string}'
+    ],
+    'query-input' => 'required name=search_term_string'
+  ]
+];
+$schema_org = [
+  '@context' => 'https://schema.org',
+  '@type' => 'TravelAgency',
+  'name' => 'iTanzania Safaris',
+  'alternateName' => 'iTanzania',
+  'url' => 'https://itanzaniasafaris.com',
+  'logo' => [
+    '@type' => 'ImageObject',
+    'url' => 'https://itanzaniasafaris.com/images/logo.png',
+    'width' => 300,
+    'height' => 60
+  ],
+  'image' => 'https://itanzaniasafaris.com/images/hero-serengeti.jpg',
+  'description' => 'Tanzania safari specialists based in Arusha. Expert-led safaris to Serengeti, Ngorongoro Crater, Kilimanjaro, and Zanzibar. Book tailor-made Tanzania safaris 2025/2026.',
+  'address' => [
+    '@type' => 'PostalAddress',
+    'streetAddress' => 'Arusha',
+    'addressLocality' => 'Arusha',
+    'addressRegion' => 'Arusha Region',
+    'addressCountry' => 'TZ'
+  ],
+  'geo' => [
+    '@type' => 'GeoCoordinates',
+    'latitude' => -3.3869,
+    'longitude' => 36.6830
+  ],
+  'areaServed' => ['Tanzania', 'East Africa'],
+  'serviceType' => ['Safari Tours', 'Wildlife Tours', 'Kilimanjaro Climbing', 'Zanzibar Beach Holidays'],
+  'sameAs' => [
+    'https://www.facebook.com/profile.php?id=61586977694056',
+    'https://www.instagram.com/itanzania.safaris'
+  ],
+  'priceRange' => '$$',
+  'currenciesAccepted' => 'USD',
+  'paymentAccepted' => 'Cash, Credit Card, Bank Transfer'
+];
+$extra_head  = '<link rel="preload" href="/images/hero-serengeti.jpg" as="image" fetchpriority="high">';
+$extra_head .= '<script type="application/ld+json">' . json_encode($schema_website, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) . '</script>';
+$extra_head .= '<script type="application/ld+json">' . json_encode($schema_org, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) . '</script>';
 include 'includes/header.php';
 ?>
 
