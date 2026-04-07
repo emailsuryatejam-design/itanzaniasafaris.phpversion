@@ -13,6 +13,10 @@ $blogPosts = [
     'read_time' => '12 min read',
     'featured' => true,
     'keywords' => 'best time to visit Tanzania, Tanzania safari season, Great Migration timing, Tanzania dry season, Tanzania weather, Tanzania safari months, best month for Tanzania safari',
+    'youtube_id' => 'DEAcPVg8V7U',
+    'youtube_title' => 'Tanzania & Serengeti 4K — Wildlife Safari Film',
+    'youtube_description' => 'Experience the landscapes and wildlife of Tanzania\'s Serengeti and Ngorongoro in stunning 4K — from elephant herds to lion prides across every season.',
+    'youtube_date' => '2023-01-01',
     'faq_items' => [
       ['q' => 'When is the best time to visit Tanzania for a safari?', 'a' => 'The best time to visit Tanzania for safari is June–October, the dry season. Water sources are scarce so wildlife concentrates around rivers and watering holes, making game viewing exceptionally easy. August–September is peak for Mara River crossings in the northern Serengeti. January–February is also excellent for the calving season in the southern Serengeti.'],
       ['q' => 'What are the two main safari seasons in Tanzania?', 'a' => 'Tanzania has two primary safari seasons: the Dry Season (June–October), which offers the best overall wildlife viewing with clear skies and easy game drives, and the Green Season (November–May), which brings lush landscapes, fewer crowds, lower prices, and excellent birdwatching. The short rains (November–December) and long rains (April–May) are the wettest periods.'],
@@ -99,6 +103,10 @@ $blogPosts = [
     'read_time' => '12 min read',
     'featured' => true,
     'keywords' => 'Great Migration Tanzania, wildebeest migration, Mara River crossing, Great Migration calendar, Serengeti migration, when is great migration Tanzania, wildebeest crossing season',
+    'youtube_id' => 'oTw4XnLnSmU',
+    'youtube_title' => 'The Great Migration: Wildebeest Crossing the Mara River, Serengeti Tanzania',
+    'youtube_description' => 'Watch thousands of wildebeest brave the crocodile-filled Mara River in the northern Serengeti during the peak of the Great Migration.',
+    'youtube_date' => '2023-09-01',
     'faq_items' => [
       ['q' => 'When is the Great Migration in Tanzania?', 'a' => 'The Great Migration is a year-round event in Tanzania. The wildebeest calving season runs January–March in the southern Serengeti. The Grumeti River crossings happen June–July. The famous Mara River crossings — the peak of the migration — occur August–October in the northern Serengeti (Kogatende area).'],
       ['q' => 'Which month is best to see the wildebeest migration?', 'a' => 'August and September are widely considered the best months for the Great Migration. This is when the largest and most dramatic Mara River crossings occur in the northern Serengeti, with herds of 50,000+ animals crossing at once. However, February (calving season) and June–July (Grumeti crossings) are also exceptional.'],

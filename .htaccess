@@ -21,6 +21,10 @@ RewriteRule ^feb-march-2026-safari\.php$ /feb-march-2026-safari [L,R=301]
 RewriteRule ^mar-april-2026-safari-zanzibar\.php$ /mar-april-2026-safari-zanzibar [L,R=301]
 RewriteRule ^10-day-northern-circuit-safari\.php$ /10-day-northern-circuit-safari [L,R=301]
 
+# 301 redirect: old blog-post?slug=X → clean URL /X
+RewriteCond %{QUERY_STRING} ^slug=([a-zA-Z0-9-]+)$
+RewriteRule ^blog-post(\.php)?/?$ /%1? [R=301,L]
+
 # English clean URL internal rewrites
 RewriteRule ^safaris/?$ safaris.php [L,QSA]
 RewriteRule ^kilimanjaro/?$ kilimanjaro.php [L,QSA]
@@ -33,6 +37,11 @@ RewriteRule ^contact/?$ contact.php [L,QSA]
 RewriteRule ^feb-march-2026-safari/?$ feb-march-2026-safari.php [L,QSA]
 RewriteRule ^mar-april-2026-safari-zanzibar/?$ mar-april-2026-safari-zanzibar.php [L,QSA]
 RewriteRule ^10-day-northern-circuit-safari/?$ 10-day-northern-circuit-safari.php [L,QSA]
+
+# Blog post clean URLs — catch-all (must be last, after all specific rules)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-z][a-z0-9-]+)/?$ blog-post.php?slug=$1 [L,QSA]
 
 # German language rewrites
 RewriteRule ^de/?$ index.php?lang=de [L,QSA]

@@ -213,6 +213,23 @@
 
   <div class="blog-faq-item">
     <h3>What should I pack for a Tanzania safari?</h3>
-    <p>Essential items: neutral-coloured clothing (khaki, olive, beige), lightweight layers for cool mornings and evenings, a fleece or jacket for Ngorongoro Crater night temperatures, high-SPF sunscreen, DEET insect repellent, a wide-brim hat, binoculars, and a camera with a zoom lens. Bring a rain jacket if visiting November–March. Tanzania uses Type D and G plugs (230V, 50Hz).</p>
+    <p>Essential items: neutral-coloured clothing (khaki, olive, beige), lightweight layers for cool mornings and evenings, a fleece or jacket for Ngorongoro Crater night temperatures, high-SPF sunscreen, DEET insect repellent, a wide-brim hat, binoculars, and a camera with a zoom lens. Bring a rain jacket if visiting November–March. Tanzania uses Type D and G plugs (230V, 50Hz). See our full <a href="/tanzania-safari-packing-list-2026">Tanzania safari packing list</a> for a printable checklist.</p>
   </div>
+</div>
+
+<div class="blog-related-links" style="background:#f8f6f1;border-left:4px solid #c9a84c;padding:1.5rem 2rem;margin:2.5rem 0;border-radius:0 8px 8px 0;">
+  <h3 style="margin-top:0;font-size:1.1rem;color:#2c2c2c;">Continue Planning Your Tanzania Safari</h3>
+  <ul style="margin:0;padding-left:1.2rem;line-height:2.2;">
+    <li><a href="/great-migration-tanzania-when-where">Great Migration Tanzania: When & Where to See It Month by Month</a></li>
+    <li><a href="/great-migration-serengeti-calendar">Great Migration Serengeti Calendar 2026: Dates & Locations</a></li>
+    <li><a href="/serengeti-national-park-safari-guide">Serengeti National Park: Complete Safari Guide</a></li>
+    <li><a href="/ngorongoro-crater-safari-guide">Ngorongoro Crater Safari Guide: Wildlife, Logistics & Pricing</a></li>
+    <li><a href="/tarangire-national-park-safari-guide">Tarangire National Park: Elephants & Best Dry Season Safari</a></li>
+    <li><a href="/tanzania-safari-cost-budget-guide">Tanzania Safari Cost 2026: Budget, Mid-Range & Luxury Breakdown</a></li>
+    <li><a href="/tanzania-safari-packing-list-2026">Complete Tanzania Safari Packing List 2026</a></li>
+    <li><a href="/tanzania-vs-kenya-safari">Tanzania vs Kenya Safari: Which Destination is Right for You?</a></li>
+    <li><a href="/honeymoon-safari-tanzania">Honeymoon Safari Tanzania: Romantic Itineraries & Best Lodges</a></li>
+    <li><a href="/10-day-northern-circuit-safari">10-Day Northern Circuit Safari Package — From $2,508pp</a></li>
+    <li><a href="/safaris">Browse All Tanzania Safari Packages</a></li>
+  </ul>
 </div>

@@ -13,7 +13,8 @@ $og_description = $post['meta_description'];
 $og_image = $post['image'];
 
 // BlogPosting schema JSON-LD (rich result eligible)
-$canonical_url = get_canonical_url();
+// Use clean slug-based canonical URL (not ?slug= query parameter)
+$canonical_url = 'https://itanzaniasafaris.com/' . $post['slug'];
 $image_url = (strpos($post['image'], 'http') === 0) ? $post['image'] : 'https://itanzaniasafaris.com' . $post['image'];
 $schema = [
   '@context' => 'https://schema.org',
@@ -30,10 +31,12 @@ $schema = [
   'keywords' => isset($post['keywords']) ? $post['keywords'] : 'Tanzania safari, Africa safari',
   'articleSection' => $post['category'],
   'author' => [
-    '@type' => 'Organization',
-    'name' => 'iTanzania Safaris',
-    'url' => 'https://itanzaniasafaris.com',
-    'logo' => ['@type' => 'ImageObject', 'url' => 'https://itanzaniasafaris.com/images/logo.png']
+    '@type' => 'Person',
+    'name' => 'Safari Expert Team — iTanzania Safaris',
+    'url' => 'https://itanzaniasafaris.com/about',
+    'worksFor' => ['@type' => 'Organization', 'name' => 'iTanzania Safaris', 'url' => 'https://itanzaniasafaris.com'],
+    'knowsAbout' => ['Tanzania Safari', 'Great Migration', 'Serengeti', 'Ngorongoro Crater', 'Kilimanjaro', 'East Africa Wildlife'],
+    'jobTitle' => 'Tanzania Safari Guides & Experts',
   ],
   'publisher' => [
     '@type' => 'Organization',
@@ -66,6 +69,21 @@ $breadcrumb = [
 
 $extra_head  = '<script type="application/ld+json">' . json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
 $extra_head .= '<script type="application/ld+json">' . json_encode($breadcrumb, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
+
+// VideoObject schema — added when post has youtube_id
+if (!empty($post['youtube_id'])) {
+  $video_schema = [
+    '@context' => 'https://schema.org',
+    '@type' => 'VideoObject',
+    'name' => isset($post['youtube_title']) ? $post['youtube_title'] : $post['title'],
+    'description' => isset($post['youtube_description']) ? $post['youtube_description'] : $post['meta_description'],
+    'thumbnailUrl' => 'https://img.youtube.com/vi/' . $post['youtube_id'] . '/maxresdefault.jpg',
+    'uploadDate' => isset($post['youtube_date']) ? $post['youtube_date'] : $post['date'],
+    'embedUrl' => 'https://www.youtube.com/embed/' . $post['youtube_id'],
+    'contentUrl' => 'https://www.youtube.com/watch?v=' . $post['youtube_id'],
+  ];
+  $extra_head .= '<script type="application/ld+json">' . json_encode($video_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
+}
 
 // FAQPage schema — added when post has faq_items
 if (!empty($post['faq_items'])) {
@@ -140,6 +158,24 @@ $related = array_map(fn($p) => localizePost($p, $current_lang), getRelatedPosts(
       }
       ?>
 
+      <!-- YouTube Video Embed -->
+      <?php if (!empty($post['youtube_id'])): ?>
+      <div class="blog-video-embed" style="margin:2.5rem 0;">
+        <h2 style="font-size:1.35rem;margin-bottom:1rem;"><?php echo htmlspecialchars(isset($post['youtube_title']) ? $post['youtube_title'] : 'Watch: ' . $post['title']); ?></h2>
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+          <iframe
+            src="https://www.youtube.com/embed/<?php echo htmlspecialchars($post['youtube_id']); ?>?rel=0"
+            title="<?php echo htmlspecialchars(isset($post['youtube_title']) ? $post['youtube_title'] : $post['title']); ?>"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;">
+          </iframe>
+        </div>
+      </div>
+      <?php endif; ?>
+
       <!-- CTA Box -->
       <div class="blog-cta-box">
         <h3><?php echo t('blog_post.cta_title'); ?></h3>
@@ -162,6 +198,16 @@ $related = array_map(fn($p) => localizePost($p, $current_lang), getRelatedPosts(
           </a>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Author Bio -->
+  <div class="blog-author-bio" style="background:#f8f6f1;border-radius:12px;padding:1.8rem 2rem;margin:2rem auto;max-width:780px;display:flex;gap:1.5rem;align-items:flex-start;">
+    <img src="/images/logo.png" alt="iTanzania Safaris Guide Team" style="width:64px;height:64px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+    <div>
+      <p style="margin:0 0 0.3rem;font-weight:700;font-size:1rem;color:#2c2c2c;">Safari Expert Team — iTanzania Safaris</p>
+      <p style="margin:0 0 0.5rem;font-size:0.82rem;color:#c9a84c;font-weight:600;">Tanzania-Based Safari Guides & Operators</p>
+      <p style="margin:0;font-size:0.9rem;color:#555;line-height:1.6;">Our guides have collectively led hundreds of safaris across the Serengeti, Ngorongoro, Tarangire, and Kilimanjaro. Based in Arusha, we combine on-the-ground expertise with real-time field knowledge — so every guide we publish is grounded in firsthand experience, not theory. <a href="/about" style="color:#c9a84c;">Meet our team →</a></p>
     </div>
   </div>
 </article>

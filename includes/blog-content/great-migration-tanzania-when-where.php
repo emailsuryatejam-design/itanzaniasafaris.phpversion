@@ -201,5 +201,21 @@
 
 <h2>Book Your Great Migration Safari</h2>
 <p>Planning a migration safari requires matching your travel dates to the exact phase of the migration you want to witness — and knowing which camps to book for each phase. As a locally operated safari company in Arusha, we receive daily field reports from our guides throughout the Serengeti, giving us real-time knowledge of where the herds are and where they are heading.</p>
-<p>We design migration itineraries that adapt to conditions — if the herds shift north earlier than expected, we can reposition your camp bookings accordingly. <a href="contact.php">Contact our team</a> to start planning, or browse our <a href="safaris.php">Serengeti safari packages</a> for itineraries and pricing starting from $2,100 per person.</p>
+<p>We design migration itineraries that adapt to conditions — if the herds shift north earlier than expected, we can reposition your camp bookings accordingly. <a href="/contact">Contact our team</a> to start planning, or browse our <a href="/safaris">Serengeti safari packages</a> for itineraries and pricing starting from $2,100 per person.</p>
+
+<div class="blog-related-links" style="background:#f8f6f1;border-left:4px solid #c9a84c;padding:1.5rem 2rem;margin:2.5rem 0;border-radius:0 8px 8px 0;">
+  <h3 style="margin-top:0;font-size:1.1rem;color:#2c2c2c;">Related Reading</h3>
+  <ul style="margin:0;padding-left:1.2rem;line-height:2.2;">
+    <li><a href="/best-time-to-visit-tanzania-safari">Best Time to Visit Tanzania for Safari — Month-by-Month Guide 2026</a></li>
+    <li><a href="/great-migration-serengeti-calendar">Great Migration Serengeti Calendar: Phase-by-Phase Breakdown</a></li>
+    <li><a href="/serengeti-national-park-safari-guide">Serengeti National Park Safari Guide: Everything You Need to Know</a></li>
+    <li><a href="/ngorongoro-crater-safari-guide">Ngorongoro Crater Safari Guide: Wildlife, Logistics & Pricing</a></li>
+    <li><a href="/tarangire-national-park-safari-guide">Tarangire National Park Safari Guide: Elephants, Baobabs & Best Time</a></li>
+    <li><a href="/tanzania-safari-cost-budget-guide">Tanzania Safari Cost 2026: Complete Budget Breakdown</a></li>
+    <li><a href="/tanzania-safari-packing-list-2026">Tanzania Safari Packing List 2026: What to Bring</a></li>
+    <li><a href="/10-day-northern-circuit-safari">10-Day Northern Circuit Safari — Full Itinerary from $2,508pp</a></li>
+    <li><a href="/safaris">View All Tanzania Safari Packages</a></li>
+    <li><a href="/tanzania-vs-kenya-safari">Tanzania vs Kenya Safari: Which is Better?</a></li>
+  </ul>
+</div>
 <p>You may also find our guides useful: <a href="blog-post.php?slug=great-migration-serengeti-calendar">the month-by-month Great Migration Serengeti calendar</a> and our <a href="blog-post.php?slug=best-time-to-visit-tanzania-safari">complete guide to the best time to visit Tanzania for safari</a>.</p>
